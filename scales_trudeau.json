@@ -1,0 +1,4115 @@
+{
+  "scales_version": "1.1.0",
+  "computed": "2026-09-18",
+  "subject": {
+    "name": "Justin Trudeau",
+    "office": "23rd Prime Minister of Canada",
+    "party": "Liberal Party of Canada",
+    "term_start": "2015-11-04",
+    "term_end": "2025-03-14",
+    "successor": "Mark Carney",
+    "elections": [
+      {
+        "year": 2015,
+        "result": "Majority",
+        "seats": 184
+      },
+      {
+        "year": 2019,
+        "result": "Minority",
+        "seats": 157
+      },
+      {
+        "year": 2021,
+        "result": "Minority",
+        "seats": 160
+      }
+    ],
+    "resignation_announced": "2025-01-06"
+  },
+  "years_in_office": 9.36,
+  "oa": {
+    "score": 18.7,
+    "band": "Unaccountable",
+    "band_line": "Fought or ignored the findings. Nothing landed on him. The same conduct again.",
+    "owed": 41,
+    "not_owed": 22,
+    "items": {
+      "consequence": {
+        "name": "Consequence",
+        "line": "What landed on the person responsible, in office.",
+        "score": 19.1
+      },
+      "posture": {
+        "name": "Posture",
+        "line": "What he did with it before a body ruled.",
+        "score": 17.3
+      },
+      "change": {
+        "name": "Change",
+        "line": "Whether anything actually changed, in office.",
+        "score": 19.8
+      }
+    },
+    "by_who": {
+      "pm": 13.2,
+      "gov": 18.7,
+      "min": 27.8
+    },
+    "owed_by_who": {
+      "pm": 13,
+      "gov": 19,
+      "min": 9
+    },
+    "consequence_on_him": 0,
+    "consequence_on_others": 17,
+    "consequence_none": 24,
+    "owned": 11,
+    "fought": 18,
+    "silent": 12,
+    "changed": 8,
+    "repeats": [
+      "access-to-information-decline",
+      "aga-khan-vacation",
+      "electoral-reform",
+      "fiscal-record-2015-promise",
+      "leblanc-surf-clam",
+      "morneau-french-villa",
+      "snc-lavalin-affair",
+      "winnipeg-lab-documents"
+    ],
+    "fought_cases": [
+      "aga-khan-vacation",
+      "blair-csis-warrant-delay",
+      "boil-water-advisories-promise",
+      "covid-benefit-overpayments",
+      "david-johnston-rapporteur",
+      "electoral-reform",
+      "emergencies-act-2022",
+      "fiscal-record-2015-promise",
+      "foreign-interference-response",
+      "hehr-resignation",
+      "india-trip-atwal",
+      "julie-payette",
+      "mark-norman-prosecution",
+      "sdtc-green-fund",
+      "snc-lavalin-affair",
+      "vance-allegations-2018",
+      "we-charity",
+      "winnipeg-lab-documents"
+    ],
+    "owned_cases": [
+      "blackface-images",
+      "butts-telford-moving-expenses",
+      "cash-for-access-fundraisers",
+      "elbowgate",
+      "immigration-could-have-acted-quicker",
+      "kang-harassment",
+      "morneau-we-charity",
+      "nuctech-standing-offer",
+      "sajjan-operation-medusa",
+      "tofino-truth-reconciliation-day",
+      "tootoo-resignation"
+    ],
+    "changed_cases": [
+      "afghanistan-evacuation-2021",
+      "cash-for-access-fundraisers",
+      "foreign-interference-response",
+      "immigration-could-have-acted-quicker",
+      "julie-payette",
+      "michael-chong-zhao-wei",
+      "nuctech-standing-offer",
+      "sdtc-green-fund"
+    ],
+    "time_flags": {},
+    "term_end": "2025-03-14"
+  },
+  "poc": {
+    "points": 90.7,
+    "per_year": 9.7,
+    "leader_major_acts": 7.6,
+    "band": "Systemic",
+    "band_line": "A pattern, plus obstruction of scrutiny and false statements to the public both proven, plus a repeat after an adverse finding.",
+    "band_facts": {
+      "leader_cases": 5,
+      "leader_types": [
+        "T1",
+        "T2",
+        "T3",
+        "T5",
+        "T6",
+        "T7"
+      ],
+      "cases": 18,
+      "obstruction_proven": true,
+      "false_statements_proven": true,
+      "repeat_after_adverse_finding": true
+    },
+    "scored_acts": 26,
+    "scored_cases": 21,
+    "listed_unexamined": 5,
+    "cleared_under_law": [
+      "cash-for-access-fundraisers",
+      "we-charity"
+    ],
+    "by_type": {
+      "T1": 22.5,
+      "T2": 12.8,
+      "T3": 12.0,
+      "T4": 16.8,
+      "T5": 9.8,
+      "T6": 13.8,
+      "T7": 3.0
+    },
+    "by_who": {
+      "him": 48.9,
+      "office": 16.4,
+      "minister": 14.6,
+      "government": 10.8
+    },
+    "by_evidence": {
+      "E4": 13,
+      "E3": 10,
+      "E2": 3
+    },
+    "ledger": [
+      {
+        "type": "T3",
+        "type_name": "Abuse of state power against people",
+        "evidence": "E4",
+        "who": "him",
+        "role": "primary",
+        "base": 4.0,
+        "e_mult": 1.0,
+        "p_mult": 1.0,
+        "weight": 1.0,
+        "points": 12.0,
+        "elements": "Bank accounts frozen (about 257) and protest powers used under a declaration the courts found had no lawful basis and breached the Charter. The declaration was cabinet's, announced by him.",
+        "cleared_under_law": false,
+        "note": "",
+        "case": "emergencies-act-2022",
+        "headline": "Invoked the Emergencies Act against the convoy protests and froze people's bank accounts. Two courts have ruled it was illegal. Nobody paid for it.",
+        "years": "2022 –",
+        "who_case": "Trudeau himself",
+        "S": 3,
+        "repeat_after_finding": false
+      },
+      {
+        "type": "T2",
+        "type_name": "Interference with an independent process",
+        "evidence": "E4",
+        "who": "him",
+        "role": "primary",
+        "base": 4.0,
+        "e_mult": 1.0,
+        "p_mult": 1.0,
+        "weight": 1.0,
+        "points": 8.0,
+        "elements": "The prime minister, his staff, the finance minister's office and the clerk pressed the attorney general over months to overrule the prosecution service on SNC-Lavalin — a decision reserved to her alone. Found by the commissioner.",
+        "cleared_under_law": false,
+        "note": "",
+        "case": "snc-lavalin-affair",
+        "headline": "Leaned on his attorney general to spare SNC-Lavalin a criminal trial. Broke the ethics law. Two ministers who wouldn't go along were pushed out.",
+        "years": "2019",
+        "who_case": "Trudeau himself",
+        "S": 2,
+        "repeat_after_finding": true
+      },
+      {
+        "type": "T1",
+        "type_name": "Self-dealing and conflicts",
+        "evidence": "E4",
+        "who": "him",
+        "role": "primary",
+        "base": 3.0,
+        "e_mult": 1.0,
+        "p_mult": 1.0,
+        "weight": 1.0,
+        "points": 6.0,
+        "elements": "A gift (the island stay, the helicopter) from a party whose foundation was registered to lobby his office with a $15-million grant pending; not refused. Found by the commissioner.",
+        "cleared_under_law": false,
+        "note": "",
+        "case": "aga-khan-vacation",
+        "headline": "Took a free holiday on a billionaire's private island while the billionaire's foundation lobbied his office. Broke the ethics law. Paid nothing.",
+        "years": "2016–2017",
+        "who_case": "Trudeau himself",
+        "S": 2,
+        "repeat_after_finding": true
+      },
+      {
+        "type": "T1",
+        "type_name": "Self-dealing and conflicts",
+        "evidence": "E3",
+        "who": "him",
+        "role": "primary",
+        "base": 3.0,
+        "e_mult": 1.0,
+        "p_mult": 1.0,
+        "weight": 1.0,
+        "points": 6.0,
+        "elements": "A benefit to his family (about $282,000 in fees from WE); WE had a $912-million programme before cabinet; he did not recuse — all admitted. Cleared because the Act's 'private interest' excludes relatives' fees.",
+        "cleared_under_law": true,
+        "note": "Cleared under the Act, May 2021. The Supreme Court struck down the clause shielding that clearance in July 2026; the Federal Court of Appeal now reviews it.",
+        "case": "we-charity",
+        "headline": "Handed a $912-million student program to a charity that had paid his mother and brother over $280,000 in speaking fees. Didn't recuse. Cleared, and now the courts get to check that.",
+        "years": "2020–2021",
+        "who_case": "Trudeau himself",
+        "S": 2,
+        "repeat_after_finding": false
+      },
+      {
+        "type": "T2",
+        "type_name": "Interference with an independent process",
+        "evidence": "E2",
+        "who": "him",
+        "role": "primary",
+        "base": 4.0,
+        "e_mult": 0.6,
+        "p_mult": 1.0,
+        "weight": 1.0,
+        "points": 4.8,
+        "elements": "Publicly pre-judged (twice, on the record) a decision reserved to police and prosecutors. The statements are his; their effect was never examined by any body.",
+        "cleared_under_law": false,
+        "note": "Counsel's claims that records were withheld and code names used were argued in court, not ruled on: not scored.",
+        "case": "mark-norman-prosecution",
+        "headline": "His government prosecuted a vice-admiral for leaking, after Trudeau twice predicted the case would go to court before any charge existed. The case collapsed.",
+        "years": "2017–2019",
+        "who_case": "His government",
+        "S": 2,
+        "repeat_after_finding": false
+      },
+      {
+        "type": "T6",
+        "type_name": "Obstruction of scrutiny",
+        "evidence": "E3",
+        "who": "office",
+        "role": "primary",
+        "base": 3.0,
+        "e_mult": 1.0,
+        "p_mult": 0.8,
+        "weight": 1.0,
+        "points": 4.8,
+        "elements": "Parliament twice ordered the records; the government withheld them and filed a Federal Court application against the Speaker. The agency president was formally admonished by the House. All of it on the record, by the government's own acts.",
+        "cleared_under_law": false,
+        "note": "",
+        "case": "winnipeg-lab-documents",
+        "headline": "Two scientists with ties to Chinese military researchers were fired from Canada's top-security lab. His government fought Parliament in court to keep the files secret.",
+        "years": "2019–2024",
+        "who_case": "His government",
+        "S": 2,
+        "repeat_after_finding": false
+      },
+      {
+        "type": "T1",
+        "type_name": "Self-dealing and conflicts",
+        "evidence": "E4",
+        "who": "minister",
+        "role": "primary",
+        "base": 3.0,
+        "e_mult": 1.0,
+        "p_mult": 0.5,
+        "weight": 1.0,
+        "points": 4.5,
+        "elements": "Free travel from WE; WE had a $912-million programme before the minister; no recusal. Found by the commissioner: preferential treatment, a decision in conflict, failure to recuse.",
+        "cleared_under_law": false,
+        "note": "",
+        "case": "morneau-we-charity",
+        "headline": "Finance minister took free trips from WE, let his staff run interference for WE's funding, then helped hand WE a $912-million program. Broke the law three ways. Resigned.",
+        "years": "2020–2021",
+        "who_case": "His ministers & MPs",
+        "S": 3,
+        "repeat_after_finding": false
+      },
+      {
+        "type": "T4",
+        "type_name": "Public money to insiders, or without the rules",
+        "evidence": "E4",
+        "who": "government",
+        "role": "primary",
+        "base": 3.0,
+        "e_mult": 1.0,
+        "p_mult": 0.4,
+        "weight": 1.0,
+        "points": 3.6,
+        "elements": "Some $60 million of public money went to contractors without the controls the rules require; in 76% of contracts people paid for did no work (procurement ombud). Found by the Auditor General.",
+        "cleared_under_law": false,
+        "note": "",
+        "case": "arrivecan",
+        "headline": "An app first estimated at $80,000 ended up costing about $60 million. A two-man firm got $19 million. Nobody has been charged.",
+        "years": "2020 –",
+        "who_case": "His government",
+        "S": 3,
+        "repeat_after_finding": false
+      },
+      {
+        "type": "T4",
+        "type_name": "Public money to insiders, or without the rules",
+        "evidence": "E4",
+        "who": "government",
+        "role": "primary",
+        "base": 3.0,
+        "e_mult": 1.0,
+        "p_mult": 0.4,
+        "weight": 1.0,
+        "points": 3.6,
+        "elements": "$209 million in contracts awarded with frequent disregard for the procurement rules. Found by the Auditor General.",
+        "cleared_under_law": false,
+        "note": "",
+        "case": "mckinsey-outsourcing",
+        "headline": "Federal contracts to McKinsey went from $2 million in the nine years before he took office to more than $100 million under him. The Auditor General found the rules were routinely ignored.",
+        "years": "2023–2024",
+        "who_case": "His government",
+        "S": 3,
+        "repeat_after_finding": false
+      },
+      {
+        "type": "T4",
+        "type_name": "Public money to insiders, or without the rules",
+        "evidence": "E2",
+        "who": "him",
+        "role": "primary",
+        "base": 3.0,
+        "e_mult": 0.6,
+        "p_mult": 1.0,
+        "weight": 1.0,
+        "points": 3.6,
+        "elements": "A $4.5-million appointment went to a long-time family friend; the House voted 174–150 that he step aside. The friendship is on the record; the vote is Parliament's, not an adjudication.",
+        "cleared_under_law": false,
+        "note": "",
+        "case": "david-johnston-rapporteur",
+        "headline": "To head off a public inquiry into Chinese interference, he appointed a family friend and Trudeau Foundation member to review it. The House voted him out within three months.",
+        "years": "2023",
+        "who_case": "His government",
+        "S": 2,
+        "repeat_after_finding": false
+      },
+      {
+        "type": "T4",
+        "type_name": "Public money to insiders, or without the rules",
+        "evidence": "E4",
+        "who": "government",
+        "role": "primary",
+        "base": 3.0,
+        "e_mult": 1.0,
+        "p_mult": 0.4,
+        "weight": 1.0,
+        "points": 3.6,
+        "elements": "$76 million in 90 funding decisions where conflict-of-interest rules were not followed; $59 million to ineligible projects; the chair found in breach. Found by the Auditor General and the commissioner.",
+        "cleared_under_law": false,
+        "note": "",
+        "case": "sdtc-green-fund",
+        "headline": "The government's billion-dollar green-tech fund gave $59 million to ineligible projects and $76 million in deals where board members had conflicts. Parliament seized up for four months over the documents.",
+        "years": "2023 –",
+        "who_case": "His government",
+        "S": 3,
+        "repeat_after_finding": false
+      },
+      {
+        "type": "T6",
+        "type_name": "Obstruction of scrutiny",
+        "evidence": "E3",
+        "who": "office",
+        "role": "secondary",
+        "base": 3.0,
+        "e_mult": 1.0,
+        "p_mult": 0.8,
+        "weight": 0.5,
+        "points": 3.6,
+        "elements": "The House ordered the documents; the government did not fully comply; the House sat on the privilege question for four months. On the record.",
+        "cleared_under_law": false,
+        "note": "",
+        "case": "sdtc-green-fund",
+        "headline": "The government's billion-dollar green-tech fund gave $59 million to ineligible projects and $76 million in deals where board members had conflicts. Parliament seized up for four months over the documents.",
+        "years": "2023 –",
+        "who_case": "His government",
+        "S": 3,
+        "repeat_after_finding": false
+      },
+      {
+        "type": "T1",
+        "type_name": "Self-dealing and conflicts",
+        "evidence": "E4",
+        "who": "minister",
+        "role": "primary",
+        "base": 3.0,
+        "e_mult": 1.0,
+        "p_mult": 0.5,
+        "weight": 1.0,
+        "points": 3.0,
+        "elements": "A lucrative licence to a company run by a relative of the minister's wife; the company had business before the department; no recusal. Found by the commissioner.",
+        "cleared_under_law": false,
+        "note": "",
+        "case": "leblanc-surf-clam",
+        "headline": "Fisheries minister handed a lucrative clam licence to a company run by his wife's cousin. Broke the ethics law. Kept his job.",
+        "years": "2018",
+        "who_case": "His ministers & MPs",
+        "S": 2,
+        "repeat_after_finding": false
+      },
+      {
+        "type": "T1",
+        "type_name": "Self-dealing and conflicts",
+        "evidence": "E4",
+        "who": "minister",
+        "role": "primary",
+        "base": 3.0,
+        "e_mult": 1.0,
+        "p_mult": 0.5,
+        "weight": 1.0,
+        "points": 3.0,
+        "elements": "Contracts ($22,790) to a friend's firm; the firm had business with the office; no recusal. Found by the commissioner.",
+        "cleared_under_law": false,
+        "note": "",
+        "case": "ng-pomp-circumstance",
+        "headline": "Trade minister gave $23,000 in contracts to her friend's PR firm. Broke the ethics law. Kept her job.",
+        "years": "2019–2022",
+        "who_case": "His ministers & MPs",
+        "S": 2,
+        "repeat_after_finding": false
+      },
+      {
+        "type": "T6",
+        "type_name": "Obstruction of scrutiny",
+        "evidence": "E3",
+        "who": "him",
+        "role": "secondary",
+        "base": 3.0,
+        "e_mult": 1.0,
+        "p_mult": 1.0,
+        "weight": 0.5,
+        "points": 3.0,
+        "elements": "Four committee studies were under way; prorogation on August 18, 2020 ended them. A motion for a special committee was made a confidence vote and defeated. Both his decisions, on the record.",
+        "cleared_under_law": false,
+        "note": "",
+        "case": "we-charity",
+        "headline": "Handed a $912-million student program to a charity that had paid his mother and brother over $280,000 in speaking fees. Didn't recuse. Cleared, and now the courts get to check that.",
+        "years": "2020–2021",
+        "who_case": "Trudeau himself",
+        "S": 2,
+        "repeat_after_finding": false
+      },
+      {
+        "type": "T4",
+        "type_name": "Public money to insiders, or without the rules",
+        "evidence": "E3",
+        "who": "office",
+        "role": "primary",
+        "base": 3.0,
+        "e_mult": 1.0,
+        "p_mult": 0.8,
+        "weight": 1.0,
+        "points": 2.4,
+        "elements": "Public money ($207,052) went to his two most senior aides; the excess was admitted by the repayment of $65,000 as 'unreasonable'.",
+        "cleared_under_law": false,
+        "note": "Within the policy; scored on the admitted excess only.",
+        "case": "butts-telford-moving-expenses",
+        "headline": "His two top aides billed $207,000 to move from Toronto to Ottawa.",
+        "years": "2016",
+        "who_case": "His government",
+        "S": 1,
+        "repeat_after_finding": false
+      },
+      {
+        "type": "T6",
+        "type_name": "Obstruction of scrutiny",
+        "evidence": "E4",
+        "who": "office",
+        "role": "secondary",
+        "base": 3.0,
+        "e_mult": 1.0,
+        "p_mult": 0.8,
+        "weight": 0.5,
+        "points": 2.4,
+        "elements": "The commissioner reported he was denied access to cabinet confidences for nine witnesses; the RCMP said cabinet secrecy blocked much of its investigation. The limits of the waiver were a cabinet decision.",
+        "cleared_under_law": false,
+        "note": "",
+        "case": "snc-lavalin-affair",
+        "headline": "Leaned on his attorney general to spare SNC-Lavalin a criminal trial. Broke the ethics law. Two ministers who wouldn't go along were pushed out.",
+        "years": "2019",
+        "who_case": "Trudeau himself",
+        "S": 2,
+        "repeat_after_finding": false
+      },
+      {
+        "type": "T5",
+        "type_name": "False statements to the public",
+        "evidence": "E4",
+        "who": "him",
+        "role": "secondary",
+        "base": 2.0,
+        "e_mult": 1.0,
+        "p_mult": 1.0,
+        "weight": 0.5,
+        "points": 2.0,
+        "elements": "'The Aga Khan has been a long-time family friend' — the commissioner found no private interaction between the two men until Trudeau became Liberal leader, and that the relationship 'cannot be described as one of friends for the purposes of the Act'.",
+        "cleared_under_law": false,
+        "note": "",
+        "case": "aga-khan-vacation",
+        "headline": "Took a free holiday on a billionaire's private island while the billionaire's foundation lobbied his office. Broke the ethics law. Paid nothing.",
+        "years": "2016–2017",
+        "who_case": "Trudeau himself",
+        "S": 2,
+        "repeat_after_finding": false
+      },
+      {
+        "type": "T5",
+        "type_name": "False statements to the public",
+        "evidence": "E4",
+        "who": "him",
+        "role": "secondary",
+        "base": 2.0,
+        "e_mult": 1.0,
+        "p_mult": 1.0,
+        "weight": 0.5,
+        "points": 2.0,
+        "elements": "'The allegations in the Globe story this morning are false.' The commissioner found the pressure the story described had happened.",
+        "cleared_under_law": false,
+        "note": "",
+        "case": "snc-lavalin-affair",
+        "headline": "Leaned on his attorney general to spare SNC-Lavalin a criminal trial. Broke the ethics law. Two ministers who wouldn't go along were pushed out.",
+        "years": "2019",
+        "who_case": "Trudeau himself",
+        "S": 2,
+        "repeat_after_finding": false
+      },
+      {
+        "type": "T5",
+        "type_name": "False statements to the public",
+        "evidence": "E3",
+        "who": "office",
+        "role": "primary",
+        "base": 2.0,
+        "e_mult": 1.0,
+        "p_mult": 0.8,
+        "weight": 1.0,
+        "points": 1.6,
+        "elements": "The itinerary his office issued stated a location that was false; corrected after a reporter asked. The office knew where he was.",
+        "cleared_under_law": false,
+        "note": "",
+        "case": "tofino-truth-reconciliation-day",
+        "headline": "Spent the first National Day for Truth and Reconciliation surfing in Tofino while his schedule said 'private meetings' in Ottawa.",
+        "years": "2021",
+        "who_case": "Trudeau himself",
+        "S": 1,
+        "repeat_after_finding": false
+      },
+      {
+        "type": "T5",
+        "type_name": "False statements to the public",
+        "evidence": "E3",
+        "who": "office",
+        "role": "primary",
+        "base": 2.0,
+        "e_mult": 1.0,
+        "p_mult": 0.8,
+        "weight": 1.0,
+        "points": 1.6,
+        "elements": "'The family was covering the cost' — then 'at no cost at a location owned by family friends' — then 'with family friends'. The office's own three statements, on the record.",
+        "cleared_under_law": false,
+        "note": "",
+        "case": "jamaica-vacation",
+        "headline": "Took a free luxury vacation at a family friend's Jamaica estate. His office gave three different stories about who paid.",
+        "years": "2023–2024",
+        "who_case": "Trudeau himself",
+        "S": 1,
+        "repeat_after_finding": false
+      },
+      {
+        "type": "T7",
+        "type_name": "Breach of their own written standard",
+        "evidence": "E3",
+        "who": "him",
+        "role": "primary",
+        "base": 1.5,
+        "e_mult": 1.0,
+        "p_mult": 1.0,
+        "weight": 1.0,
+        "points": 1.5,
+        "elements": "His own Open and Accountable Government (2015), Annex B: 'no preferential access to government, or appearance of preferential access ... because they have made financial contributions'. Face time sold at $1,525 in private homes is the appearance the standard names. Admitted by ending the format.",
+        "cleared_under_law": true,
+        "note": "Cleared under the Conflict of Interest Act; scored under his own written standard, which is broader.",
+        "case": "cash-for-access-fundraisers",
+        "headline": "Sold face time at $1,500 a ticket in private homes, including to a Chinese billionaire who then gave $200,000 to the Trudeau Foundation.",
+        "years": "2016–2017",
+        "who_case": "Trudeau himself",
+        "S": 1,
+        "repeat_after_finding": false
+      },
+      {
+        "type": "T7",
+        "type_name": "Breach of their own written standard",
+        "evidence": "E4",
+        "who": "minister",
+        "role": "primary",
+        "base": 1.5,
+        "e_mult": 1.0,
+        "p_mult": 0.5,
+        "weight": 1.0,
+        "points": 1.5,
+        "elements": "The disclosure rule of the Conflict of Interest Act, broken; found by the commissioner. No private benefit shown.",
+        "cleared_under_law": false,
+        "note": "",
+        "case": "morneau-french-villa",
+        "headline": "Finance minister didn't declare the company holding his villa in France for two years. Fined $200.",
+        "years": "2017–2018",
+        "who_case": "His ministers & MPs",
+        "S": 2,
+        "repeat_after_finding": false
+      },
+      {
+        "type": "T5",
+        "type_name": "False statements to the public",
+        "evidence": "E3",
+        "who": "minister",
+        "role": "primary",
+        "base": 2.0,
+        "e_mult": 1.0,
+        "p_mult": 0.5,
+        "weight": 1.0,
+        "points": 1.0,
+        "elements": "A public statement of fact ('the architect' of Operation Medusa), retracted by the minister himself, about his own service.",
+        "cleared_under_law": false,
+        "note": "",
+        "case": "sajjan-operation-medusa",
+        "headline": "Defence minister claimed to be 'the architect' of a major Afghan battle. He wasn't.",
+        "years": "2017",
+        "who_case": "His ministers & MPs",
+        "S": 1,
+        "repeat_after_finding": false
+      },
+      {
+        "type": "T5",
+        "type_name": "False statements to the public",
+        "evidence": "E3",
+        "who": "minister",
+        "role": "primary",
+        "base": 2.0,
+        "e_mult": 1.0,
+        "p_mult": 0.5,
+        "weight": 1.0,
+        "points": 1.0,
+        "elements": "'Police asked for it' — contradicted by the police chiefs' testimony and walked back by his own deputy. The minister was in a position to know.",
+        "cleared_under_law": false,
+        "note": "",
+        "case": "mendicino-police-request-claim",
+        "headline": "Public safety minister said police asked for the Emergencies Act. The police said they didn't.",
+        "years": "2022",
+        "who_case": "His ministers & MPs",
+        "S": 1,
+        "repeat_after_finding": false
+      },
+      {
+        "type": "T5",
+        "type_name": "False statements to the public",
+        "evidence": "E2",
+        "who": "minister",
+        "role": "primary",
+        "base": 2.0,
+        "e_mult": 0.6,
+        "p_mult": 0.5,
+        "weight": 1.0,
+        "points": 0.6,
+        "elements": "'Found out from the news' — Corrections' records show his office was briefed months before. Whether the minister himself was told was never examined.",
+        "cleared_under_law": false,
+        "note": "",
+        "case": "mendicino-bernardo-transfer",
+        "headline": "His public safety minister's office was told months ahead that Paul Bernardo was moving to a medium-security prison. The minister said he found out from the news.",
+        "years": "2023",
+        "who_case": "His ministers & MPs",
+        "S": 1,
+        "repeat_after_finding": false
+      }
+    ],
+    "listed": [
+      {
+        "type": "T1",
+        "type_name": "Self-dealing and conflicts",
+        "evidence": "E1",
+        "who": "him",
+        "role": "primary",
+        "base": 3.0,
+        "e_mult": 0.0,
+        "p_mult": 1.0,
+        "weight": 1.0,
+        "points": 0.0,
+        "elements": "If proven: a benefit to a family foundation, directed by a foreign state. His own role is not on the record.",
+        "cleared_under_law": false,
+        "note": "",
+        "case": "trudeau-foundation-donation",
+        "headline": "Beijing directed a $200,000 gift to the Trudeau Foundation, CSIS intercepts showed. The whole board quit.",
+        "years": "2016–2023",
+        "who_case": "Trudeau himself",
+        "S": 1,
+        "repeat_after_finding": false
+      },
+      {
+        "type": "T4",
+        "type_name": "Public money to insiders, or without the rules",
+        "evidence": "E1",
+        "who": "office",
+        "role": "primary",
+        "base": 3.0,
+        "e_mult": 0.0,
+        "p_mult": 0.8,
+        "weight": 1.0,
+        "points": 0.0,
+        "elements": "If proven: appointments steered to party-connected candidates. The vetting is admitted; that appointments were skewed by it is not on this record.",
+        "cleared_under_law": false,
+        "note": "",
+        "case": "liberalist-judicial-vetting",
+        "headline": "His office ran would-be judges through the Liberal Party's voter database before appointing them.",
+        "years": "2019–2021",
+        "who_case": "His government",
+        "S": 1,
+        "repeat_after_finding": false
+      },
+      {
+        "type": "T4",
+        "type_name": "Public money to insiders, or without the rules",
+        "evidence": "E1",
+        "who": "government",
+        "role": "primary",
+        "base": 3.0,
+        "e_mult": 0.0,
+        "p_mult": 0.4,
+        "weight": 1.0,
+        "points": 0.0,
+        "elements": "If proven: a $237-million contract steered to a party-connected firm. The chain of contracts is documented; favouritism was never examined.",
+        "cleared_under_law": false,
+        "note": "",
+        "case": "baylis-ventilators",
+        "headline": "A $237-million ventilator contract went to a firm that subcontracted to a company co-owned by a former Liberal MP.",
+        "years": "2020",
+        "who_case": "His government",
+        "S": 2,
+        "repeat_after_finding": false
+      },
+      {
+        "type": "T4",
+        "type_name": "Public money to insiders, or without the rules",
+        "evidence": "E1",
+        "who": "minister",
+        "role": "primary",
+        "base": 3.0,
+        "e_mult": 0.0,
+        "p_mult": 0.5,
+        "weight": 1.0,
+        "points": 0.0,
+        "elements": "If proven: military resources directed for a domestic political constituency. Reported; denied; never examined.",
+        "cleared_under_law": false,
+        "note": "",
+        "case": "sajjan-afghan-sikhs",
+        "headline": "During the Kabul evacuation, the defence minister reportedly told special forces to go rescue 225 Afghan Sikhs with no ties to Canada. The mission failed.",
+        "years": "2021–2024",
+        "who_case": "His ministers & MPs",
+        "S": 1,
+        "repeat_after_finding": false
+      },
+      {
+        "type": "T4",
+        "type_name": "Public money to insiders, or without the rules",
+        "evidence": "E1",
+        "who": "minister",
+        "role": "primary",
+        "base": 3.0,
+        "e_mult": 0.0,
+        "p_mult": 0.5,
+        "weight": 1.0,
+        "points": 0.0,
+        "elements": "If proven: $93,050 to a firm run by a staffer's sister. The payments are documented; impropriety was never examined.",
+        "cleared_under_law": false,
+        "note": "",
+        "case": "hussen-constituency-contracts",
+        "headline": "A minister's office paid $93,000 to a firm run by his policy director's sister.",
+        "years": "2023",
+        "who_case": "His ministers & MPs",
+        "S": 1,
+        "repeat_after_finding": false
+      }
+    ]
+  },
+  "cases": [
+    {
+      "id": "boil-water-advisories-promise",
+      "no": 1,
+      "headline": "Promised to end every long-term boil-water advisory on reserves within five years. The deadline passed with 58 still in place.",
+      "who": "Trudeau himself",
+      "subject_key": "pm",
+      "years": "2015–2021",
+      "label": "Promise broken",
+      "result": "BROKEN_COMMITMENT",
+      "result_class": "warning",
+      "S": 3,
+      "S_facts": {
+        "harm": true,
+        "money": false,
+        "against": true
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.0,
+            "date": null,
+            "what": "Nobody. The minister restated the commitment and set no date."
+          },
+          "posture": {
+            "kind": "fought",
+            "value": 0.0,
+            "date": "2021-03-10",
+            "what": "'Remains firm' — the deadline missed that month; no new date. Minimized."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "More money pledged; the funding formula the Auditor General flagged was left as it was."
+          }
+        },
+        "score": 0.0,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "A missed commitment. No private benefit, no false statement, no rule broken: not corruption."
+    },
+    {
+      "id": "fiscal-record-2015-promise",
+      "no": 2,
+      "headline": "Promised small deficits and a balanced budget by 2019. Never balanced one.",
+      "who": "Trudeau himself",
+      "subject_key": "pm",
+      "years": "2015–2025",
+      "label": "Promise broken",
+      "result": "BROKEN_COMMITMENT",
+      "result_class": "warning",
+      "S": 3,
+      "S_facts": {
+        "harm": false,
+        "money": true,
+        "against": true
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.0,
+            "date": null,
+            "what": "Nobody."
+          },
+          "posture": {
+            "kind": "fought",
+            "value": 0.0,
+            "date": null,
+            "what": "The balanced-budget target was replaced with a 'debt-to-GDP anchor' rather than acknowledged as missed."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "A second written ceiling ($40.1 billion, 2023–24) was missed by $21.8 billion."
+          }
+        },
+        "score": 0.0,
+        "flags": []
+      },
+      "repeat_of": [
+        "freeland-resignation"
+      ],
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "A fiscal outcome. Not corruption unless the promise was made knowing it would not be kept; the record does not show that."
+    },
+    {
+      "id": "electoral-reform",
+      "no": 3,
+      "headline": "Promised 2015 would be the last election under first past the post. Killed the promise in 2017.",
+      "who": "Trudeau himself",
+      "subject_key": "pm",
+      "years": "2015–2017",
+      "label": "Promise broken",
+      "result": "BROKEN_COMMITMENT",
+      "result_class": "warning",
+      "S": 2,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": true
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.0,
+            "date": null,
+            "what": "Nobody."
+          },
+          "posture": {
+            "kind": "fought",
+            "value": 0.0,
+            "date": "2017-02-01",
+            "what": "Cancelled by his own mandate letter and blamed on the absence of consensus."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "Two more written commitments missed after this one: the balanced budget, the water advisories."
+          }
+        },
+        "score": 0.0,
+        "flags": []
+      },
+      "repeat_of": [
+        "fiscal-record-2015-promise",
+        "boil-water-advisories-promise"
+      ],
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "A broken promise, not a false statement of fact. Not corruption."
+    },
+    {
+      "id": "phoenix-pay-system",
+      "no": 4,
+      "headline": "Switched on a pay system that failed hundreds of thousands of public servants. The fix has cost $5 billion.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2016 –",
+      "label": "Audit: failure",
+      "result": "AUDIT_ADVERSE",
+      "result_class": "warning",
+      "S": 3,
+      "S_facts": {
+        "harm": true,
+        "money": true,
+        "against": true
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.0,
+            "date": null,
+            "what": "No minister or deputy minister was removed."
+          },
+          "posture": {
+            "kind": "nothing",
+            "value": 0.0,
+            "date": null,
+            "what": "The reports were accepted once made."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "Phoenix still running at the end of the tenure with a backlog above 233,000; the replacement not delivered."
+          }
+        },
+        "score": 0.0,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "Mismanagement on a vast scale. No insider benefit, no rule-breaking for gain: not corruption. Scored in OA."
+    },
+    {
+      "id": "elbowgate",
+      "no": 5,
+      "headline": "Grabbed one MP and elbowed another on the floor of the House.",
+      "who": "Trudeau himself",
+      "subject_key": "pm",
+      "years": "2016",
+      "label": "Apologized",
+      "result": "ADMISSION",
+      "result_class": "neutral",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.0,
+            "date": "2016-05-19",
+            "what": "Two apologies. Words."
+          },
+          "posture": {
+            "kind": "owned",
+            "value": 1.0,
+            "date": "2016-05-18",
+            "what": "Apologized in the House the same evening, before the committee referral."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "Nothing to change; nothing recurred."
+          }
+        },
+        "score": 0.3333,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "Personal conduct. Not corruption."
+    },
+    {
+      "id": "cash-for-access-fundraisers",
+      "no": 6,
+      "headline": "Sold face time at $1,500 a ticket in private homes, including to a Chinese billionaire who then gave $200,000 to the Trudeau Foundation.",
+      "who": "Trudeau himself",
+      "subject_key": "pm",
+      "years": "2016–2017",
+      "label": "Cleared",
+      "result": "CLEARED",
+      "result_class": "good",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": true,
+        "reason": "His own written standard, Open and Accountable Government, was breached (see the corruption ledger); accountability was owed under his own rules.",
+        "items": {
+          "consequence": {
+            "value": 0.5,
+            "date": "2017-01-27",
+            "what": "The private-home format ended: his own decision reversed under pressure."
+          },
+          "posture": {
+            "kind": "owned",
+            "value": 1.0,
+            "date": "2017-01-27",
+            "what": "Ended the format before the commissioner's letter of February 14, 2017."
+          },
+          "change": {
+            "value": 1.0,
+            "date": "2018-06",
+            "what": "Bill C-50: advance notice and reporting of leaders' fundraisers, in law. No repeat in the record."
+          }
+        },
+        "score": 0.8333,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 1.5,
+      "poc_rows": [
+        {
+          "type": "T7",
+          "type_name": "Breach of their own written standard",
+          "evidence": "E3",
+          "who": "him",
+          "role": "primary",
+          "base": 1.5,
+          "e_mult": 1.0,
+          "p_mult": 1.0,
+          "weight": 1.0,
+          "points": 1.5,
+          "elements": "His own Open and Accountable Government (2015), Annex B: 'no preferential access to government, or appearance of preferential access ... because they have made financial contributions'. Face time sold at $1,525 in private homes is the appearance the standard names. Admitted by ending the format.",
+          "cleared_under_law": true,
+          "note": "Cleared under the Conflict of Interest Act; scored under his own written standard, which is broader.",
+          "case": "cash-for-access-fundraisers",
+          "headline": "Sold face time at $1,500 a ticket in private homes, including to a Chinese billionaire who then gave $200,000 to the Trudeau Foundation.",
+          "years": "2016–2017",
+          "who_case": "Trudeau himself",
+          "S": 1,
+          "repeat_after_finding": false
+        }
+      ],
+      "poc_note": "Element (b) of self-dealing — that the guests had business before the government — is not on this record for each guest, so the case scores as a breach of his own standard, not as self-dealing."
+    },
+    {
+      "id": "tootoo-resignation",
+      "no": 7,
+      "headline": "Fisheries minister quit cabinet and caucus over an 'inappropriate relationship' with a staffer.",
+      "who": "His ministers & MPs",
+      "subject_key": "min",
+      "years": "2016",
+      "label": "Quit",
+      "result": "RESIGNATION",
+      "result_class": "proceeding",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": true,
+        "reason": "He resigned over a relationship with a staffer he acknowledged; the fault is his own admission.",
+        "items": {
+          "consequence": {
+            "value": 0.5,
+            "date": "2016-05-31",
+            "what": "The minister left cabinet and caucus the same day."
+          },
+          "posture": {
+            "kind": "owned",
+            "value": 1.0,
+            "date": "2016-05-31",
+            "what": "Resigned at once; no investigation was needed to make him."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "Individual conduct."
+          }
+        },
+        "score": 0.5,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "Personal conduct. Not corruption."
+    },
+    {
+      "id": "trudeau-foundation-donation",
+      "no": 8,
+      "headline": "Beijing directed a $200,000 gift to the Trudeau Foundation, CSIS intercepts showed. The whole board quit.",
+      "who": "Trudeau himself",
+      "subject_key": "pm",
+      "years": "2016–2023",
+      "label": "Never investigated",
+      "result": "UNADJUDICATED",
+      "result_class": "neutral",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": false,
+        "reason": "Never examined by any body; nothing established to answer for."
+      },
+      "repeat_of": null,
+      "poc_points": 0.0,
+      "poc_rows": [
+        {
+          "type": "T1",
+          "type_name": "Self-dealing and conflicts",
+          "evidence": "E1",
+          "who": "him",
+          "role": "primary",
+          "base": 3.0,
+          "e_mult": 0.0,
+          "p_mult": 1.0,
+          "weight": 1.0,
+          "points": 0.0,
+          "elements": "If proven: a benefit to a family foundation, directed by a foreign state. His own role is not on the record.",
+          "cleared_under_law": false,
+          "note": "",
+          "case": "trudeau-foundation-donation",
+          "headline": "Beijing directed a $200,000 gift to the Trudeau Foundation, CSIS intercepts showed. The whole board quit.",
+          "years": "2016–2023",
+          "who_case": "Trudeau himself",
+          "S": 1,
+          "repeat_after_finding": false
+        }
+      ],
+      "poc_note": "Listed. Never examined. Scores nothing."
+    },
+    {
+      "id": "butts-telford-moving-expenses",
+      "no": 9,
+      "headline": "His two top aides billed $207,000 to move from Toronto to Ottawa.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2016",
+      "label": "Partly repaid",
+      "result": "ADMISSION",
+      "result_class": "neutral",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.5,
+            "date": "2016-09-22",
+            "what": "$64,992 repaid by the two aides; $142,060 stood."
+          },
+          "posture": {
+            "kind": "owned",
+            "value": 1.0,
+            "date": "2016-09-22",
+            "what": "Repaid part and called it unreasonable the day the figures were reported; no finding forced it."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "A new relocation policy was ordered; its outcome is not on this record."
+          }
+        },
+        "score": 0.5,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 2.4,
+      "poc_rows": [
+        {
+          "type": "T4",
+          "type_name": "Public money to insiders, or without the rules",
+          "evidence": "E3",
+          "who": "office",
+          "role": "primary",
+          "base": 3.0,
+          "e_mult": 1.0,
+          "p_mult": 0.8,
+          "weight": 1.0,
+          "points": 2.4,
+          "elements": "Public money ($207,052) went to his two most senior aides; the excess was admitted by the repayment of $65,000 as 'unreasonable'.",
+          "cleared_under_law": false,
+          "note": "Within the policy; scored on the admitted excess only.",
+          "case": "butts-telford-moving-expenses",
+          "headline": "His two top aides billed $207,000 to move from Toronto to Ottawa.",
+          "years": "2016",
+          "who_case": "His government",
+          "S": 1,
+          "repeat_after_finding": false
+        }
+      ],
+      "poc_note": ""
+    },
+    {
+      "id": "aga-khan-vacation",
+      "no": 10,
+      "headline": "Took a free holiday on a billionaire's private island while the billionaire's foundation lobbied his office. Broke the ethics law. Paid nothing.",
+      "who": "Trudeau himself",
+      "subject_key": "pm",
+      "years": "2016–2017",
+      "label": "Broke the ethics law",
+      "result": "VIOLATION_FOUND",
+      "result_class": "critical",
+      "S": 2,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": true
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.0,
+            "date": null,
+            "what": "Nothing. No penalty exists; none imposed; nothing repaid."
+          },
+          "posture": {
+            "kind": "fought",
+            "value": 0.0,
+            "date": "2017-01-10",
+            "what": "'A long-time family friend' — rejected by the commissioner. Accepted the report only once it ruled."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "Broke the same Act again within two years (SNC-Lavalin)."
+          }
+        },
+        "score": 0.0,
+        "flags": []
+      },
+      "repeat_of": [
+        "snc-lavalin-affair",
+        "jamaica-vacation"
+      ],
+      "poc_points": 8.0,
+      "poc_rows": [
+        {
+          "type": "T1",
+          "type_name": "Self-dealing and conflicts",
+          "evidence": "E4",
+          "who": "him",
+          "role": "primary",
+          "base": 3.0,
+          "e_mult": 1.0,
+          "p_mult": 1.0,
+          "weight": 1.0,
+          "points": 6.0,
+          "elements": "A gift (the island stay, the helicopter) from a party whose foundation was registered to lobby his office with a $15-million grant pending; not refused. Found by the commissioner.",
+          "cleared_under_law": false,
+          "note": "",
+          "case": "aga-khan-vacation",
+          "headline": "Took a free holiday on a billionaire's private island while the billionaire's foundation lobbied his office. Broke the ethics law. Paid nothing.",
+          "years": "2016–2017",
+          "who_case": "Trudeau himself",
+          "S": 2,
+          "repeat_after_finding": true
+        },
+        {
+          "type": "T5",
+          "type_name": "False statements to the public",
+          "evidence": "E4",
+          "who": "him",
+          "role": "secondary",
+          "base": 2.0,
+          "e_mult": 1.0,
+          "p_mult": 1.0,
+          "weight": 0.5,
+          "points": 2.0,
+          "elements": "'The Aga Khan has been a long-time family friend' — the commissioner found no private interaction between the two men until Trudeau became Liberal leader, and that the relationship 'cannot be described as one of friends for the purposes of the Act'.",
+          "cleared_under_law": false,
+          "note": "",
+          "case": "aga-khan-vacation",
+          "headline": "Took a free holiday on a billionaire's private island while the billionaire's foundation lobbied his office. Broke the ethics law. Paid nothing.",
+          "years": "2016–2017",
+          "who_case": "Trudeau himself",
+          "S": 2,
+          "repeat_after_finding": false
+        }
+      ],
+      "poc_note": ""
+    },
+    {
+      "id": "mark-norman-prosecution",
+      "no": 11,
+      "headline": "His government prosecuted a vice-admiral for leaking, after Trudeau twice predicted the case would go to court before any charge existed. The case collapsed.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2017–2019",
+      "label": "Case collapsed",
+      "result": "CHARGES_STAYED",
+      "result_class": "proceeding",
+      "S": 2,
+      "S_facts": {
+        "harm": true,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": true,
+        "reason": "The Crown stayed the charge for no reasonable prospect of conviction and the House apologized unanimously: the failure is on the record.",
+        "items": {
+          "consequence": {
+            "value": 0.0,
+            "date": null,
+            "what": "Nothing on anyone in government. Norman's legal fees were paid by the treasury: a cost to you, not a consequence to them."
+          },
+          "posture": {
+            "kind": "fought",
+            "value": 0.0,
+            "date": "2019-05-08",
+            "what": "'Entirely independent of my office.' Left the chamber before the apology vote."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "Nothing changed."
+          }
+        },
+        "score": 0.0,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 4.8,
+      "poc_rows": [
+        {
+          "type": "T2",
+          "type_name": "Interference with an independent process",
+          "evidence": "E2",
+          "who": "him",
+          "role": "primary",
+          "base": 4.0,
+          "e_mult": 0.6,
+          "p_mult": 1.0,
+          "weight": 1.0,
+          "points": 4.8,
+          "elements": "Publicly pre-judged (twice, on the record) a decision reserved to police and prosecutors. The statements are his; their effect was never examined by any body.",
+          "cleared_under_law": false,
+          "note": "Counsel's claims that records were withheld and code names used were argued in court, not ruled on: not scored.",
+          "case": "mark-norman-prosecution",
+          "headline": "His government prosecuted a vice-admiral for leaking, after Trudeau twice predicted the case would go to court before any charge existed. The case collapsed.",
+          "years": "2017–2019",
+          "who_case": "His government",
+          "S": 2,
+          "repeat_after_finding": false
+        }
+      ],
+      "poc_note": ""
+    },
+    {
+      "id": "sajjan-operation-medusa",
+      "no": 12,
+      "headline": "Defence minister claimed to be 'the architect' of a major Afghan battle. He wasn't.",
+      "who": "His ministers & MPs",
+      "subject_key": "min",
+      "years": "2017",
+      "label": "Retracted",
+      "result": "ADMISSION",
+      "result_class": "neutral",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.0,
+            "date": "2017-05-02",
+            "what": "Retraction and apology. Words. Kept the portfolio."
+          },
+          "posture": {
+            "kind": "owned",
+            "value": 1.0,
+            "date": "2017-05-02",
+            "what": "Retracted within days; no body was involved."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "Individual conduct."
+          }
+        },
+        "score": 0.3333,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 1.0,
+      "poc_rows": [
+        {
+          "type": "T5",
+          "type_name": "False statements to the public",
+          "evidence": "E3",
+          "who": "minister",
+          "role": "primary",
+          "base": 2.0,
+          "e_mult": 1.0,
+          "p_mult": 0.5,
+          "weight": 1.0,
+          "points": 1.0,
+          "elements": "A public statement of fact ('the architect' of Operation Medusa), retracted by the minister himself, about his own service.",
+          "cleared_under_law": false,
+          "note": "",
+          "case": "sajjan-operation-medusa",
+          "headline": "Defence minister claimed to be 'the architect' of a major Afghan battle. He wasn't.",
+          "years": "2017",
+          "who_case": "His ministers & MPs",
+          "S": 1,
+          "repeat_after_finding": false
+        }
+      ],
+      "poc_note": ""
+    },
+    {
+      "id": "khadr-settlement",
+      "no": 13,
+      "headline": "Paid Omar Khadr $10.5 million and apologized, settling a lawsuit over Charter breaches the Supreme Court had already found.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2017",
+      "label": "Cost on record",
+      "result": "RECORD",
+      "result_class": "neutral",
+      "S": 2,
+      "S_facts": {
+        "harm": false,
+        "money": true,
+        "against": false
+      },
+      "oa": {
+        "owed": false,
+        "reason": "A settlement of Charter breaches found against earlier governments; no fault of this one on the record."
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "A settlement, not corruption."
+    },
+    {
+      "id": "julie-payette",
+      "no": 14,
+      "headline": "Skipped the vetting committee and picked a governor general who quit over a toxic workplace. She keeps a $150,000 pension for life.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2017–2021",
+      "label": "Resigned",
+      "result": "RESIGNATION",
+      "result_class": "proceeding",
+      "S": 2,
+      "S_facts": {
+        "harm": true,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": true,
+        "reason": "The independent review found the workplace toxic and abusive; the skipped vetting was admitted by the promise to strengthen it.",
+        "items": {
+          "consequence": {
+            "value": 0.5,
+            "date": "2021-01-21",
+            "what": "The governor general and her secretary resigned. Nothing on the office that skipped the vetting."
+          },
+          "posture": {
+            "kind": "fought",
+            "value": 0.0,
+            "date": "2020-09-02",
+            "what": "'We have an excellent governor general right now' — two months after the abuse reports, four and a half months before she resigned."
+          },
+          "change": {
+            "value": 1.0,
+            "date": "2021-07",
+            "what": "An advisory group was used for the next appointment (Mary Simon, July 2021). No repeat."
+          }
+        },
+        "score": 0.5,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "A skipped process and a bad appointment. Not corruption."
+    },
+    {
+      "id": "kang-harassment",
+      "no": 15,
+      "headline": "Liberal MP found to have harassed a constituency staffer. Left caucus.",
+      "who": "His ministers & MPs",
+      "subject_key": "min",
+      "years": "2017–2018",
+      "label": "Left caucus; harassment found",
+      "result": "RESIGNATION",
+      "result_class": "proceeding",
+      "S": 2,
+      "S_facts": {
+        "harm": true,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": true,
+        "reason": "A House of Commons investigation found harassment, upheld on appeal.",
+        "items": {
+          "consequence": {
+            "value": 0.5,
+            "date": "2018-08-31",
+            "what": "Out of caucus for good; the House finding upheld on appeal."
+          },
+          "posture": {
+            "kind": "owned",
+            "value": 1.0,
+            "date": "2017-08-31",
+            "what": "Left the caucus the day the allegations surfaced, seven months before the finding."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "Individual conduct."
+          }
+        },
+        "score": 0.5,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "Personal conduct. Not corruption."
+    },
+    {
+      "id": "morneau-french-villa",
+      "no": 16,
+      "headline": "Finance minister didn't declare the company holding his villa in France for two years. Fined $200.",
+      "who": "His ministers & MPs",
+      "subject_key": "min",
+      "years": "2017–2018",
+      "label": "Fined $200",
+      "result": "VIOLATION_FOUND",
+      "result_class": "critical",
+      "S": 2,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": true
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.5,
+            "date": "2017-10-26",
+            "what": "A $200 penalty on the minister; the only fine on any member of the ministry in the tenure. Kept the job."
+          },
+          "posture": {
+            "kind": "nothing",
+            "value": 0.0,
+            "date": null,
+            "what": "Disclosed after CBC inquiries; 'early administrative confusion'."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "The same minister broke the same Act three ways in 2020."
+          }
+        },
+        "score": 0.1667,
+        "flags": []
+      },
+      "repeat_of": [
+        "morneau-we-charity"
+      ],
+      "poc_points": 1.5,
+      "poc_rows": [
+        {
+          "type": "T7",
+          "type_name": "Breach of their own written standard",
+          "evidence": "E4",
+          "who": "minister",
+          "role": "primary",
+          "base": 1.5,
+          "e_mult": 1.0,
+          "p_mult": 0.5,
+          "weight": 1.0,
+          "points": 1.5,
+          "elements": "The disclosure rule of the Conflict of Interest Act, broken; found by the commissioner. No private benefit shown.",
+          "cleared_under_law": false,
+          "note": "",
+          "case": "morneau-french-villa",
+          "headline": "Finance minister didn't declare the company holding his villa in France for two years. Fined $200.",
+          "years": "2017–2018",
+          "who_case": "His ministers & MPs",
+          "S": 2,
+          "repeat_after_finding": false
+        }
+      ],
+      "poc_note": ""
+    },
+    {
+      "id": "hehr-resignation",
+      "no": 17,
+      "headline": "Sport minister quit cabinet over sexual harassment allegations. The report was never released.",
+      "who": "His ministers & MPs",
+      "subject_key": "min",
+      "years": "2018",
+      "label": "Quit cabinet",
+      "result": "RESIGNATION",
+      "result_class": "proceeding",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": true,
+        "reason": "The PMO's own investigation concluded and he was not returned to cabinet; the report itself was withheld.",
+        "items": {
+          "consequence": {
+            "value": 0.5,
+            "date": "2018-01-25",
+            "what": "Out of cabinet for good; kept in caucus."
+          },
+          "posture": {
+            "kind": "fought",
+            "value": 0.0,
+            "date": "2018-06-06",
+            "what": "The PMO commissioned the report and withheld it."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "Individual conduct."
+          }
+        },
+        "score": 0.1667,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "Personal conduct. The withheld report was sought by no investigator or committee: not obstruction under the elements."
+    },
+    {
+      "id": "india-trip-atwal",
+      "no": 18,
+      "headline": "A man convicted of trying to murder an Indian cabinet minister got invited to Trudeau's reception in India.",
+      "who": "Trudeau himself",
+      "subject_key": "pm",
+      "years": "2018",
+      "label": "Inquiry: PMO failed to vet",
+      "result": "INQUIRY_FINDING",
+      "result_class": "warning",
+      "S": 2,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": true
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.0,
+            "date": null,
+            "what": "Nobody in the PMO was disciplined for the screening failures the committee identified."
+          },
+          "posture": {
+            "kind": "fought",
+            "value": 0.0,
+            "date": "2018-02",
+            "what": "The national security adviser briefed reporters that factions in India had orchestrated it."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "The committee recommended background checks for guest lists; no change on this record."
+          }
+        },
+        "score": 0.0,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "A screening failure and a deflection. No element of any type met."
+    },
+    {
+      "id": "leblanc-surf-clam",
+      "no": 19,
+      "headline": "Fisheries minister handed a lucrative clam licence to a company run by his wife's cousin. Broke the ethics law. Kept his job.",
+      "who": "His ministers & MPs",
+      "subject_key": "min",
+      "years": "2018",
+      "label": "Broke the ethics law",
+      "result": "VIOLATION_FOUND",
+      "result_class": "critical",
+      "S": 2,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": true
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.5,
+            "date": "2018-07",
+            "what": "The licence award was withdrawn and the process restarted. The minister was kept through 2025."
+          },
+          "posture": {
+            "kind": "nothing",
+            "value": 0.0,
+            "date": null,
+            "what": "Accepted the finding 'without reservation' once it was made."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "Two more ministers failed to recuse and were found in breach: Ng (2022), Morneau (2021)."
+          }
+        },
+        "score": 0.1667,
+        "flags": []
+      },
+      "repeat_of": [
+        "ng-pomp-circumstance",
+        "morneau-we-charity"
+      ],
+      "poc_points": 3.0,
+      "poc_rows": [
+        {
+          "type": "T1",
+          "type_name": "Self-dealing and conflicts",
+          "evidence": "E4",
+          "who": "minister",
+          "role": "primary",
+          "base": 3.0,
+          "e_mult": 1.0,
+          "p_mult": 0.5,
+          "weight": 1.0,
+          "points": 3.0,
+          "elements": "A lucrative licence to a company run by a relative of the minister's wife; the company had business before the department; no recusal. Found by the commissioner.",
+          "cleared_under_law": false,
+          "note": "",
+          "case": "leblanc-surf-clam",
+          "headline": "Fisheries minister handed a lucrative clam licence to a company run by his wife's cousin. Broke the ethics law. Kept his job.",
+          "years": "2018",
+          "who_case": "His ministers & MPs",
+          "S": 2,
+          "repeat_after_finding": false
+        }
+      ],
+      "poc_note": ""
+    },
+    {
+      "id": "vance-allegations-2018",
+      "no": 20,
+      "headline": "Told in 2018 that the top general faced a misconduct allegation, his defence minister refused to look at the evidence. The general stayed three more years.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2018–2022",
+      "label": "Vance pleaded guilty",
+      "result": "CHARGES",
+      "result_class": "proceeding",
+      "S": 2,
+      "S_facts": {
+        "harm": true,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": true,
+        "reason": "The general pleaded guilty to obstruction; the ombudsman's sworn account of the minister refusing the evidence stands unrebutted; Arbour's review found the system failed.",
+        "items": {
+          "consequence": {
+            "value": 0.0,
+            "date": null,
+            "what": "The minister was moved, not sanctioned. No PMO or PCO official disciplined."
+          },
+          "posture": {
+            "kind": "fought",
+            "value": 0.0,
+            "date": "2021-03",
+            "what": "'Confidence in Sajjan' after the ombudsman's testimony; the minister: allegations were 'very quickly put forward to the proper authorities'."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "48 recommendations 'accepted', 'under implementation'. Accepted is not changed."
+          }
+        },
+        "score": 0.0,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "A refusal to look at evidence. No element of obstruction (no investigator sought records), no benefit, no false statement adjudicated: not corruption. Scored in OA."
+    },
+    {
+      "id": "trans-mountain",
+      "no": 21,
+      "headline": "Bought a pipeline for $4.5 billion. The expansion cost $34 billion. Taxpayers will likely take a loss.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2018 –",
+      "label": "Likely loss",
+      "result": "RECORD",
+      "result_class": "neutral",
+      "S": 2,
+      "S_facts": {
+        "harm": false,
+        "money": true,
+        "against": false
+      },
+      "oa": {
+        "owed": false,
+        "reason": "A purchase on the record; no finding of fault."
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "A policy decision with a public bill. Not corruption."
+    },
+    {
+      "id": "kokanee-summit-allegation",
+      "no": 22,
+      "headline": "A 2000 editorial said he groped a reporter at a festival. In 2018 the reporter confirmed it happened. Nobody investigated.",
+      "who": "Trudeau himself",
+      "subject_key": "pm",
+      "years": "2018",
+      "label": "Never investigated",
+      "result": "UNADJUDICATED",
+      "result_class": "neutral",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": false,
+        "reason": "Never examined by any body."
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "Personal conduct, pre-office, never examined. Not corruption under any type; listed in the record as never investigated."
+    },
+    {
+      "id": "grewal-charges",
+      "no": 23,
+      "headline": "Liberal MP quit over gambling debts, was charged with breach of trust, and was acquitted.",
+      "who": "His ministers & MPs",
+      "subject_key": "min",
+      "years": "2018–2023",
+      "label": "Charged, acquitted",
+      "result": "CHARGES",
+      "result_class": "proceeding",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": false,
+        "reason": "Acquitted."
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "Acquitted. Not corruption."
+    },
+    {
+      "id": "snc-lavalin-affair",
+      "no": 24,
+      "headline": "Leaned on his attorney general to spare SNC-Lavalin a criminal trial. Broke the ethics law. Two ministers who wouldn't go along were pushed out.",
+      "who": "Trudeau himself",
+      "subject_key": "pm",
+      "years": "2019",
+      "label": "Broke the ethics law",
+      "result": "VIOLATION_FOUND",
+      "result_class": "critical",
+      "S": 2,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": true
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.5,
+            "date": "2019-02-18",
+            "what": "His principal secretary resigned; the clerk retired. Nothing on him. The two ministers who resisted were expelled."
+          },
+          "posture": {
+            "kind": "fought",
+            "value": 0.0,
+            "date": "2019-02-07",
+            "what": "'The allegations are false.' Cabinet confidence waived only in part; the commissioner and the RCMP both said it blocked them. 'I won't apologize.'"
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "Within a year he sat in on a $912-million decision involving an organization that had paid his family."
+          }
+        },
+        "score": 0.1667,
+        "flags": []
+      },
+      "repeat_of": [
+        "we-charity"
+      ],
+      "poc_points": 12.4,
+      "poc_rows": [
+        {
+          "type": "T2",
+          "type_name": "Interference with an independent process",
+          "evidence": "E4",
+          "who": "him",
+          "role": "primary",
+          "base": 4.0,
+          "e_mult": 1.0,
+          "p_mult": 1.0,
+          "weight": 1.0,
+          "points": 8.0,
+          "elements": "The prime minister, his staff, the finance minister's office and the clerk pressed the attorney general over months to overrule the prosecution service on SNC-Lavalin — a decision reserved to her alone. Found by the commissioner.",
+          "cleared_under_law": false,
+          "note": "",
+          "case": "snc-lavalin-affair",
+          "headline": "Leaned on his attorney general to spare SNC-Lavalin a criminal trial. Broke the ethics law. Two ministers who wouldn't go along were pushed out.",
+          "years": "2019",
+          "who_case": "Trudeau himself",
+          "S": 2,
+          "repeat_after_finding": true
+        },
+        {
+          "type": "T5",
+          "type_name": "False statements to the public",
+          "evidence": "E4",
+          "who": "him",
+          "role": "secondary",
+          "base": 2.0,
+          "e_mult": 1.0,
+          "p_mult": 1.0,
+          "weight": 0.5,
+          "points": 2.0,
+          "elements": "'The allegations in the Globe story this morning are false.' The commissioner found the pressure the story described had happened.",
+          "cleared_under_law": false,
+          "note": "",
+          "case": "snc-lavalin-affair",
+          "headline": "Leaned on his attorney general to spare SNC-Lavalin a criminal trial. Broke the ethics law. Two ministers who wouldn't go along were pushed out.",
+          "years": "2019",
+          "who_case": "Trudeau himself",
+          "S": 2,
+          "repeat_after_finding": false
+        },
+        {
+          "type": "T6",
+          "type_name": "Obstruction of scrutiny",
+          "evidence": "E4",
+          "who": "office",
+          "role": "secondary",
+          "base": 3.0,
+          "e_mult": 1.0,
+          "p_mult": 0.8,
+          "weight": 0.5,
+          "points": 2.4,
+          "elements": "The commissioner reported he was denied access to cabinet confidences for nine witnesses; the RCMP said cabinet secrecy blocked much of its investigation. The limits of the waiver were a cabinet decision.",
+          "cleared_under_law": false,
+          "note": "",
+          "case": "snc-lavalin-affair",
+          "headline": "Leaned on his attorney general to spare SNC-Lavalin a criminal trial. Broke the ethics law. Two ministers who wouldn't go along were pushed out.",
+          "years": "2019",
+          "who_case": "Trudeau himself",
+          "S": 2,
+          "repeat_after_finding": false
+        }
+      ],
+      "poc_note": ""
+    },
+    {
+      "id": "liberalist-judicial-vetting",
+      "no": 25,
+      "headline": "His office ran would-be judges through the Liberal Party's voter database before appointing them.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2019–2021",
+      "label": "Never investigated",
+      "result": "UNADJUDICATED",
+      "result_class": "neutral",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": false,
+        "reason": "Never examined by any body."
+      },
+      "repeat_of": null,
+      "poc_points": 0.0,
+      "poc_rows": [
+        {
+          "type": "T4",
+          "type_name": "Public money to insiders, or without the rules",
+          "evidence": "E1",
+          "who": "office",
+          "role": "primary",
+          "base": 3.0,
+          "e_mult": 0.0,
+          "p_mult": 0.8,
+          "weight": 1.0,
+          "points": 0.0,
+          "elements": "If proven: appointments steered to party-connected candidates. The vetting is admitted; that appointments were skewed by it is not on this record.",
+          "cleared_under_law": false,
+          "note": "",
+          "case": "liberalist-judicial-vetting",
+          "headline": "His office ran would-be judges through the Liberal Party's voter database before appointing them.",
+          "years": "2019–2021",
+          "who_case": "His government",
+          "S": 1,
+          "repeat_after_finding": false
+        }
+      ],
+      "poc_note": "Listed. The practice is admitted; the outcome element is not on the record, so it scores nothing."
+    },
+    {
+      "id": "ng-pomp-circumstance",
+      "no": 26,
+      "headline": "Trade minister gave $23,000 in contracts to her friend's PR firm. Broke the ethics law. Kept her job.",
+      "who": "His ministers & MPs",
+      "subject_key": "min",
+      "years": "2019–2022",
+      "label": "Broke the ethics law",
+      "result": "VIOLATION_FOUND",
+      "result_class": "critical",
+      "S": 2,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": true
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.0,
+            "date": null,
+            "what": "Apology. No repayment, no penalty, kept in cabinet."
+          },
+          "posture": {
+            "kind": "nothing",
+            "value": 0.0,
+            "date": null,
+            "what": "Apologized once the finding was made."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "Nothing changed."
+          }
+        },
+        "score": 0.0,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 3.0,
+      "poc_rows": [
+        {
+          "type": "T1",
+          "type_name": "Self-dealing and conflicts",
+          "evidence": "E4",
+          "who": "minister",
+          "role": "primary",
+          "base": 3.0,
+          "e_mult": 1.0,
+          "p_mult": 0.5,
+          "weight": 1.0,
+          "points": 3.0,
+          "elements": "Contracts ($22,790) to a friend's firm; the firm had business with the office; no recusal. Found by the commissioner.",
+          "cleared_under_law": false,
+          "note": "",
+          "case": "ng-pomp-circumstance",
+          "headline": "Trade minister gave $23,000 in contracts to her friend's PR firm. Broke the ethics law. Kept her job.",
+          "years": "2019–2022",
+          "who_case": "His ministers & MPs",
+          "S": 2,
+          "repeat_after_finding": false
+        }
+      ],
+      "poc_note": ""
+    },
+    {
+      "id": "winnipeg-lab-documents",
+      "no": 27,
+      "headline": "Two scientists with ties to Chinese military researchers were fired from Canada's top-security lab. His government fought Parliament in court to keep the files secret.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2019–2024",
+      "label": "Files withheld, then released",
+      "result": "ADMISSION",
+      "result_class": "neutral",
+      "S": 2,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": true
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.5,
+            "date": "2021-06-21",
+            "what": "The agency's president was admonished at the bar of the House. Nothing on the ministers who withheld the records."
+          },
+          "posture": {
+            "kind": "fought",
+            "value": 0.0,
+            "date": "2021-06",
+            "what": "Refused two orders of the House and sued the Speaker in Federal Court, the first such application ever."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "In 2024 another House order for documents (the green fund) was not fully met."
+          }
+        },
+        "score": 0.1667,
+        "flags": []
+      },
+      "repeat_of": [
+        "sdtc-green-fund"
+      ],
+      "poc_points": 4.8,
+      "poc_rows": [
+        {
+          "type": "T6",
+          "type_name": "Obstruction of scrutiny",
+          "evidence": "E3",
+          "who": "office",
+          "role": "primary",
+          "base": 3.0,
+          "e_mult": 1.0,
+          "p_mult": 0.8,
+          "weight": 1.0,
+          "points": 4.8,
+          "elements": "Parliament twice ordered the records; the government withheld them and filed a Federal Court application against the Speaker. The agency president was formally admonished by the House. All of it on the record, by the government's own acts.",
+          "cleared_under_law": false,
+          "note": "",
+          "case": "winnipeg-lab-documents",
+          "headline": "Two scientists with ties to Chinese military researchers were fired from Canada's top-security lab. His government fought Parliament in court to keep the files secret.",
+          "years": "2019–2024",
+          "who_case": "His government",
+          "S": 2,
+          "repeat_after_finding": false
+        }
+      ],
+      "poc_note": "The security lapse itself is scored in OA; the obstruction is the corrupt act."
+    },
+    {
+      "id": "blackface-images",
+      "no": 28,
+      "headline": "Wore blackface at least three times. Couldn't say how many.",
+      "who": "Trudeau himself",
+      "subject_key": "pm",
+      "years": "2019",
+      "label": "Admitted",
+      "result": "ADMISSION",
+      "result_class": "neutral",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.0,
+            "date": "2019-09-19",
+            "what": "Two apologies. Words."
+          },
+          "posture": {
+            "kind": "owned",
+            "value": 1.0,
+            "date": "2019-09-18",
+            "what": "Admitted it the night it was published."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "Personal conduct; nothing to change in office."
+          }
+        },
+        "score": 0.3333,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "Personal conduct. Not corruption."
+    },
+    {
+      "id": "pandemic-preparedness-audit",
+      "no": 29,
+      "headline": "The pandemic early-warning system stayed silent, the risk was rated 'low' until March 12, 2020, and two-thirds of quarantined travellers were never checked.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2020–2021",
+      "label": "Audit: unprepared",
+      "result": "AUDIT_ADVERSE",
+      "result_class": "warning",
+      "S": 2,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": true
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.0,
+            "date": null,
+            "what": "Nothing on any minister."
+          },
+          "posture": {
+            "kind": "nothing",
+            "value": 0.0,
+            "date": null,
+            "what": "Recommendations accepted once the report was made."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "No change on this record."
+          }
+        },
+        "score": 0.0,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "Unpreparedness. Not corruption."
+    },
+    {
+      "id": "baylis-ventilators",
+      "no": 30,
+      "headline": "A $237-million ventilator contract went to a firm that subcontracted to a company co-owned by a former Liberal MP.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2020",
+      "label": "Never investigated",
+      "result": "UNADJUDICATED",
+      "result_class": "neutral",
+      "S": 2,
+      "S_facts": {
+        "harm": false,
+        "money": true,
+        "against": false
+      },
+      "oa": {
+        "owed": false,
+        "reason": "Never examined by any body."
+      },
+      "repeat_of": null,
+      "poc_points": 0.0,
+      "poc_rows": [
+        {
+          "type": "T4",
+          "type_name": "Public money to insiders, or without the rules",
+          "evidence": "E1",
+          "who": "government",
+          "role": "primary",
+          "base": 3.0,
+          "e_mult": 0.0,
+          "p_mult": 0.4,
+          "weight": 1.0,
+          "points": 0.0,
+          "elements": "If proven: a $237-million contract steered to a party-connected firm. The chain of contracts is documented; favouritism was never examined.",
+          "cleared_under_law": false,
+          "note": "",
+          "case": "baylis-ventilators",
+          "headline": "A $237-million ventilator contract went to a firm that subcontracted to a company co-owned by a former Liberal MP.",
+          "years": "2020",
+          "who_case": "His government",
+          "S": 2,
+          "repeat_after_finding": false
+        }
+      ],
+      "poc_note": "Listed. Scores nothing."
+    },
+    {
+      "id": "covid-benefit-overpayments",
+      "no": 31,
+      "headline": "$4.6 billion in pandemic benefits went to people who weren't eligible, and $27 billion more needs checking. The tax agency said checking wasn't worth it.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2020 –",
+      "label": "Audit: $4.6B overpaid",
+      "result": "AUDIT_ADVERSE",
+      "result_class": "warning",
+      "S": 3,
+      "S_facts": {
+        "harm": false,
+        "money": true,
+        "against": true
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.0,
+            "date": null,
+            "what": "Nothing on any minister."
+          },
+          "posture": {
+            "kind": "fought",
+            "value": 0.0,
+            "date": "2022-12-06",
+            "what": "The tax agency disputed the Auditor General's figure and told MPs a full review would not be worth it."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "Recovery letters went out; the position that full verification is not worthwhile stood."
+          }
+        },
+        "score": 0.0,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "A design choice and its cost. Not corruption."
+    },
+    {
+      "id": "we-charity",
+      "no": 32,
+      "headline": "Handed a $912-million student program to a charity that had paid his mother and brother over $280,000 in speaking fees. Didn't recuse. Cleared, and now the courts get to check that.",
+      "who": "Trudeau himself",
+      "subject_key": "pm",
+      "years": "2020–2021",
+      "label": "Cleared, now under court review",
+      "result": "CLEARED",
+      "result_class": "good",
+      "S": 2,
+      "S_facts": {
+        "harm": false,
+        "money": true,
+        "against": false
+      },
+      "oa": {
+        "owed": true,
+        "reason": "He admitted he should have recused; his finance minister was found in breach over the same decision.",
+        "items": {
+          "consequence": {
+            "value": 0.5,
+            "date": "2020-08-17",
+            "what": "The finance minister resigned; the programme was withdrawn from WE. Nothing on him."
+          },
+          "posture": {
+            "kind": "fought",
+            "value": 0.0,
+            "date": "2020-08-18",
+            "what": "Apologized on July 13, then prorogued Parliament, ending four committee studies, and made a motion for a special committee a confidence vote."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "No rule changed. The next free stay was cleared in advance; that is a phone call, not a rule."
+          }
+        },
+        "score": 0.1667,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 9.0,
+      "poc_rows": [
+        {
+          "type": "T1",
+          "type_name": "Self-dealing and conflicts",
+          "evidence": "E3",
+          "who": "him",
+          "role": "primary",
+          "base": 3.0,
+          "e_mult": 1.0,
+          "p_mult": 1.0,
+          "weight": 1.0,
+          "points": 6.0,
+          "elements": "A benefit to his family (about $282,000 in fees from WE); WE had a $912-million programme before cabinet; he did not recuse — all admitted. Cleared because the Act's 'private interest' excludes relatives' fees.",
+          "cleared_under_law": true,
+          "note": "Cleared under the Act, May 2021. The Supreme Court struck down the clause shielding that clearance in July 2026; the Federal Court of Appeal now reviews it.",
+          "case": "we-charity",
+          "headline": "Handed a $912-million student program to a charity that had paid his mother and brother over $280,000 in speaking fees. Didn't recuse. Cleared, and now the courts get to check that.",
+          "years": "2020–2021",
+          "who_case": "Trudeau himself",
+          "S": 2,
+          "repeat_after_finding": false
+        },
+        {
+          "type": "T6",
+          "type_name": "Obstruction of scrutiny",
+          "evidence": "E3",
+          "who": "him",
+          "role": "secondary",
+          "base": 3.0,
+          "e_mult": 1.0,
+          "p_mult": 1.0,
+          "weight": 0.5,
+          "points": 3.0,
+          "elements": "Four committee studies were under way; prorogation on August 18, 2020 ended them. A motion for a special committee was made a confidence vote and defeated. Both his decisions, on the record.",
+          "cleared_under_law": false,
+          "note": "",
+          "case": "we-charity",
+          "headline": "Handed a $912-million student program to a charity that had paid his mother and brother over $280,000 in speaking fees. Didn't recuse. Cleared, and now the courts get to check that.",
+          "years": "2020–2021",
+          "who_case": "Trudeau himself",
+          "S": 2,
+          "repeat_after_finding": false
+        }
+      ],
+      "poc_note": ""
+    },
+    {
+      "id": "lucki-nova-scotia-call",
+      "no": 33,
+      "headline": "After the Nova Scotia massacre, the RCMP commissioner said she'd promised his office details on the guns to help sell gun legislation. Inquiry found no interference.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2020–2023",
+      "label": "Inquiry: no interference",
+      "result": "INQUIRY_FINDING",
+      "result_class": "warning",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": false,
+        "reason": "The inquiry found no attempted political interference."
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "Examined and no interference found. Not corruption."
+    },
+    {
+      "id": "arrivecan",
+      "no": 34,
+      "headline": "An app first estimated at $80,000 ended up costing about $60 million. A two-man firm got $19 million. Nobody has been charged.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2020 –",
+      "label": "Audit: rules ignored",
+      "result": "AUDIT_ADVERSE",
+      "result_class": "warning",
+      "S": 3,
+      "S_facts": {
+        "harm": false,
+        "money": true,
+        "against": true
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.5,
+            "date": "2024",
+            "what": "Two agency executives suspended without pay; the contractor barred and admonished by the House. No minister sanctioned."
+          },
+          "posture": {
+            "kind": "nothing",
+            "value": 0.0,
+            "date": null,
+            "what": "'Unacceptable', once the audit was out."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "No procurement rule changed on this record."
+          }
+        },
+        "score": 0.1667,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 3.6,
+      "poc_rows": [
+        {
+          "type": "T4",
+          "type_name": "Public money to insiders, or without the rules",
+          "evidence": "E4",
+          "who": "government",
+          "role": "primary",
+          "base": 3.0,
+          "e_mult": 1.0,
+          "p_mult": 0.4,
+          "weight": 1.0,
+          "points": 3.6,
+          "elements": "Some $60 million of public money went to contractors without the controls the rules require; in 76% of contracts people paid for did no work (procurement ombud). Found by the Auditor General.",
+          "cleared_under_law": false,
+          "note": "",
+          "case": "arrivecan",
+          "headline": "An app first estimated at $80,000 ended up costing about $60 million. A two-man firm got $19 million. Nobody has been charged.",
+          "years": "2020 –",
+          "who_case": "His government",
+          "S": 3,
+          "repeat_after_finding": false
+        }
+      ],
+      "poc_note": ""
+    },
+    {
+      "id": "firearms-buyback-program",
+      "no": 35,
+      "headline": "Banned 1,500 models of firearm in 2020 and promised a buyback. Four years and $67 million later, it had collected no guns.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2020 –",
+      "label": "Cost on record",
+      "result": "RECORD",
+      "result_class": "neutral",
+      "S": 2,
+      "S_facts": {
+        "harm": false,
+        "money": true,
+        "against": false
+      },
+      "oa": {
+        "owed": false,
+        "reason": "A cost on the record; no finding of fault."
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "A programme that did not deliver. Not corruption."
+    },
+    {
+      "id": "morneau-we-charity",
+      "no": 36,
+      "headline": "Finance minister took free trips from WE, let his staff run interference for WE's funding, then helped hand WE a $912-million program. Broke the law three ways. Resigned.",
+      "who": "His ministers & MPs",
+      "subject_key": "min",
+      "years": "2020–2021",
+      "label": "Broke the ethics law",
+      "result": "VIOLATION_FOUND",
+      "result_class": "critical",
+      "S": 3,
+      "S_facts": {
+        "harm": false,
+        "money": true,
+        "against": true
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.5,
+            "date": "2020-08-17",
+            "what": "The minister resigned as minister and MP."
+          },
+          "posture": {
+            "kind": "owned",
+            "value": 1.0,
+            "date": "2020-07-22",
+            "what": "Repaid $41,366 for the trips ten months before the finding."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "He left office."
+          }
+        },
+        "score": 0.5,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 4.5,
+      "poc_rows": [
+        {
+          "type": "T1",
+          "type_name": "Self-dealing and conflicts",
+          "evidence": "E4",
+          "who": "minister",
+          "role": "primary",
+          "base": 3.0,
+          "e_mult": 1.0,
+          "p_mult": 0.5,
+          "weight": 1.0,
+          "points": 4.5,
+          "elements": "Free travel from WE; WE had a $912-million programme before the minister; no recusal. Found by the commissioner: preferential treatment, a decision in conflict, failure to recuse.",
+          "cleared_under_law": false,
+          "note": "",
+          "case": "morneau-we-charity",
+          "headline": "Finance minister took free trips from WE, let his staff run interference for WE's funding, then helped hand WE a $912-million program. Broke the law three ways. Resigned.",
+          "years": "2020–2021",
+          "who_case": "His ministers & MPs",
+          "S": 3,
+          "repeat_after_finding": false
+        }
+      ],
+      "poc_note": ""
+    },
+    {
+      "id": "nuctech-standing-offer",
+      "no": 37,
+      "headline": "Awarded a Chinese state-linked firm the contract to supply X-ray scanners for Canadian embassies. Reversed after it hit the news.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2020",
+      "label": "Reversed",
+      "result": "ADMISSION",
+      "result_class": "neutral",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.5,
+            "date": "2020-11-17",
+            "what": "The standing offer was set aside; no equipment bought."
+          },
+          "posture": {
+            "kind": "owned",
+            "value": 1.0,
+            "date": "2020-11-17",
+            "what": "Reversed once reported; the Deloitte review confirmed the gap."
+          },
+          "change": {
+            "value": 1.0,
+            "date": "2020-11-17",
+            "what": "The department designed a new procurement route with a national-security exemption. No repeat."
+          }
+        },
+        "score": 0.8333,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "A procurement lapse, reversed. Not corruption."
+    },
+    {
+      "id": "access-to-information-decline",
+      "no": 38,
+      "headline": "Canada's information watchdog: the access-to-information system 'no longer serves its intended purpose', and transparency 'is not a priority for the government'.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2021–2023",
+      "label": "Watchdog: system failing",
+      "result": "INQUIRY_FINDING",
+      "result_class": "warning",
+      "S": 2,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": true
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.0,
+            "date": null,
+            "what": "Nobody."
+          },
+          "posture": {
+            "kind": "nothing",
+            "value": 0.0,
+            "date": null,
+            "what": "The report was left unanswered; the law unchanged."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "A House order for documents was not fully met the following year."
+          }
+        },
+        "score": 0.0,
+        "flags": []
+      },
+      "repeat_of": [
+        "sdtc-green-fund"
+      ],
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "Systemic non-transparency, scored in OA. No specific order or investigator refused in this case: not obstruction under the elements."
+    },
+    {
+      "id": "michael-chong-zhao-wei",
+      "no": 39,
+      "headline": "CSIS knew in 2021 that a Chinese diplomat was targeting MP Michael Chong's family in Hong Kong. Chong found out from a newspaper two years later.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2021–2025",
+      "label": "Inquiry: warning never delivered",
+      "result": "INQUIRY_FINDING",
+      "result_class": "warning",
+      "S": 3,
+      "S_facts": {
+        "harm": true,
+        "money": false,
+        "against": true
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.0,
+            "date": null,
+            "what": "No minister, adviser or official disciplined. The diplomat was expelled; that is a consequence for China, not for them."
+          },
+          "posture": {
+            "kind": "nothing",
+            "value": 0.0,
+            "date": null,
+            "what": "Said he learned of it from the newspaper; the inquiry recorded the same."
+          },
+          "change": {
+            "value": 1.0,
+            "date": "2024-06-20",
+            "what": "The Countering Foreign Interference Act, in law, in office. No repeat."
+          }
+        },
+        "score": 0.3333,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "Negligence, not corruption."
+    },
+    {
+      "id": "blair-csis-warrant-delay",
+      "no": 40,
+      "headline": "A CSIS spy warrant sat in the public safety minister's office for 54 days. The inquiry called it 'unacceptable'.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2021–2025",
+      "label": "Inquiry: 'unacceptable' delay",
+      "result": "INQUIRY_FINDING",
+      "result_class": "warning",
+      "S": 2,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": true
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.0,
+            "date": null,
+            "what": "No sanction; the minister stayed to the end."
+          },
+          "posture": {
+            "kind": "fought",
+            "value": 0.0,
+            "date": "2024-10",
+            "what": "Said he did not learn of the warrant until days before signing; the inquiry placed 54 days in his office."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "A tracking process was recommended; none on this record."
+          }
+        },
+        "score": 0.0,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "Delay, not corruption."
+    },
+    {
+      "id": "afghanistan-evacuation-2021",
+      "no": 41,
+      "headline": "Called an election the day Kabul fell. The airlift ended eleven days later with people left behind.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2021–2022",
+      "label": "Committee: planning failures",
+      "result": "INQUIRY_FINDING",
+      "result_class": "warning",
+      "S": 3,
+      "S_facts": {
+        "harm": true,
+        "money": false,
+        "against": true
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.0,
+            "date": null,
+            "what": "No minister resigned; two were moved to other portfolios."
+          },
+          "posture": {
+            "kind": "nothing",
+            "value": 0.0,
+            "date": null,
+            "what": "The committee reported; the government did not dispute it."
+          },
+          "change": {
+            "value": 1.0,
+            "date": "2023-06",
+            "what": "Bill C-41 exempted humanitarian aid from the terrorism-financing provisions the committee flagged. No repeat."
+          }
+        },
+        "score": 0.3333,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "Operational failure. Not corruption."
+    },
+    {
+      "id": "snap-election-2021",
+      "no": 42,
+      "headline": "Called a $600-million pandemic election two years early and got the same Parliament back.",
+      "who": "Trudeau himself",
+      "subject_key": "pm",
+      "years": "2021",
+      "label": "Cost on record",
+      "result": "RECORD",
+      "result_class": "neutral",
+      "S": 2,
+      "S_facts": {
+        "harm": false,
+        "money": true,
+        "against": false
+      },
+      "oa": {
+        "owed": false,
+        "reason": "Lawful; a cost on the record; no finding of fault."
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "Calling an election is politics, whatever it costs. Not corruption."
+    },
+    {
+      "id": "sajjan-afghan-sikhs",
+      "no": 43,
+      "headline": "During the Kabul evacuation, the defence minister reportedly told special forces to go rescue 225 Afghan Sikhs with no ties to Canada. The mission failed.",
+      "who": "His ministers & MPs",
+      "subject_key": "min",
+      "years": "2021–2024",
+      "label": "Never investigated",
+      "result": "UNADJUDICATED",
+      "result_class": "neutral",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": false,
+        "reason": "Never examined by any body."
+      },
+      "repeat_of": null,
+      "poc_points": 0.0,
+      "poc_rows": [
+        {
+          "type": "T4",
+          "type_name": "Public money to insiders, or without the rules",
+          "evidence": "E1",
+          "who": "minister",
+          "role": "primary",
+          "base": 3.0,
+          "e_mult": 0.0,
+          "p_mult": 0.5,
+          "weight": 1.0,
+          "points": 0.0,
+          "elements": "If proven: military resources directed for a domestic political constituency. Reported; denied; never examined.",
+          "cleared_under_law": false,
+          "note": "",
+          "case": "sajjan-afghan-sikhs",
+          "headline": "During the Kabul evacuation, the defence minister reportedly told special forces to go rescue 225 Afghan Sikhs with no ties to Canada. The mission failed.",
+          "years": "2021–2024",
+          "who_case": "His ministers & MPs",
+          "S": 1,
+          "repeat_after_finding": false
+        }
+      ],
+      "poc_note": "Listed. Scores nothing."
+    },
+    {
+      "id": "tofino-truth-reconciliation-day",
+      "no": 44,
+      "headline": "Spent the first National Day for Truth and Reconciliation surfing in Tofino while his schedule said 'private meetings' in Ottawa.",
+      "who": "Trudeau himself",
+      "subject_key": "pm",
+      "years": "2021",
+      "label": "Admitted",
+      "result": "ADMISSION",
+      "result_class": "neutral",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.0,
+            "date": "2021-10-06",
+            "what": "Apology and a visit. Words."
+          },
+          "posture": {
+            "kind": "owned",
+            "value": 1.0,
+            "date": "2021-10-06",
+            "what": "'A mistake, and I regret it' — six days later; no body was involved."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "Nothing recurred; nothing changed."
+          }
+        },
+        "score": 0.3333,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 1.6,
+      "poc_rows": [
+        {
+          "type": "T5",
+          "type_name": "False statements to the public",
+          "evidence": "E3",
+          "who": "office",
+          "role": "primary",
+          "base": 2.0,
+          "e_mult": 1.0,
+          "p_mult": 0.8,
+          "weight": 1.0,
+          "points": 1.6,
+          "elements": "The itinerary his office issued stated a location that was false; corrected after a reporter asked. The office knew where he was.",
+          "cleared_under_law": false,
+          "note": "",
+          "case": "tofino-truth-reconciliation-day",
+          "headline": "Spent the first National Day for Truth and Reconciliation surfing in Tofino while his schedule said 'private meetings' in Ottawa.",
+          "years": "2021",
+          "who_case": "Trudeau himself",
+          "S": 1,
+          "repeat_after_finding": false
+        }
+      ],
+      "poc_note": ""
+    },
+    {
+      "id": "emergencies-act-2022",
+      "no": 45,
+      "headline": "Invoked the Emergencies Act against the convoy protests and froze people's bank accounts. Two courts have ruled it was illegal. Nobody paid for it.",
+      "who": "Trudeau himself",
+      "subject_key": "pm",
+      "years": "2022 –",
+      "label": "Court: illegal, upheld on appeal",
+      "result": "COURT_AGAINST_GOVERNMENT",
+      "result_class": "critical",
+      "S": 3,
+      "S_facts": {
+        "harm": true,
+        "money": false,
+        "against": true
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.0,
+            "date": null,
+            "what": "No minister resigned. No sanction after either ruling."
+          },
+          "posture": {
+            "kind": "fought",
+            "value": 0.0,
+            "date": "2024-01-23",
+            "what": "Appealed the first ruling; 'that continues to be my belief today'. Sought leave to appeal the second."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "The Act was not amended; the inquiry's recommendations accepted in principle."
+          }
+        },
+        "score": 0.0,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 12.0,
+      "poc_rows": [
+        {
+          "type": "T3",
+          "type_name": "Abuse of state power against people",
+          "evidence": "E4",
+          "who": "him",
+          "role": "primary",
+          "base": 4.0,
+          "e_mult": 1.0,
+          "p_mult": 1.0,
+          "weight": 1.0,
+          "points": 12.0,
+          "elements": "Bank accounts frozen (about 257) and protest powers used under a declaration the courts found had no lawful basis and breached the Charter. The declaration was cabinet's, announced by him.",
+          "cleared_under_law": false,
+          "note": "",
+          "case": "emergencies-act-2022",
+          "headline": "Invoked the Emergencies Act against the convoy protests and froze people's bank accounts. Two courts have ruled it was illegal. Nobody paid for it.",
+          "years": "2022 –",
+          "who_case": "Trudeau himself",
+          "S": 3,
+          "repeat_after_finding": false
+        }
+      ],
+      "poc_note": ""
+    },
+    {
+      "id": "mendicino-police-request-claim",
+      "no": 46,
+      "headline": "Public safety minister said police asked for the Emergencies Act. The police said they didn't.",
+      "who": "His ministers & MPs",
+      "subject_key": "min",
+      "years": "2022",
+      "label": "Walked back",
+      "result": "ADMISSION",
+      "result_class": "neutral",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.0,
+            "date": null,
+            "what": "Nothing. The minister stayed a year, and was dropped over a different matter."
+          },
+          "posture": {
+            "kind": "nothing",
+            "value": 0.0,
+            "date": null,
+            "what": "Walked back by his deputy minister, not by him."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "Individual conduct."
+          }
+        },
+        "score": 0.0,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 1.0,
+      "poc_rows": [
+        {
+          "type": "T5",
+          "type_name": "False statements to the public",
+          "evidence": "E3",
+          "who": "minister",
+          "role": "primary",
+          "base": 2.0,
+          "e_mult": 1.0,
+          "p_mult": 0.5,
+          "weight": 1.0,
+          "points": 1.0,
+          "elements": "'Police asked for it' — contradicted by the police chiefs' testimony and walked back by his own deputy. The minister was in a position to know.",
+          "cleared_under_law": false,
+          "note": "",
+          "case": "mendicino-police-request-claim",
+          "headline": "Public safety minister said police asked for the Emergencies Act. The police said they didn't.",
+          "years": "2022",
+          "who_case": "His ministers & MPs",
+          "S": 1,
+          "repeat_after_finding": false
+        }
+      ],
+      "poc_note": ""
+    },
+    {
+      "id": "boissonnault-global-health-imports",
+      "no": 47,
+      "headline": "A minister's business partner texted about 'Randy' during a deal while the minister was in cabinet. Then his claim to be Cree fell apart. He left cabinet.",
+      "who": "His ministers & MPs",
+      "subject_key": "min",
+      "years": "2022–2025",
+      "label": "Cleared; left cabinet",
+      "result": "CLEARED",
+      "result_class": "good",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": false,
+        "reason": "Closed by the commissioner with no evidence of a breach."
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "Examined; no element met at grade E2 or better."
+    },
+    {
+      "id": "london-hotel-queen-funeral",
+      "no": 48,
+      "headline": "Stayed in a $6,000-a-night hotel suite for the Queen's funeral, and his office wouldn't say who was in it.",
+      "who": "Trudeau himself",
+      "subject_key": "pm",
+      "years": "2022–2023",
+      "label": "Cost on record",
+      "result": "RECORD",
+      "result_class": "neutral",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": false,
+        "reason": "A cost on the record; no finding of fault."
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "Extravagance and a refusal to answer a reporter. Not corruption under the elements."
+    },
+    {
+      "id": "foreign-interference-response",
+      "no": 49,
+      "headline": "Warned by CSIS about Chinese interference in two elections, his government was 'slow to act' and 'insufficiently transparent', in a public inquiry's words.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2022–2025",
+      "label": "Inquiry: slow, not transparent",
+      "result": "INQUIRY_FINDING",
+      "result_class": "warning",
+      "S": 2,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": true
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.0,
+            "date": null,
+            "what": "No minister resigned."
+          },
+          "posture": {
+            "kind": "fought",
+            "value": 0.0,
+            "date": "2023-03-15",
+            "what": "Refused a public inquiry and appointed a rapporteur instead; agreed to the inquiry six months later under a House vote."
+          },
+          "change": {
+            "value": 1.0,
+            "date": "2024-06-20",
+            "what": "The Countering Foreign Interference Act, in law, in office."
+          }
+        },
+        "score": 0.3333,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "Slowness and poor communication. Not corruption."
+    },
+    {
+      "id": "mckinsey-outsourcing",
+      "no": 50,
+      "headline": "Federal contracts to McKinsey went from $2 million in the nine years before he took office to more than $100 million under him. The Auditor General found the rules were routinely ignored.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2023–2024",
+      "label": "Audit: rules ignored",
+      "result": "AUDIT_ADVERSE",
+      "result_class": "warning",
+      "S": 3,
+      "S_facts": {
+        "harm": false,
+        "money": true,
+        "against": true
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.0,
+            "date": null,
+            "what": "Nobody sanctioned."
+          },
+          "posture": {
+            "kind": "nothing",
+            "value": 0.0,
+            "date": null,
+            "what": "Ministers were asked to review the contracts."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "No rule changed on this record."
+          }
+        },
+        "score": 0.0,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 3.6,
+      "poc_rows": [
+        {
+          "type": "T4",
+          "type_name": "Public money to insiders, or without the rules",
+          "evidence": "E4",
+          "who": "government",
+          "role": "primary",
+          "base": 3.0,
+          "e_mult": 1.0,
+          "p_mult": 0.4,
+          "weight": 1.0,
+          "points": 3.6,
+          "elements": "$209 million in contracts awarded with frequent disregard for the procurement rules. Found by the Auditor General.",
+          "cleared_under_law": false,
+          "note": "",
+          "case": "mckinsey-outsourcing",
+          "headline": "Federal contracts to McKinsey went from $2 million in the nine years before he took office to more than $100 million under him. The Auditor General found the rules were routinely ignored.",
+          "years": "2023–2024",
+          "who_case": "His government",
+          "S": 3,
+          "repeat_after_finding": false
+        }
+      ],
+      "poc_note": "The Auditor General found no evidence of political direction in the awards; scored as money without the rules, at the department's proximity."
+    },
+    {
+      "id": "hussen-constituency-contracts",
+      "no": 51,
+      "headline": "A minister's office paid $93,000 to a firm run by his policy director's sister.",
+      "who": "His ministers & MPs",
+      "subject_key": "min",
+      "years": "2023",
+      "label": "Never investigated",
+      "result": "UNADJUDICATED",
+      "result_class": "neutral",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": false,
+        "reason": "Never examined by any body."
+      },
+      "repeat_of": null,
+      "poc_points": 0.0,
+      "poc_rows": [
+        {
+          "type": "T4",
+          "type_name": "Public money to insiders, or without the rules",
+          "evidence": "E1",
+          "who": "minister",
+          "role": "primary",
+          "base": 3.0,
+          "e_mult": 0.0,
+          "p_mult": 0.5,
+          "weight": 1.0,
+          "points": 0.0,
+          "elements": "If proven: $93,050 to a firm run by a staffer's sister. The payments are documented; impropriety was never examined.",
+          "cleared_under_law": false,
+          "note": "",
+          "case": "hussen-constituency-contracts",
+          "headline": "A minister's office paid $93,000 to a firm run by his policy director's sister.",
+          "years": "2023",
+          "who_case": "His ministers & MPs",
+          "S": 1,
+          "repeat_after_finding": false
+        }
+      ],
+      "poc_note": "Listed. Scores nothing."
+    },
+    {
+      "id": "han-dong",
+      "no": 52,
+      "headline": "CSIS warned the Liberals in 2019 that Beijing had bused students to a nomination vote. Trudeau kept the candidate.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2023–2025",
+      "label": "Inquiry: undetermined",
+      "result": "INQUIRY_FINDING",
+      "result_class": "warning",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": false,
+        "reason": "The inquiry left the irregularities undetermined."
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "Undetermined by the inquiry. Not scored."
+    },
+    {
+      "id": "mendicino-bernardo-transfer",
+      "no": 53,
+      "headline": "His public safety minister's office was told months ahead that Paul Bernardo was moving to a medium-security prison. The minister said he found out from the news.",
+      "who": "His ministers & MPs",
+      "subject_key": "min",
+      "years": "2023",
+      "label": "Dropped from cabinet",
+      "result": "UNADJUDICATED",
+      "result_class": "neutral",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": false,
+        "reason": "Never formally examined; the minister's own statement is scored on the corruption scale."
+      },
+      "repeat_of": null,
+      "poc_points": 0.6,
+      "poc_rows": [
+        {
+          "type": "T5",
+          "type_name": "False statements to the public",
+          "evidence": "E2",
+          "who": "minister",
+          "role": "primary",
+          "base": 2.0,
+          "e_mult": 0.6,
+          "p_mult": 0.5,
+          "weight": 1.0,
+          "points": 0.6,
+          "elements": "'Found out from the news' — Corrections' records show his office was briefed months before. Whether the minister himself was told was never examined.",
+          "cleared_under_law": false,
+          "note": "",
+          "case": "mendicino-bernardo-transfer",
+          "headline": "His public safety minister's office was told months ahead that Paul Bernardo was moving to a medium-security prison. The minister said he found out from the news.",
+          "years": "2023",
+          "who_case": "His ministers & MPs",
+          "S": 1,
+          "repeat_after_finding": false
+        }
+      ],
+      "poc_note": ""
+    },
+    {
+      "id": "david-johnston-rapporteur",
+      "no": 54,
+      "headline": "To head off a public inquiry into Chinese interference, he appointed a family friend and Trudeau Foundation member to review it. The House voted him out within three months.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2023",
+      "label": "Forced out",
+      "result": "RESIGNATION",
+      "result_class": "proceeding",
+      "S": 2,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": true
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.5,
+            "date": "2023-06-09",
+            "what": "The rapporteur resigned; the inquiry he had recommended against was called in September. His decision, reversed."
+          },
+          "posture": {
+            "kind": "fought",
+            "value": 0.0,
+            "date": "2023-05-31",
+            "what": "Defended the appointment against a 174–150 vote of the House."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "Nothing changed in how such appointments are made."
+          }
+        },
+        "score": 0.1667,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 3.6,
+      "poc_rows": [
+        {
+          "type": "T4",
+          "type_name": "Public money to insiders, or without the rules",
+          "evidence": "E2",
+          "who": "him",
+          "role": "primary",
+          "base": 3.0,
+          "e_mult": 0.6,
+          "p_mult": 1.0,
+          "weight": 1.0,
+          "points": 3.6,
+          "elements": "A $4.5-million appointment went to a long-time family friend; the House voted 174–150 that he step aside. The friendship is on the record; the vote is Parliament's, not an adjudication.",
+          "cleared_under_law": false,
+          "note": "",
+          "case": "david-johnston-rapporteur",
+          "headline": "To head off a public inquiry into Chinese interference, he appointed a family friend and Trudeau Foundation member to review it. The House voted him out within three months.",
+          "years": "2023",
+          "who_case": "His government",
+          "S": 2,
+          "repeat_after_finding": false
+        }
+      ],
+      "poc_note": ""
+    },
+    {
+      "id": "hunka-recognition",
+      "no": 55,
+      "headline": "Parliament gave a standing ovation to a Waffen-SS veteran during Zelenskyy's visit. The Speaker resigned; Trudeau apologized for Parliament.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2023",
+      "label": "Speaker resigned",
+      "result": "RESIGNATION",
+      "result_class": "proceeding",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": false,
+        "reason": "The Speaker's invitation; the Speaker resigned. No fault of the government on the record."
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "Not corruption."
+    },
+    {
+      "id": "sdtc-green-fund",
+      "no": 56,
+      "headline": "The government's billion-dollar green-tech fund gave $59 million to ineligible projects and $76 million in deals where board members had conflicts. Parliament seized up for four months over the documents.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2023 –",
+      "label": "Audit: conflicts, ineligible grants",
+      "result": "AUDIT_ADVERSE",
+      "result_class": "warning",
+      "S": 3,
+      "S_facts": {
+        "harm": false,
+        "money": true,
+        "against": true
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.5,
+            "date": "2023-11",
+            "what": "The chair resigned and was found in breach; the foundation was dissolved. Nothing on the minister."
+          },
+          "posture": {
+            "kind": "fought",
+            "value": 0.0,
+            "date": "2024-09-26",
+            "what": "The House order for the documents was not fully met; the privilege debate ran to prorogation."
+          },
+          "change": {
+            "value": 1.0,
+            "date": "2024-06-04",
+            "what": "The foundation was wound down into the National Research Council; the conduct did not recur."
+          }
+        },
+        "score": 0.5,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 7.2,
+      "poc_rows": [
+        {
+          "type": "T4",
+          "type_name": "Public money to insiders, or without the rules",
+          "evidence": "E4",
+          "who": "government",
+          "role": "primary",
+          "base": 3.0,
+          "e_mult": 1.0,
+          "p_mult": 0.4,
+          "weight": 1.0,
+          "points": 3.6,
+          "elements": "$76 million in 90 funding decisions where conflict-of-interest rules were not followed; $59 million to ineligible projects; the chair found in breach. Found by the Auditor General and the commissioner.",
+          "cleared_under_law": false,
+          "note": "",
+          "case": "sdtc-green-fund",
+          "headline": "The government's billion-dollar green-tech fund gave $59 million to ineligible projects and $76 million in deals where board members had conflicts. Parliament seized up for four months over the documents.",
+          "years": "2023 –",
+          "who_case": "His government",
+          "S": 3,
+          "repeat_after_finding": false
+        },
+        {
+          "type": "T6",
+          "type_name": "Obstruction of scrutiny",
+          "evidence": "E3",
+          "who": "office",
+          "role": "secondary",
+          "base": 3.0,
+          "e_mult": 1.0,
+          "p_mult": 0.8,
+          "weight": 0.5,
+          "points": 3.6,
+          "elements": "The House ordered the documents; the government did not fully comply; the House sat on the privilege question for four months. On the record.",
+          "cleared_under_law": false,
+          "note": "",
+          "case": "sdtc-green-fund",
+          "headline": "The government's billion-dollar green-tech fund gave $59 million to ineligible projects and $76 million in deals where board members had conflicts. Parliament seized up for four months over the documents.",
+          "years": "2023 –",
+          "who_case": "His government",
+          "S": 3,
+          "repeat_after_finding": false
+        }
+      ],
+      "poc_note": ""
+    },
+    {
+      "id": "carbon-charge-heating-oil",
+      "no": 57,
+      "headline": "Exempted home heating oil from the carbon tax, a fuel used mostly in Atlantic Liberal ridings. A minister then told the Prairies to 'elect more Liberals' if they wanted the same.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2023",
+      "label": "Reversed",
+      "result": "ADMISSION",
+      "result_class": "neutral",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": false,
+        "reason": "A policy reversal on the record; no fault found or admitted."
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "Regional relief and a partisan remark. Relief to a region is not money to insiders: not scored."
+    },
+    {
+      "id": "jamaica-vacation",
+      "no": 58,
+      "headline": "Took a free luxury vacation at a family friend's Jamaica estate. His office gave three different stories about who paid.",
+      "who": "Trudeau himself",
+      "subject_key": "pm",
+      "years": "2023–2024",
+      "label": "Cleared in advance",
+      "result": "CLEARED",
+      "result_class": "good",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": false,
+        "reason": "Cleared in advance; the office's three statements are scored on the corruption scale."
+      },
+      "repeat_of": null,
+      "poc_points": 1.6,
+      "poc_rows": [
+        {
+          "type": "T5",
+          "type_name": "False statements to the public",
+          "evidence": "E3",
+          "who": "office",
+          "role": "primary",
+          "base": 2.0,
+          "e_mult": 1.0,
+          "p_mult": 0.8,
+          "weight": 1.0,
+          "points": 1.6,
+          "elements": "'The family was covering the cost' — then 'at no cost at a location owned by family friends' — then 'with family friends'. The office's own three statements, on the record.",
+          "cleared_under_law": false,
+          "note": "",
+          "case": "jamaica-vacation",
+          "headline": "Took a free luxury vacation at a family friend's Jamaica estate. His office gave three different stories about who paid.",
+          "years": "2023–2024",
+          "who_case": "Trudeau himself",
+          "S": 1,
+          "repeat_after_finding": false
+        }
+      ],
+      "poc_note": "The stay itself was cleared in advance and the host had no dealings with the government: not self-dealing under the elements."
+    },
+    {
+      "id": "nsicop-2024-parliamentarians",
+      "no": 59,
+      "headline": "A committee with top-secret clearance said some MPs were 'witting' helpers of foreign governments. Trudeau wouldn't name them. The inquiry later said the claim overshot the evidence.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2024–2025",
+      "label": "Inquiry: overstated",
+      "result": "INQUIRY_FINDING",
+      "result_class": "warning",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": false,
+        "reason": "The inquiry found the committee's claim overshot the intelligence."
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "Not corruption."
+    },
+    {
+      "id": "immigration-could-have-acted-quicker",
+      "no": 60,
+      "headline": "After population growth hit its highest rate since 1957, he admitted his government 'could have acted quicker and turned off the taps faster'.",
+      "who": "Trudeau himself",
+      "subject_key": "pm",
+      "years": "2024",
+      "label": "Admitted",
+      "result": "ADMISSION",
+      "result_class": "neutral",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": true,
+        "reason": "",
+        "items": {
+          "consequence": {
+            "value": 0.0,
+            "date": "2024-11-17",
+            "what": "An admission on video. Words."
+          },
+          "posture": {
+            "kind": "owned",
+            "value": 1.0,
+            "date": "2024-11-17",
+            "what": "'We could have acted quicker and turned off the taps faster.'"
+          },
+          "change": {
+            "value": 1.0,
+            "date": "2024-10-24",
+            "what": "Permanent-resident targets cut by about a fifth; a target set for temporary residents. In office."
+          }
+        },
+        "score": 0.6667,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "An admitted policy error. Not corruption."
+    },
+    {
+      "id": "freeland-resignation",
+      "no": 61,
+      "headline": "His finance minister quit the morning of the fiscal update, calling his spending plans 'costly political gimmicks'.",
+      "who": "His government",
+      "subject_key": "gov",
+      "years": "2024",
+      "label": "Quit",
+      "result": "RESIGNATION",
+      "result_class": "proceeding",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": true,
+        "reason": "Her own ceiling, missed by $21.8 billion, on the government's own statement.",
+        "items": {
+          "consequence": {
+            "value": 0.5,
+            "date": "2024-12-16",
+            "what": "The finance minister left. Nothing on him."
+          },
+          "posture": {
+            "kind": "nothing",
+            "value": 0.0,
+            "date": null,
+            "what": "No dispute of the figure; no acknowledgment of it either."
+          },
+          "change": {
+            "value": 0.0,
+            "date": null,
+            "what": "End of tenure."
+          }
+        },
+        "score": 0.1667,
+        "flags": []
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "A resignation and a missed target. Not corruption."
+    },
+    {
+      "id": "prorogation-2025",
+      "no": 62,
+      "headline": "Shut down Parliament for eleven weeks to run a leadership race. A court said that was within his power.",
+      "who": "Trudeau himself",
+      "subject_key": "pm",
+      "years": "2025",
+      "label": "Upheld by court",
+      "result": "COURT_FOR_GOVERNMENT",
+      "result_class": "good",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": false,
+        "reason": "Upheld by the court."
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "Examined by a court and upheld. The green-fund order it ended is scored in that case."
+    },
+    {
+      "id": "trudeau-resignation",
+      "no": 63,
+      "headline": "With his own MPs demanding he go, he quit and prorogued Parliament to give the party time to replace him.",
+      "who": "Trudeau himself",
+      "subject_key": "pm",
+      "years": "2025",
+      "label": "Resigned",
+      "result": "RESIGNATION",
+      "result_class": "proceeding",
+      "S": 1,
+      "S_facts": {
+        "harm": false,
+        "money": false,
+        "against": false
+      },
+      "oa": {
+        "owed": false,
+        "reason": "A resignation under caucus pressure after nine years; the record ties it to no single case."
+      },
+      "repeat_of": null,
+      "poc_points": 0,
+      "poc_rows": [],
+      "poc_note": "Not corruption."
+    }
+  ],
+  "definitions": {
+    "oa_items": {
+      "consequence": {
+        "name": "Consequence",
+        "line": "What landed on the person responsible, in office.",
+        "rubric": {
+          "1": "On the leader personally: resigned over it, fined, sanctioned, repaid, or his own decision reversed under pressure.",
+          "0.5": "On the responsible minister or official: resigned or removed over it, sanctioned; or the specific decision reversed.",
+          "0": "Nothing. Words are nothing: an apology, 'accepting' a report, a review ordered, a recommendation accepted. Money paid by the treasury is nothing. Anything after leaving office is nothing."
+        }
+      },
+      "posture": {
+        "name": "Posture",
+        "line": "What he did with it before a body ruled.",
+        "rubric": {
+          "owned": "Admitted it or acted on it before any finding, and did not obstruct.",
+          "nothing": "Said nothing of substance, or accepted the finding only once it was made.",
+          "fought": "Denied, minimized, blamed others, appealed, litigated, withheld records, invoked cabinet confidence, prorogued, or refused an order."
+        }
+      },
+      "change": {
+        "name": "Change",
+        "line": "Whether anything actually changed, in office.",
+        "rubric": {
+          "1": "A law, a rule, a process or a decision changed, and the conduct did not recur.",
+          "0": "Nothing changed; a change promised, accepted or 'under implementation'; the same conduct recurred; or the change came after leaving office."
+        }
+      }
+    },
+    "oa_owed": "A body found against the leader, the government or a minister, or they admitted the fault. Cleared, upheld, never-examined and cost-only cases are out: neither for nor against.",
+    "oa_time": "Nothing after the last day in office counts. Owning it counts only before the finding. Cooperating with a process the law requires is not owning it.",
+    "oa_bands": [
+      {
+        "min": 80,
+        "name": "Fully accountable",
+        "line": "Owned it, paid for it, changed it, in office."
+      },
+      {
+        "min": 60,
+        "name": "Accountable",
+        "line": "Most findings owned before they were forced; consequences borne at the top; rules changed in office."
+      },
+      {
+        "min": 40,
+        "name": "Partly accountable",
+        "line": "Some consequences borne at the top; some findings owned before they were forced; some rules changed."
+      },
+      {
+        "min": 20,
+        "name": "Others paid",
+        "line": "Consequences fell on ministers and officials, not on him. More findings fought than owned. Little changed."
+      },
+      {
+        "min": 0,
+        "name": "Unaccountable",
+        "line": "Fought or ignored the findings. Nothing landed on him. The same conduct again."
+      }
+    ],
+    "poc_types": {
+      "T1": {
+        "name": "Self-dealing and conflicts",
+        "base": 3.0,
+        "elements": [
+          "a benefit — a gift, money, travel, a contract, a licence, a programme — to the office-holder, their family, their party, or a close associate",
+          "the giver or recipient had, or sought, business with the government",
+          "the office-holder did not refuse it, or did not recuse from the decision"
+        ]
+      },
+      "T2": {
+        "name": "Interference with an independent process",
+        "base": 4.0,
+        "elements": [
+          "the office-holder or their office intervened in, pressured, or publicly pre-judged",
+          "a decision reserved to an independent actor: a prosecutor, a judge, the police, an officer of Parliament, an arm's-length appointment",
+          "without lawful authority to direct that decision"
+        ]
+      },
+      "T3": {
+        "name": "Abuse of state power against people",
+        "base": 4.0,
+        "elements": [
+          "state power was used against people: detention, property, bank accounts, prosecution, surveillance",
+          "a court found the legal conditions for using it were not met, or that it breached their rights"
+        ]
+      },
+      "T4": {
+        "name": "Public money to insiders, or without the rules",
+        "base": 3.0,
+        "elements": [
+          "public funds, contracts, grants or appointments went",
+          "to insiders, friends, party-connected people, ineligible recipients, or without the controls the rules require",
+          "as found by an auditor, an officer of Parliament, a court, a recorded vote of Parliament, or admitted — beyond ordinary error"
+        ]
+      },
+      "T5": {
+        "name": "False statements to the public",
+        "base": 2.0,
+        "elements": [
+          "a public statement of fact by the office-holder, their office, or a minister",
+          "contradicted by a document, a finding, or their own later statement on the record",
+          "about a matter they were in a position to know"
+        ]
+      },
+      "T6": {
+        "name": "Obstruction of scrutiny",
+        "base": 3.0,
+        "elements": [
+          "an investigator, a committee, a court, an inquiry, or Parliament sought records or answers",
+          "the office-holder or government withheld them, redacted beyond the order, ended the process (prorogation, a confidence vote, dissolution), or went to court against disclosure",
+          "as shown by an order, a ruling, a formal admonishment, or the record"
+        ]
+      },
+      "T7": {
+        "name": "Breach of their own written standard",
+        "base": 1.5,
+        "elements": [
+          "a written standard the office-holder set, signed, or swore to",
+          "was broken, per a finding or an admission",
+          "with none of the types above present"
+        ]
+      }
+    },
+    "evidence": {
+      "E4": {
+        "name": "Adjudicated",
+        "multiplier": 1.0,
+        "meaning": "A court, an officer of Parliament, an auditor, or a public inquiry found it."
+      },
+      "E3": {
+        "name": "Admitted / own record",
+        "multiplier": 1.0,
+        "meaning": "They admitted it, or it is their own act or document on the record: a settlement paid, a lawsuit filed, an itinerary issued, a statement made."
+      },
+      "E2": {
+        "name": "Documented, no ruling",
+        "multiplier": 0.6,
+        "meaning": "On the public record — sworn testimony, released documents, a recorded vote of the House — but no body with authority ruled on it."
+      },
+      "E1": {
+        "name": "Reported, never examined",
+        "multiplier": 0.0,
+        "meaning": "Reported by major outlets, denied or unanswered, examined by nobody. Listed. Scores nothing."
+      }
+    },
+    "proximity": {
+      "him": {
+        "name": "The leader personally: his own act or statement, or a decision he announced and defended as his own",
+        "multiplier": 1.0
+      },
+      "office": {
+        "name": "His staff, or a cabinet decision carried by a minister",
+        "multiplier": 0.8
+      },
+      "minister": {
+        "name": "A minister or MP, personally",
+        "multiplier": 0.5
+      },
+      "government": {
+        "name": "A department, agency or body under the government",
+        "multiplier": 0.4
+      }
+    },
+    "severity": {
+      "rule": "S = 1 + [harm or ≥$10M public money] + [a body found against them], capped at 3",
+      "money_threshold": 10000000
+    },
+    "secondary_weight": 0.5,
+    "leader_major_act_points": 12.0,
+    "poc_bands": [
+      {
+        "name": "None",
+        "test": "No proven corrupt act on the record."
+      },
+      {
+        "name": "Isolated",
+        "test": "Proven acts, none by the leader personally."
+      },
+      {
+        "name": "Repeated",
+        "test": "More than one proven act by the leader personally, or one by the leader and three or more across the government."
+      },
+      {
+        "name": "Pattern",
+        "test": "Proven acts by the leader personally in three or more types, or the same type again after an adverse finding."
+      },
+      {
+        "name": "Systemic",
+        "test": "A pattern, plus obstruction of scrutiny and false statements to the public both proven, plus a repeat after an adverse finding."
+      }
+    ]
+  }
+}

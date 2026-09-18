@@ -1,6 +1,6 @@
 {
   "platform": "politaccount",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "subject": {
     "name": "Justin Trudeau",
     "office": "23rd Prime Minister of Canada",
@@ -185,8 +185,8 @@
     },
     "cases_with_said_vs_record": 29,
     "cases_with_cost_cad": 21,
-    "sources": 198,
-    "official_sources": 64
+    "sources": 199,
+    "official_sources": 65
   },
   "cabinet_departures": [
     {
@@ -709,6 +709,13 @@
       "public_cost": null,
       "status": "Closed. The $200,000 Foundation donation resurfaced in 2023 (see the Trudeau Foundation entry).",
       "sources": [
+        {
+          "title": "Open and Accountable Government — Annex B, Fundraising and Dealing with Lobbyists: “no preferential access to government, or appearance of preferential access, accorded to individuals or organizations because they have made financial contributions to politicians and political parties”",
+          "publisher": "Office of the Prime Minister",
+          "url": "https://www.pm.gc.ca/en/news/backgrounders/2015/11/27/open-and-accountable-government",
+          "date": "2015-11-27",
+          "primary": true
+        },
         {
           "title": "Trudeau attended cash-for-access fundraiser with Chinese billionaires",
           "publisher": "The Globe and Mail",

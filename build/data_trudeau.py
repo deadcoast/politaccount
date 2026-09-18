@@ -190,6 +190,7 @@ consequence_others="None.",
 public_cost=None,
 status="Closed. The $200,000 Foundation donation resurfaced in 2023 (see the Trudeau Foundation entry).",
 sources=[
+S("Open and Accountable Government — Annex B, Fundraising and Dealing with Lobbyists: “no preferential access to government, or appearance of preferential access, accorded to individuals or organizations because they have made financial contributions to politicians and political parties”", "Office of the Prime Minister", "https://www.pm.gc.ca/en/news/backgrounders/2015/11/27/open-and-accountable-government", "2015-11-27", primary=True),
 S("Trudeau attended cash-for-access fundraiser with Chinese billionaires", "The Globe and Mail", "https://www.theglobeandmail.com/news/politics/trudeau-attended-cash-for-access-fundraiser-with-chinese-billionaires/article32971362/", "2016-11-22"),
 S("Ethics Commissioner to question Trudeau on cash-for-access fundraisers", "The Globe and Mail", "https://www.theglobeandmail.com/news/politics/ethics-commissioner-to-question-trudeau-on-cash-for-access-fundraisers/article33329767/", "2016-12-15"),
 S("Ethics commissioner cleared Trudeau’s fundraising in February", "CBC News", "https://amp.cbc.ca/lite/story/1.4089202", "2017-04-27"),

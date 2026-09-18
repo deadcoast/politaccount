@@ -1,0 +1,1084 @@
+<title>Politaccount · Scales</title>
+<meta name="description" content="Two rating scales for Record 001, Justin Trudeau: Operational Accountability and Provable Observable Corruption, scored from 63 cases on the record, every point traced to a case and a source.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+/* charcoal by default; light is an explicit choice from the toggle */
+:root{
+  color-scheme:dark;
+  --ground:#1F2123;--surface:#26282B;--surface-2:#2E3134;--rule:#3A3D41;--rule-strong:#585C62;
+  --ink:#ECEAE4;--ink-2:#BDBBB4;--ink-3:#8C8B86;--accent:#E0596A;
+  --c-critical:#E0596A;--c-warning:#C9A227;--c-proceeding:#6E8FE8;--c-good:#3FB06A;--c-neutral:#8E9196;
+  --on-color:#1F2123;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;--serif:"IBM Plex Serif",Georgia,"Times New Roman",serif;--mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+:root[data-theme="light"]{
+  color-scheme:light;
+  --ground:#F2F1EE;--surface:#FAF9F7;--surface-2:#E9E7E2;--rule:#D3D0CA;--rule-strong:#A19D96;
+  --ink:#1B1C1E;--ink-2:#48494C;--ink-3:#6C6D70;--accent:#A11C15;
+  --c-critical:#A11C15;--c-warning:#8F6600;--c-proceeding:#3B5BA9;--c-good:#2E7D4F;--c-neutral:#6B7280;
+  --on-color:#FFFFFF;
+}
+
+*{box-sizing:border-box} [hidden]{display:none!important} html{scroll-behavior:smooth}
+body{margin:0;padding-inline:clamp(16px,4vw,44px);padding-block:0;background:var(--ground);color:var(--ink);font:16px/1.5 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration-color:var(--rule-strong);text-underline-offset:2px} a:hover{text-decoration-color:var(--ink)}
+:focus-visible{outline:2px solid var(--c-proceeding);outline-offset:2px} button{font:inherit;color:inherit}
+h1,h2,h3,h4{margin:0;font-family:var(--sans);letter-spacing:-.01em;text-wrap:balance}
+.wrap{max-width:1120px;margin-inline:auto} section{padding-block:44px;border-top:1px solid var(--rule);scroll-margin-top:64px}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:8px} .sec-head h2{font-size:30px;font-weight:700}
+.sec-sub{font-size:16px;color:var(--ink-2);margin:0 0 22px;max-width:72ch}
+.lbl{font:600 11px/1.2 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)} .mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+small{font-size:.8em} p{margin:0}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+.masthead{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--ground) 90%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.masthead .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:54px;flex-wrap:wrap;padding-block:8px}
+.brand{display:flex;align-items:baseline;gap:14px;text-decoration:none} .wordmark{font:700 15px/1 var(--mono);letter-spacing:.22em;text-transform:uppercase} .tagline{font:italic 400 13.5px/1 var(--serif);color:var(--ink-2)}
+.nav{display:flex;align-items:center;gap:2px;flex-wrap:wrap} .nav a{font:600 12.5px/1 var(--sans);text-decoration:none;padding:8px 10px;border-radius:3px;color:var(--ink-2)} .nav a:hover{background:var(--surface-2);color:var(--ink)}
+.theme-btn{border:1px solid var(--rule);background:var(--surface);border-radius:3px;padding:7px 10px;font:600 12px/1 var(--sans);cursor:pointer;color:var(--ink-2)}
+@media (max-width:720px){.tagline{display:none}.masthead{position:static;backdrop-filter:none}}
+
+#top{border-top:0;padding-block:40px 32px}
+.eyebrow{font:600 12px/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin-bottom:12px} .eyebrow b{color:var(--accent)}
+#top h1{font-size:clamp(46px,7.5vw,84px);line-height:.98;letter-spacing:-.03em;font-weight:700}
+.sub{font-size:18px;color:var(--ink-2);margin:12px 0 22px}
+.lede{font-size:clamp(19px,2.3vw,24px);line-height:1.4;font-weight:500;max-width:34em;margin:0 0 10px} .lede b{color:var(--accent);font-weight:600}
+.lede-note{font-size:14.5px;color:var(--ink-2);margin:0;max-width:66ch}
+
+/* results */
+.results{display:grid;grid-template-columns:1fr 1fr;gap:22px} @media (max-width:860px){.results{grid-template-columns:1fr}}
+.panel{background:var(--surface);border:1px solid var(--rule);border-top:3px solid var(--ink);padding:22px 22px 18px;display:flex;flex-direction:column;gap:18px}
+.panel-critical{border-top-color:var(--c-critical)} .panel-warning{border-top-color:var(--c-warning)} .panel-proceeding{border-top-color:var(--c-proceeding)} .panel-good{border-top-color:var(--c-good)}
+.panel-h{display:flex;flex-direction:column;gap:6px} .panel-h h3{font-size:22px;font-weight:700} .panel-h p{color:var(--ink-2);font-size:14.5px;max-width:52ch}
+.score{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.score .num{font:700 clamp(58px,8vw,88px)/.9 var(--sans);letter-spacing:-.04em} .score .num small{font:500 16px/1 var(--mono);letter-spacing:0;color:var(--ink-3);margin-left:6px}
+.band{display:inline-flex;flex-direction:column;gap:4px;padding:8px 12px;border:1.5px solid;border-radius:3px;max-width:34ch}
+.band b{font:700 15px/1.1 var(--sans);letter-spacing:.02em;text-transform:uppercase} .band span{font-size:13px;line-height:1.35;color:var(--ink-2)}
+.band-critical{border-color:var(--c-critical)} .band-critical b{color:var(--c-critical)} .band-warning{border-color:var(--c-warning)} .band-warning b{color:var(--c-warning)}
+.band-proceeding{border-color:var(--c-proceeding)} .band-proceeding b{color:var(--c-proceeding)} .band-good{border-color:var(--c-good)} .band-good b{color:var(--c-good)}
+.bars{display:flex;flex-direction:column;gap:10px}
+.bar{display:grid;grid-template-columns:minmax(0,1fr) 44%;grid-template-rows:auto auto;gap:2px 12px;align-items:center}
+.bar-l{grid-row:1/3;display:flex;flex-direction:column} .bar-name{font-weight:600;font-size:14.5px} .bar-sub{font-size:12.5px;color:var(--ink-3);line-height:1.35}
+.bar-t{height:9px;background:var(--surface-2);border-radius:2px;overflow:hidden;align-self:end} .bar-t i{display:block;height:100%;background:var(--ink)}
+.bar-v{font-size:13px;font-weight:600;align-self:start} .bar-v small{color:var(--ink-3);font-weight:400;margin-left:2px}
+.who{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;padding-top:14px;border-top:1px solid var(--rule)}
+.who div{display:flex;flex-direction:column;gap:3px} .who b{font-size:22px;font-weight:600}
+.facts-line{font-size:13.5px;color:var(--ink-2);line-height:1.5} .facts-line b{color:var(--ink);font-weight:600}
+
+/* bands */
+.bands{display:grid;grid-template-columns:1fr 1fr;gap:28px} @media (max-width:860px){.bands{grid-template-columns:1fr}}
+.bands h3{font-size:18px;margin-bottom:12px}
+.strip{position:relative;padding-top:30px;padding-bottom:6px} .strip-segs{display:flex;height:34px;border-radius:3px;overflow:hidden}
+.seg{display:flex;flex-direction:column;justify-content:center;padding-inline:8px;color:var(--on-color);font:600 11px/1.1 var(--sans);letter-spacing:.04em;text-transform:uppercase;overflow:hidden;white-space:nowrap} .seg small{opacity:.8;font-weight:500;letter-spacing:0;text-transform:none}
+.seg-good{background:var(--c-good)} .seg-proceeding{background:var(--c-proceeding)} .seg-warning{background:var(--c-warning)} .seg-critical{background:var(--c-critical)} .seg-critical+.seg-critical{filter:brightness(.8)}
+.strip-mark{position:absolute;top:0;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center} .strip-mark b{font-size:15px;font-weight:600;background:var(--ink);color:var(--ground);padding:3px 7px;border-radius:3px}
+.strip-mark::after{content:"";width:2px;height:40px;background:var(--ink)}
+@media (max-width:520px){.seg span{display:none}}
+.rung{display:grid;grid-template-columns:42px 110px minmax(0,1fr);gap:10px;padding:10px 0;border-bottom:1px solid var(--rule);color:var(--ink-3);align-items:baseline}
+.rung.met{color:var(--ink)} .rung-mark{font-size:12px;font-weight:600} .rung.met .rung-mark{color:var(--c-good)} .rung-name{font-weight:700} .rung-test{font-size:14px;line-height:1.45}
+.rung.is{background:var(--surface);margin-inline:-10px;padding-inline:10px} .rung.is .rung-name{color:var(--c-critical)}
+@media (max-width:520px){.rung{grid-template-columns:42px minmax(0,1fr)}.rung-test{grid-column:2}}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:16px}
+.facts div{display:flex;flex-direction:column;gap:3px;padding:12px;background:var(--surface);border:1px solid var(--rule)} .facts b{font-size:20px;font-weight:600} .facts small{color:var(--ink-2);font-size:12.5px;line-height:1.4}
+
+/* ledgers */
+.ledger{border-top:2px solid var(--ink)}
+.lrow,.arow{border-bottom:1px solid var(--rule)}
+.lhead,.ahead{display:grid;width:100%;text-align:left;background:none;border:0;padding:12px 0;gap:6px 16px;align-items:center;cursor:pointer}
+.lhead{grid-template-columns:64px 230px minmax(0,1fr) 20px} .ahead{grid-template-columns:56px minmax(0,1fr) 210px 20px}
+.lhead:hover,.ahead:hover{background:var(--surface)}
+.lpts{font-size:22px;font-weight:600} .ltype b{display:block;font-size:14.5px} .lmeta{display:block;font-size:12px;color:var(--ink-3);margin-top:2px}
+.lcase a{font-weight:600;font-size:14.5px;line-height:1.35} .lbody,.abody{padding:4px 0 18px 80px;display:flex;flex-direction:column;gap:8px;max-width:84ch} .lbody p,.abody p{font-size:14.5px;line-height:1.5}
+.note{color:var(--ink-2);font-size:13.5px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px} .chip{font:500 11.5px/1.2 var(--sans);padding:4px 8px;border:1px solid var(--rule);border-radius:3px;background:var(--surface);color:var(--ink-2)} .chip-warn{border-color:var(--c-warning);color:var(--ink)}
+.chev{width:9px;height:9px;border-right:2px solid var(--ink-3);border-bottom:2px solid var(--ink-3);transform:rotate(45deg);justify-self:center;transition:transform .15s} [aria-expanded="true"] .chev{transform:rotate(-135deg)}
+.listed{padding:12px 0;border-bottom:1px solid var(--rule);display:flex;flex-direction:column;gap:4px;max-width:84ch} .listed a{font-weight:600;font-size:14.5px} .listed p{font-size:13.5px;color:var(--ink-2)}
+.ascore{font-size:20px;font-weight:600} .s-critical{color:var(--c-critical)} .s-warning{color:var(--c-warning)} .s-neutral{color:var(--ink)} .s-proceeding{color:var(--c-proceeding)} .s-good{color:var(--c-good)} .s-na{color:var(--ink-3)}
+.ahl{display:block;font-weight:600;font-size:14.5px;line-height:1.35}
+.apips{display:flex;gap:14px;justify-content:flex-end} .pips{display:inline-flex;align-items:center;gap:2px} .pips i{width:9px;height:9px;border:1.5px solid var(--rule-strong);border-radius:1px} .pips b{font-size:11px;margin-left:4px;color:var(--ink-3);font-weight:600}
+.p-critical i.on{background:var(--c-critical);border-color:var(--c-critical)} .p-warning i.on{background:var(--c-warning);border-color:var(--c-warning)} .p-proceeding i.on{background:var(--c-proceeding);border-color:var(--c-proceeding)} .p-good i.on{background:var(--c-good);border-color:var(--c-good)}
+.pips.na{color:var(--ink-3);font-size:12px;width:50px;justify-content:center}
+.amarks{display:flex;gap:6px;justify-content:flex-end} .mk{min-width:52px;text-align:center;font:600 11.5px/1 var(--mono);padding:6px 6px;border:1.5px solid;border-radius:3px}
+.mk-critical{color:var(--c-critical);border-color:var(--c-critical)} .mk-warning{color:var(--c-warning);border-color:var(--c-warning)} .mk-good{color:var(--c-good);border-color:var(--c-good)} .mk-neutral{color:var(--ink-3);border-color:var(--rule-strong)}
+.ofacts{display:flex;flex-direction:column;border-top:1px solid var(--rule)}
+.ofrow{display:grid;grid-template-columns:96px repeat(3,minmax(0,1fr));gap:8px 12px;align-items:end;padding:12px 0;border-bottom:1px solid var(--rule)} .ofrow:last-child{border-bottom:0}
+.ofrow>.lbl{align-self:center} .ofrow>div{display:flex;flex-direction:column;gap:2px} .ofrow b{font-size:24px;font-weight:600;line-height:1} .ofrow span{font-size:12.5px;color:var(--ink-2);line-height:1.3} .ofrow b small{font-size:12px;color:var(--ink-3);font-weight:500}
+.ofrow .hero b{font-size:34px}
+@media (max-width:520px){.ofrow{grid-template-columns:repeat(3,minmax(0,1fr))}.ofrow>.lbl{grid-column:1 / -1}}
+.rub li b{font-size:11.5px;text-transform:none} .rub li{grid-template-columns:64px minmax(0,1fr)}
+.anotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px} .anotes div{display:flex;flex-direction:column;gap:4px} .anotes p{font-size:13.5px} .anotes .lbl b{font-size:11px}
+.controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:14px} .controls .lbl{margin-right:4px}
+.ctl{border:1px solid var(--rule);background:var(--surface);border-radius:3px;padding:7px 10px;font:600 12.5px/1 var(--sans);cursor:pointer;color:var(--ink-2)} .ctl[aria-pressed="true"]{background:var(--ink);color:var(--ground);border-color:var(--ink)}
+.pips-key{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--ink-3);margin-bottom:10px}
+@media (max-width:860px){.lhead{grid-template-columns:56px minmax(0,1fr) 20px}.ltype{grid-column:2}.lcase{grid-column:2}.lbody,.abody{padding-left:0}.ahead{grid-template-columns:56px minmax(0,1fr) 20px}.apips{grid-column:2;justify-content:flex-start}.anotes{grid-template-columns:1fr}}
+
+/* rules */
+.rules{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px} @media (max-width:860px){.rules{grid-template-columns:1fr}}
+.rub h4,.typ h4{font-size:15.5px;display:flex;flex-wrap:wrap;gap:8px 10px;align-items:baseline;margin-bottom:8px} .rub h4 span{font-weight:400;color:var(--ink-2);font-size:13.5px} .typ h4 b{margin-left:auto;font-weight:500;color:var(--ink-3);font-size:12px}
+.rub ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px} .rub li{display:grid;grid-template-columns:22px minmax(0,1fr);gap:8px;font-size:13.5px;line-height:1.45;color:var(--ink-2)} .rub li b{color:var(--ink)}
+.types{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px 26px;margin-top:8px} .typ ol{margin:0;padding-left:18px;font-size:13.5px;line-height:1.45;color:var(--ink-2)} .typ li{margin-bottom:3px}
+.kvs{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 22px;margin-top:8px} .kv{display:grid;grid-template-columns:78px minmax(0,1fr);gap:2px 10px;font-size:13.5px} .kv span{color:var(--ink-3);font-weight:600} .kv b{font-weight:600} .kv p{grid-column:2;color:var(--ink-2);line-height:1.45}
+.h3{font-size:18px;margin:30px 0 4px} .h3:first-child{margin-top:0}
+.method{max-width:72ch;display:flex;flex-direction:column;gap:12px;font-size:15px;line-height:1.55} .method b{font-weight:600}
+footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-block:22px 40px;border-top:1px solid var(--rule);font:12.5px/1.4 var(--mono);color:var(--ink-3)}
+</style>
+
+<header class="masthead"><div class="wrap">
+  <a class="brand" href="#top"><span class="wordmark">politaccount</span><span class="tagline">Accountability through History.</span></a>
+  <nav class="nav" aria-label="Sections">
+    <a href="#results">Results</a><a href="#bands">Bands</a><a href="#corruption">Corruption</a><a href="#accountability">Accountability</a><a href="#rules">Rules</a><a href="https://deadcoast.github.io/politaccount/" target="_blank" rel="noopener">The record ↗</a>
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch theme">Theme: charcoal</button>
+  </nav>
+</div></header>
+
+<main id="top" class="wrap">
+<section id="hdr" style="border-top:0;padding-block:40px 30px">
+  <div class="eyebrow"><b>Record 001</b> · Justin Trudeau · Two scales</div>
+  <h1>Two scales</h1>
+  <p class="sub">Operational Accountability. Provable Observable Corruption. One rulebook, written before any leader was scored, for the leaders of first-world democracies.</p>
+  <p class="lede">Scored from the <b>63 cases</b> on the record. Conduct, never policy. Every point traces to a case, a date and a source. Accountability is <b>counted, not graded</b>: what landed on him, whether he fought it, what changed, while he held office. The law is not the bar for corruption: the <b>common meaning of the word</b> is, tested element by element.</p>
+  <p class="lede-note">Words count for nothing. Nothing after March 14, 2025 counts. Allegations nobody examined score nothing and are listed. An act cleared under a statute narrower than the word still scores on the facts admitted, and is flagged.</p>
+</section>
+
+<section id="results">
+  <div class="sec-head"><h2>Results</h2><span class="lbl">Record 001 · 2015-11-04 to 2025-03-14 · 9.36 years</span></div>
+  <div class="results">
+    <div class="panel panel-critical">
+      <div class="panel-h"><span class="lbl">Scale 1</span><h3>Operational Accountability</h3><p>In the <b>41 cases</b> where a body found against him, his government or a minister, or they admitted the fault: what consequence landed on the person responsible, whether he owned it before a ruling or fought it, and whether anything changed. Each counted and dated, in office only, weighted by how big the matter was.</p></div>
+      <div class="score"><div class="num">18.7<small>/ 100</small></div><div class="band band-critical"><b>Unaccountable</b><span>Fought or ignored the findings. Nothing landed on him. The same conduct again.</span></div></div>
+      <div class="ofacts">
+<div class="ofrow"><span class="lbl">Consequence</span>
+  <div class="hero"><b class="mono s-critical">0<small> of 41</small></b><span>landed on him</span></div>
+  <div><b class="mono">17</b><span>on a minister or official</span></div>
+  <div><b class="mono">24</b><span>on no one</span></div></div>
+<div class="ofrow"><span class="lbl">Posture</span>
+  <div><b class="mono s-critical">18</b><span>fought</span></div>
+  <div><b class="mono">12</b><span>said nothing</span></div>
+  <div><b class="mono">11</b><span>owned before a ruling</span></div></div>
+<div class="ofrow"><span class="lbl">Change</span>
+  <div><b class="mono">8</b><span>changed, in office</span></div>
+  <div><b class="mono s-critical">8</b><span>same conduct again</span></div></div>
+</div>
+      <div class="bars"><div class="bar "><div class="bar-l"><span class="bar-name">Consequence</span><span class="bar-sub">What landed on the person responsible, in office.</span></div>
+<div class="bar-t"><i style="width:19.1%"></i></div><span class="bar-v mono">19.1<small>/100</small></span></div><div class="bar "><div class="bar-l"><span class="bar-name">Posture</span><span class="bar-sub">What he did with it before a body ruled.</span></div>
+<div class="bar-t"><i style="width:17.3%"></i></div><span class="bar-v mono">17.3<small>/100</small></span></div><div class="bar "><div class="bar-l"><span class="bar-name">Change</span><span class="bar-sub">Whether anything actually changed, in office.</span></div>
+<div class="bar-t"><i style="width:19.8%"></i></div><span class="bar-v mono">19.8<small>/100</small></span></div></div>
+      <div class="who"><div><span class="lbl">Trudeau himself</span><b class="mono">13.2</b></div><div><span class="lbl">His government</span><b class="mono">18.7</b></div><div><span class="lbl">His ministers &amp; MPs</span><b class="mono">27.8</b></div></div>
+      <p class="facts-line">The 22 other cases are out: cleared, upheld, never examined, or a cost with no finding. They count neither for nor against.</p>
+    </div>
+    <div class="panel panel-critical">
+      <div class="panel-h"><span class="lbl">Scale 2</span><h3>Provable Observable Corruption</h3><p>Corrupt acts on the public record, by the common meaning of the word. Each act must meet every element of its type at documented grade or better. Points = type × evidence × who did it × how big the matter was.</p></div>
+      <div class="score"><div class="num">90.7<small>points</small></div><div class="band band-critical"><b>Systemic</b><span>A pattern, plus obstruction of scrutiny and false statements to the public both proven, plus a repeat after an adverse finding.</span></div></div>
+      <div class="bars"><div class="bar "><div class="bar-l"><span class="bar-name">Self-dealing and conflicts</span><span class="bar-sub">T1 · base 3</span></div>
+<div class="bar-t"><i style="width:100.0%"></i></div><span class="bar-v mono">22.5<small> pts</small></span></div><div class="bar "><div class="bar-l"><span class="bar-name">Public money to insiders, or without the rules</span><span class="bar-sub">T4 · base 3</span></div>
+<div class="bar-t"><i style="width:74.7%"></i></div><span class="bar-v mono">16.8<small> pts</small></span></div><div class="bar "><div class="bar-l"><span class="bar-name">Obstruction of scrutiny</span><span class="bar-sub">T6 · base 3</span></div>
+<div class="bar-t"><i style="width:61.3%"></i></div><span class="bar-v mono">13.8<small> pts</small></span></div><div class="bar "><div class="bar-l"><span class="bar-name">Interference with an independent process</span><span class="bar-sub">T2 · base 4</span></div>
+<div class="bar-t"><i style="width:56.9%"></i></div><span class="bar-v mono">12.8<small> pts</small></span></div><div class="bar "><div class="bar-l"><span class="bar-name">Abuse of state power against people</span><span class="bar-sub">T3 · base 4</span></div>
+<div class="bar-t"><i style="width:53.3%"></i></div><span class="bar-v mono">12.0<small> pts</small></span></div><div class="bar "><div class="bar-l"><span class="bar-name">False statements to the public</span><span class="bar-sub">T5 · base 2</span></div>
+<div class="bar-t"><i style="width:43.6%"></i></div><span class="bar-v mono">9.8<small> pts</small></span></div><div class="bar "><div class="bar-l"><span class="bar-name">Breach of their own written standard</span><span class="bar-sub">T7 · base 1.5</span></div>
+<div class="bar-t"><i style="width:13.3%"></i></div><span class="bar-v mono">3.0<small> pts</small></span></div></div>
+      <div class="who"><div><span class="lbl">The leader personally</span><b class="mono">48.9</b></div><div><span class="lbl">His staff</span><b class="mono">16.4</b></div><div><span class="lbl">A minister or MP</span><b class="mono">14.6</b></div><div><span class="lbl">A department</span><b class="mono">10.8</b></div></div>
+      <p class="facts-line"><b>26</b> proven acts across <b>21</b> cases: 13 adjudicated, 10 admitted or on their own record, 3 documented without a ruling. <b>9.7</b> points a year in office; the equivalent of <b>7.6</b> leader-level major acts. <b>5</b> allegations never examined: listed, scored nothing. <b>2</b> acts cleared under the Act, scored on the admitted facts.</p>
+    </div>
+  </div>
+</section>
+
+<section id="bands">
+  <div class="sec-head"><h2>How the bands are decided</h2><span class="lbl">Fixed before scoring · the same for anyone</span></div>
+  <div class="bands">
+    <div>
+      <h3>Operational Accountability is the share of what happened, banded</h3>
+      <p class="sec-sub" style="margin-bottom:10px">For each owed case: consequence (0, ½ or 1), posture (owned = 1, else 0), change (0 or 1), averaged, then weighted by the size of the matter across the 41 cases. A leader who never bore anything, fought everything and changed nothing scores 0.</p>
+      <div class="strip"><div class="strip-segs"><div class="seg seg-critical" style="width:20%"><span>Unaccountable</span><small class="mono">0–20</small></div><div class="seg seg-critical" style="width:20%"><span>Others paid</span><small class="mono">20–40</small></div><div class="seg seg-warning" style="width:20%"><span>Partly accountable</span><small class="mono">40–60</small></div><div class="seg seg-proceeding" style="width:20%"><span>Accountable</span><small class="mono">60–80</small></div><div class="seg seg-good" style="width:20%"><span>Fully accountable</span><small class="mono">80–100</small></div></div><div class="strip-mark" style="left:18.7%"><b class="mono">18.7</b></div></div>
+      <div class="kvs" style="margin-top:14px"><div class="kv"><span class="mono">80–100</span><b>Fully accountable</b><p>Owned it, paid for it, changed it, in office.</p></div><div class="kv"><span class="mono">60–80</span><b>Accountable</b><p>Most findings owned before they were forced; consequences borne at the top; rules changed in office.</p></div><div class="kv"><span class="mono">40–60</span><b>Partly accountable</b><p>Some consequences borne at the top; some findings owned before they were forced; some rules changed.</p></div><div class="kv"><span class="mono">20–40</span><b>Others paid</b><p>Consequences fell on ministers and officials, not on him. More findings fought than owned. Little changed.</p></div><div class="kv"><span class="mono">0–20</span><b>Unaccountable</b><p>Fought or ignored the findings. Nothing landed on him. The same conduct again.</p></div></div>
+    </div>
+    <div>
+      <h3>Provable Observable Corruption is banded by what the ledger contains</h3>
+      <p class="sec-sub" style="margin-bottom:10px">Points measure how much. The band is a set of yes-or-no tests on the ledger, and only adjudicated or admitted acts count toward them. The highest test met is the band.</p>
+      <div class="ladder"><div class="rung   rung-good">
+  <span class="rung-mark mono">—</span><span class="rung-name">None</span><span class="rung-test">No proven corrupt act on the record.</span></div><div class="rung   rung-proceeding">
+  <span class="rung-mark mono">—</span><span class="rung-name">Isolated</span><span class="rung-test">Proven acts, none by the leader personally.</span></div><div class="rung met  rung-warning">
+  <span class="rung-mark mono">met</span><span class="rung-name">Repeated</span><span class="rung-test">More than one proven act by the leader personally, or one by the leader and three or more across the government.</span></div><div class="rung met  rung-critical">
+  <span class="rung-mark mono">met</span><span class="rung-name">Pattern</span><span class="rung-test">Proven acts by the leader personally in three or more types, or the same type again after an adverse finding.</span></div><div class="rung met is rung-critical">
+  <span class="rung-mark mono">met</span><span class="rung-name">Systemic</span><span class="rung-test">A pattern, plus obstruction of scrutiny and false statements to the public both proven, plus a repeat after an adverse finding.</span></div></div>
+      <div class="facts">
+<div><span class="lbl">Proven acts by him, adjudicated or admitted</span><b class="mono">5 cases</b><small>T1 self-dealing and conflicts, T2 interference with an independent process, T3 abuse of state power against people, T5 false statements to the public, T6 obstruction of scrutiny, T7 breach of their own written standard</small></div>
+<div><span class="lbl">Proven cases across the government</span><b class="mono">18</b></div>
+<div><span class="lbl">Obstruction of scrutiny proven</span><b class="mono">yes</b><small>SNC-Lavalin, WE Charity, the Winnipeg lab, the green fund</small></div>
+<div><span class="lbl">False statements to the public proven</span><b class="mono">yes</b><small>Aga Khan, SNC-Lavalin, Tofino, Jamaica, three ministers</small></div>
+<div><span class="lbl">Repeat after an adverse finding</span><b class="mono">yes</b><small>The ethics law broken a second time after the first ruling</small></div>
+</div>
+    </div>
+  </div>
+</section>
+
+<section id="corruption">
+  <div class="sec-head"><h2>Corruption ledger</h2><span class="lbl">26 acts · 90.7 points · largest first</span></div>
+  <p class="sec-sub">One line per proven act. Open a line for the elements as they sit on the record and the arithmetic. The case link opens the full record: the deciding body's words, the dates, the sources.</p>
+  <div class="ledger"><div class="lrow cls-critical">
+  <button class="lhead" type="button" aria-expanded="false" aria-controls="pl-0">
+    <span class="lpts mono">12.0</span>
+    <span class="ltype"><b>Abuse of state power against people</b><span class="lmeta mono">T3 · Adjudicated · Him · S3</span></span>
+    <span class="lcase"><a href="https://deadcoast.github.io/politaccount/#c-emergencies-act-2022" target="_blank" rel="noopener" onclick="event.stopPropagation()">Invoked the Emergencies Act against the convoy protests and froze people&#x27;s bank accounts. Two courts have ruled it was illegal. Nobody paid for it.</a><span class="lmeta">Trudeau himself · 2022 –</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="lbody" id="pl-0" hidden>
+    <span class="lbl">The elements, on the record</span><p>Bank accounts frozen (about 257) and protest powers used under a declaration the courts found had no lawful basis and breached the Charter. The declaration was cabinet&#x27;s, announced by him.</p>
+    
+    <div class="chips"><span class="chip mono">4 × 1 × 1 × S3 = 12.0</span></div>
+  </div>
+</div><div class="lrow cls-critical">
+  <button class="lhead" type="button" aria-expanded="false" aria-controls="pl-1">
+    <span class="lpts mono">8.0</span>
+    <span class="ltype"><b>Interference with an independent process</b><span class="lmeta mono">T2 · Adjudicated · Him · S2</span></span>
+    <span class="lcase"><a href="https://deadcoast.github.io/politaccount/#c-snc-lavalin-affair" target="_blank" rel="noopener" onclick="event.stopPropagation()">Leaned on his attorney general to spare SNC-Lavalin a criminal trial. Broke the ethics law. Two ministers who wouldn&#x27;t go along were pushed out.</a><span class="lmeta">Trudeau himself · 2019</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="lbody" id="pl-1" hidden>
+    <span class="lbl">The elements, on the record</span><p>The prime minister, his staff, the finance minister&#x27;s office and the clerk pressed the attorney general over months to overrule the prosecution service on SNC-Lavalin — a decision reserved to her alone. Found by the commissioner.</p>
+    
+    <div class="chips"><span class="chip mono">4 × 1 × 1 × S2 = 8.0</span></div>
+  </div>
+</div><div class="lrow cls-critical">
+  <button class="lhead" type="button" aria-expanded="false" aria-controls="pl-2">
+    <span class="lpts mono">6.0</span>
+    <span class="ltype"><b>Self-dealing and conflicts</b><span class="lmeta mono">T1 · Adjudicated · Him · S2</span></span>
+    <span class="lcase"><a href="https://deadcoast.github.io/politaccount/#c-aga-khan-vacation" target="_blank" rel="noopener" onclick="event.stopPropagation()">Took a free holiday on a billionaire&#x27;s private island while the billionaire&#x27;s foundation lobbied his office. Broke the ethics law. Paid nothing.</a><span class="lmeta">Trudeau himself · 2016–2017</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="lbody" id="pl-2" hidden>
+    <span class="lbl">The elements, on the record</span><p>A gift (the island stay, the helicopter) from a party whose foundation was registered to lobby his office with a $15-million grant pending; not refused. Found by the commissioner.</p>
+    
+    <div class="chips"><span class="chip mono">3 × 1 × 1 × S2 = 6.0</span></div>
+  </div>
+</div><div class="lrow cls-critical">
+  <button class="lhead" type="button" aria-expanded="false" aria-controls="pl-3">
+    <span class="lpts mono">6.0</span>
+    <span class="ltype"><b>Self-dealing and conflicts</b><span class="lmeta mono">T1 · Admitted / own record · Him · S2</span></span>
+    <span class="lcase"><a href="https://deadcoast.github.io/politaccount/#c-we-charity" target="_blank" rel="noopener" onclick="event.stopPropagation()">Handed a $912-million student program to a charity that had paid his mother and brother over $280,000 in speaking fees. Didn&#x27;t recuse. Cleared, and now the courts get to check that.</a><span class="lmeta">Trudeau himself · 2020–2021</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="lbody" id="pl-3" hidden>
+    <span class="lbl">The elements, on the record</span><p>A benefit to his family (about $282,000 in fees from WE); WE had a $912-million programme before cabinet; he did not recuse — all admitted. Cleared because the Act&#x27;s &#x27;private interest&#x27; excludes relatives&#x27; fees.</p>
+    <p class="note">Cleared under the Act, May 2021. The Supreme Court struck down the clause shielding that clearance in July 2026; the Federal Court of Appeal now reviews it.</p>
+    <div class="chips"><span class="chip chip-warn">Cleared under the Act · scored on the admitted facts</span><span class="chip mono">3 × 1 × 1 × S2 = 6.0</span></div>
+  </div>
+</div><div class="lrow cls-neutral">
+  <button class="lhead" type="button" aria-expanded="false" aria-controls="pl-4">
+    <span class="lpts mono">4.8</span>
+    <span class="ltype"><b>Interference with an independent process</b><span class="lmeta mono">T2 · Documented · Him · S2</span></span>
+    <span class="lcase"><a href="https://deadcoast.github.io/politaccount/#c-mark-norman-prosecution" target="_blank" rel="noopener" onclick="event.stopPropagation()">His government prosecuted a vice-admiral for leaking, after Trudeau twice predicted the case would go to court before any charge existed. The case collapsed.</a><span class="lmeta">His government · 2017–2019</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="lbody" id="pl-4" hidden>
+    <span class="lbl">The elements, on the record</span><p>Publicly pre-judged (twice, on the record) a decision reserved to police and prosecutors. The statements are his; their effect was never examined by any body.</p>
+    <p class="note">Counsel&#x27;s claims that records were withheld and code names used were argued in court, not ruled on: not scored.</p>
+    <div class="chips"><span class="chip mono">4 × 0.6 × 1 × S2 = 4.8</span></div>
+  </div>
+</div><div class="lrow cls-neutral">
+  <button class="lhead" type="button" aria-expanded="false" aria-controls="pl-5">
+    <span class="lpts mono">4.8</span>
+    <span class="ltype"><b>Obstruction of scrutiny</b><span class="lmeta mono">T6 · Admitted / own record · His office / cabinet · S2</span></span>
+    <span class="lcase"><a href="https://deadcoast.github.io/politaccount/#c-winnipeg-lab-documents" target="_blank" rel="noopener" onclick="event.stopPropagation()">Two scientists with ties to Chinese military researchers were fired from Canada&#x27;s top-security lab. His government fought Parliament in court to keep the files secret.</a><span class="lmeta">His government · 2019–2024</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="lbody" id="pl-5" hidden>
+    <span class="lbl">The elements, on the record</span><p>Parliament twice ordered the records; the government withheld them and filed a Federal Court application against the Speaker. The agency president was formally admonished by the House. All of it on the record, by the government&#x27;s own acts.</p>
+    
+    <div class="chips"><span class="chip mono">3 × 1 × 0.8 × S2 = 4.8</span></div>
+  </div>
+</div><div class="lrow cls-neutral">
+  <button class="lhead" type="button" aria-expanded="false" aria-controls="pl-6">
+    <span class="lpts mono">4.5</span>
+    <span class="ltype"><b>Self-dealing and conflicts</b><span class="lmeta mono">T1 · Adjudicated · A minister · S3</span></span>
+    <span class="lcase"><a href="https://deadcoast.github.io/politaccount/#c-morneau-we-charity" target="_blank" rel="noopener" onclick="event.stopPropagation()">Finance minister took free trips from WE, let his staff run interference for WE&#x27;s funding, then helped hand WE a $912-million program. Broke the law three ways. Resigned.</a><span class="lmeta">His ministers &amp; MPs · 2020–2021</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="lbody" id="pl-6" hidden>
+    <span class="lbl">The elements, on the record</span><p>Free travel from WE; WE had a $912-million programme before the minister; no recusal. Found by the commissioner: preferential treatment, a decision in conflict, failure to recuse.</p>
+    
+    <div class="chips"><span class="chip mono">3 × 1 × 0.5 × S3 = 4.5</span></div>
+  </div>
+</div><div class="lrow cls-neutral">
+  <button class="lhead" type="button" aria-expanded="false" aria-controls="pl-7">
+    <span class="lpts mono">3.6</span>
+    <span class="ltype"><b>Public money to insiders, or without the rules</b><span class="lmeta mono">T4 · Adjudicated · A department · S3</span></span>
+    <span class="lcase"><a href="https://deadcoast.github.io/politaccount/#c-arrivecan" target="_blank" rel="noopener" onclick="event.stopPropagation()">An app first estimated at $80,000 ended up costing about $60 million. A two-man firm got $19 million. Nobody has been charged.</a><span class="lmeta">His government · 2020 –</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="lbody" id="pl-7" hidden>
+    <span class="lbl">The elements, on the record</span><p>Some $60 million of public money went to contractors without the controls the rules require; in 76% of contracts people paid for did no work (procurement ombud). Found by the Auditor General.</p>
+    
+    <div class="chips"><span class="chip mono">3 × 1 × 0.4 × S3 = 3.6</span></div>
+  </div>
+</div><div class="lrow cls-neutral">
+  <button class="lhead" type="button" aria-expanded="false" aria-controls="pl-8">
+    <span class="lpts mono">3.6</span>
+    <span class="ltype"><b>Public money to insiders, or without the rules</b><span class="lmeta mono">T4 · Adjudicated · A department · S3</span></span>
+    <span class="lcase"><a href="https://deadcoast.github.io/politaccount/#c-mckinsey-outsourcing" target="_blank" rel="noopener" onclick="event.stopPropagation()">Federal contracts to McKinsey went from $2 million in the nine years before he took office to more than $100 million under him. The Auditor General found the rules were routinely ignored.</a><span class="lmeta">His government · 2023–2024</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="lbody" id="pl-8" hidden>
+    <span class="lbl">The elements, on the record</span><p>$209 million in contracts awarded with frequent disregard for the procurement rules. Found by the Auditor General.</p>
+    
+    <div class="chips"><span class="chip mono">3 × 1 × 0.4 × S3 = 3.6</span></div>
+  </div>
+</div><div class="lrow cls-neutral">
+  <button class="lhead" type="button" aria-expanded="false" aria-controls="pl-9">
+    <span class="lpts mono">3.6</span>
+    <span class="ltype"><b>Public money to insiders, or without the rules</b><span class="lmeta mono">T4 · Documented · Him · S2</span></span>
+    <span class="lcase"><a href="https://deadcoast.github.io/politaccount/#c-david-johnston-rapporteur" target="_blank" rel="noopener" onclick="event.stopPropagation()">To head off a public inquiry into Chinese interference, he appointed a family friend and Trudeau Foundation member to review it. The House voted him out within three months.</a><span class="lmeta">His government · 2023</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="lbody" id="pl-9" hidden>
+    <span class="lbl">The elements, on the record</span><p>A $4.5-million appointment went to a long-time family friend; the House voted 174–150 that he step aside. The friendship is on the record; the vote is Parliament&#x27;s, not an adjudication.</p>
+    
+    <div class="chips"><span class="chip mono">3 × 0.6 × 1 × S2 = 3.6</span></div>
+  </div>
+</div><div class="lrow cls-neutral">
+  <button class="lhead" type="button" aria-expanded="false" aria-controls="pl-10">
+    <span class="lpts mono">3.6</span>
+    <span class="ltype"><b>Public money to insiders, or without the rules</b><span class="lmeta mono">T4 · Adjudicated · A department · S3</span></span>
+    <span class="lcase"><a href="https://deadcoast.github.io/politaccount/#c-sdtc-green-fund" target="_blank" rel="noopener" onclick="event.stopPropagation()">The government&#x27;s billion-dollar green-tech fund gave $59 million to ineligible projects and $76 million in deals where board members had conflicts. Parliament seized up for four months over the documents.</a><span class="lmeta">His government · 2023 –</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="lbody" id="pl-10" hidden>
+    <span class="lbl">The elements, on the record</span><p>$76 million in 90 funding decisions where conflict-of-interest rules were not followed; $59 million to ineligible projects; the chair found in breach. Found by the Auditor General and the commissioner.</p>
+    
+    <div class="chips"><span class="chip mono">3 × 1 × 0.4 × S3 = 3.6</span></div>
+  </div>
+</div><div class="lrow cls-neutral">
+  <button class="lhead" type="button" aria-expanded="false" aria-controls="pl-11">
+    <span class="lpts mono">3.6</span>
+    <span class="ltype"><b>Obstruction of scrutiny</b><span class="lmeta mono">T6 · Admitted / own record · His office / cabinet · S3</span></span>
+    <span class="lcase"><a href="https://deadcoast.github.io/politaccount/#c-sdtc-green-fund" target="_blank" rel="noopener" onclick="event.stopPropagation()">The government&#x27;s billion-dollar green-tech fund gave $59 million to ineligible projects and $76 million in deals where board members had conflicts. Parliament seized up for four months over the documents.</a><span class="lmeta">His government · 2023 –</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="lbody" id="pl-11" hidden>
+    <span class="lbl">The elements, on the record</span><p>The House ordered the documents; the government did not fully comply; the House sat on the privilege question for four months. On the record.</p>
+    
+    <div class="chips"><span class="chip">Second act on the same case · half weight</span><span class="chip mono">3 × 1 × 0.8 × S3 × 0.5 = 3.6</span></div>
+  </div>
+</div><div class="lrow cls-neutral">
+  <button class="lhead" type="button" aria-expanded="false" aria-controls="pl-12">
+    <span class="lpts mono">3.0</span>
+    <span class="ltype"><b>Self-dealing and conflicts</b><span class="lmeta mono">T1 · Adjudicated · A minister · S2</span></span>
+    <span class="lcase"><a href="https://deadcoast.github.io/politaccount/#c-leblanc-surf-clam" target="_blank" rel="noopener" onclick="event.stopPropagation()">Fisheries minister handed a lucrative clam licence to a company run by his wife&#x27;s cousin. Broke the ethics law. Kept his job.</a><span class="lmeta">His ministers &amp; MPs · 2018</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="lbody" id="pl-12" hidden>
+    <span class="lbl">The elements, on the record</span><p>A lucrative licence to a company run by a relative of the minister&#x27;s wife; the company had business before the department; no recusal. Found by the commissioner.</p>
+    
+    <div class="chips"><span class="chip mono">3 × 1 × 0.5 × S2 = 3.0</span></div>
+  </div>
+</div><div class="lrow cls-neutral">
+  <button class="lhead" type="button" aria-expanded="false" aria-controls="pl-13">
+    <span class="lpts mono">3.0</span>
+    <span class="ltype"><b>Self-dealing and conflicts</b><span class="lmeta mono">T1 · Adjudicated · A minister · S2</span></span>
+    <span class="lcase"><a href="https://deadcoast.github.io/politaccount/#c-ng-pomp-circumstance" target="_blank" rel="noopener" onclick="event.stopPropagation()">Trade minister gave $23,000 in contracts to her friend&#x27;s PR firm. Broke the ethics law. Kept her job.</a><span class="lmeta">His ministers &amp; MPs · 2019–2022</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="lbody" id="pl-13" hidden>
+    <span class="lbl">The elements, on the record</span><p>Contracts ($22,790) to a friend&#x27;s firm; the firm had business with the office; no recusal. Found by the commissioner.</p>
+    
+    <div class="chips"><span class="chip mono">3 × 1 × 0.5 × S2 = 3.0</span></div>
+  </div>
+</div><div class="lrow cls-neutral">
+  <button class="lhead" type="button" aria-expanded="false" aria-controls="pl-14">
+    <span class="lpts mono">3.0</span>
+    <span class="ltype"><b>Obstruction of scrutiny</b><span class="lmeta mono">T6 · Admitted / own record · Him · S2</span></span>
+    <span class="lcase"><a href="https://deadcoast.github.io/politaccount/#c-we-charity" target="_blank" rel="noopener" onclick="event.stopPropagation()">Handed a $912-million student program to a charity that had paid his mother and brother over $280,000 in speaking fees. Didn&#x27;t recuse. Cleared, and now the courts get to check that.</a><span class="lmeta">Trudeau himself · 2020–2021</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="lbody" id="pl-14" hidden>
+    <span class="lbl">The elements, on the record</span><p>Four committee studies were under way; prorogation on August 18, 2020 ended them. A motion for a special committee was made a confidence vote and defeated. Both his decisions, on the record.</p>
+    
+    <div class="chips"><span class="chip">Second act on the same case · half weight</span><span class="chip mono">3 × 1 × 1 × S2 × 0.5 = 3.0</span></div>
+  </div>
+</div><div class="lrow cls-neutral">
+  <button class="lhead" type="button" aria-expanded="false" aria-controls="pl-15">
+    <span class="lpts mono">2.4</span>
+    <span class="ltype"><b>Public money to insiders, or without the rules</b><span class="lmeta mono">T4 · Admitted / own record · His office / cabinet · S1</span></span>
+    <span class="lcase"><a href="https://deadcoast.github.io/politaccount/#c-butts-telford-moving-expenses" target="_blank" rel="noopener" onclick="event.stopPropagation()">His two top aides billed $207,000 to move from Toronto to Ottawa.</a><span class="lmeta">His government · 2016</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="lbody" id="pl-15" hidden>
+    <span class="lbl">The elements, on the record</span><p>Public money ($207,052) went to his two most senior aides; the excess was admitted by the repayment of $65,000 as &#x27;unreasonable&#x27;.</p>
+    <p class="note">Within the policy; scored on the admitted excess only.</p>
+    <div class="chips"><span class="chip mono">3 × 1 × 0.8 × S1 = 2.4</span></div>
+  </div>
+</div><div class="lrow cls-neutral">
+  <button class="lhead" type="button" aria-expanded="false" aria-controls="pl-16">
+    <span class="lpts mono">2.4</span>
+    <span class="ltype"><b>Obstruction of scrutiny</b><span class="lmeta mono">T6 · Adjudicated · His office / cabinet · S2</span></span>
+    <span class="lcase"><a href="https://deadcoast.github.io/politaccount/#c-snc-lavalin-affair" target="_blank" rel="noopener" onclick="event.stopPropagation()">Leaned on his attorney general to spare SNC-Lavalin a criminal trial. Broke the ethics law. Two ministers who wouldn&#x27;t go along were pushed out.</a><span class="lmeta">Trudeau himself · 2019</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="lbody" id="pl-16" hidden>
+    <span class="lbl">The elements, on the record</span><p>The commissioner reported he was denied access to cabinet confidences for nine witnesses; the RCMP said cabinet secrecy blocked much of its investigation. The limits of the waiver were a cabinet decision.</p>
+    
+    <div class="chips"><span class="chip">Second act on the same case · half weight</span><span class="chip mono">3 × 1 × 0.8 × S2 × 0.5 = 2.4</span></div>
+  </div>
+</div><div class="lrow cls-neutral">
+  <button class="lhead" type="button" aria-expanded="false" aria-controls="pl-17">
+    <span class="lpts mono">2.0</span>
+    <span class="ltype"><b>False statements to the public</b><span class="lmeta mono">T5 · Adjudicated · Him · S2</span></span>
+    <span class="lcase"><a href="https://deadcoast.github.io/politaccount/#c-aga-khan-vacation" target="_blank" rel="noopener" onclick="event.stopPropagation()">Took a free holiday on a billionaire&#x27;s private island while the billionaire&#x27;s foundation lobbied his office. Broke the ethics law. Paid nothing.</a><span class="lmeta">Trudeau himself · 2016–2017</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="lbody" id="pl-17" hidden>
+    <span class="lbl">The elements, on the record</span><p>&#x27;The Aga Khan has been a long-time family friend&#x27; — the commissioner found no private interaction between the two men until Trudeau became Liberal leader, and that the relationship &#x27;cannot be described as one of friends for the purposes of the Act&#x27;.</p>
+    
+    <div class="chips"><span class="chip">Second act on the same case · half weight</span><span class="chip mono">2 × 1 × 1 × S2 × 0.5 = 2.0</span></div>
+  </div>
+</div><div class="lrow cls-neutral">
+  <button class="lhead" type="button" aria-expanded="false" aria-controls="pl-18">
+    <span class="lpts mono">2.0</span>
+    <span class="ltype"><b>False statements to the public</b><span class="lmeta mono">T5 · Adjudicated · Him · S2</span></span>
+    <span class="lcase"><a href="https://deadcoast.github.io/politaccount/#c-snc-lavalin-affair" target="_blank" rel="noopener" onclick="event.stopPropagation()">Leaned on his attorney general to spare SNC-Lavalin a criminal trial. Broke the ethics law. Two ministers who wouldn&#x27;t go along were pushed out.</a><span class="lmeta">Trudeau himself · 2019</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="lbody" id="pl-18" hidden>
+    <span class="lbl">The elements, on the record</span><p>&#x27;The allegations in the Globe story this morning are false.&#x27; The commissioner found the pressure the story described had happened.</p>
+    
+    <div class="chips"><span class="chip">Second act on the same case · half weight</span><span class="chip mono">2 × 1 × 1 × S2 × 0.5 = 2.0</span></div>
+  </div>
+</div><div class="lrow cls-neutral">
+  <button class="lhead" type="button" aria-expanded="false" aria-controls="pl-19">
+    <span class="lpts mono">1.6</span>
+    <span class="ltype"><b>False statements to the public</b><span class="lmeta mono">T5 · Admitted / own record · His office / cabinet · S1</span></span>
+    <span class="lcase"><a href="https://deadcoast.github.io/politaccount/#c-tofino-truth-reconciliation-day" target="_blank" rel="noopener" onclick="event.stopPropagation()">Spent the first National Day for Truth and Reconciliation surfing in Tofino while his schedule said &#x27;private meetings&#x27; in Ottawa.</a><span class="lmeta">Trudeau himself · 2021</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="lbody" id="pl-19" hidden>
+    <span class="lbl">The elements, on the record</span><p>The itinerary his office issued stated a location that was false; corrected after a reporter asked. The office knew where he was.</p>
+    
+    <div class="chips"><span class="chip mono">2 × 1 × 0.8 × S1 = 1.6</span></div>
+  </div>
+</div><div class="lrow cls-neutral">
+  <button class="lhead" type="button" aria-expanded="false" aria-controls="pl-20">
+    <span class="lpts mono">1.6</span>
+    <span class="ltype"><b>False statements to the public</b><span class="lmeta mono">T5 · Admitted / own record · His office / cabinet · S1</span></span>
+    <span class="lcase"><a href="https://deadcoast.github.io/politaccount/#c-jamaica-vacation" target="_blank" rel="noopener" onclick="event.stopPropagation()">Took a free luxury vacation at a family friend&#x27;s Jamaica estate. His office gave three different stories about who paid.</a><span class="lmeta">Trudeau himself · 2023–2024</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="lbody" id="pl-20" hidden>
+    <span class="lbl">The elements, on the record</span><p>&#x27;The family was covering the cost&#x27; — then &#x27;at no cost at a location owned by family friends&#x27; — then &#x27;with family friends&#x27;. The office&#x27;s own three statements, on the record.</p>
+    
+    <div class="chips"><span class="chip mono">2 × 1 × 0.8 × S1 = 1.6</span></div>
+  </div>
+</div><div class="lrow cls-neutral">
+  <button class="lhead" type="button" aria-expanded="false" aria-controls="pl-21">
+    <span class="lpts mono">1.5</span>
+    <span class="ltype"><b>Breach of their own written standard</b><span class="lmeta mono">T7 · Admitted / own record · Him · S1</span></span>
+    <span class="lcase"><a href="https://deadcoast.github.io/politaccount/#c-cash-for-access-fundraisers" target="_blank" rel="noopener" onclick="event.stopPropagation()">Sold face time at $1,500 a ticket in private homes, including to a Chinese billionaire who then gave $200,000 to the Trudeau Foundation.</a><span class="lmeta">Trudeau himself · 2016–2017</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="lbody" id="pl-21" hidden>
+    <span class="lbl">The elements, on the record</span><p>His own Open and Accountable Government (2015), Annex B: &#x27;no preferential access to government, or appearance of preferential access ... because they have made financial contributions&#x27;. Face time sold at $1,525 in private homes is the appearance the standard names. Admitted by ending the format.</p>
+    <p class="note">Cleared under the Conflict of Interest Act; scored under his own written standard, which is broader.</p>
+    <div class="chips"><span class="chip chip-warn">Cleared under the Act · scored on the admitted facts</span><span class="chip mono">1.5 × 1 × 1 × S1 = 1.5</span></div>
+  </div>
+</div><div class="lrow cls-neutral">
+  <button class="lhead" type="button" aria-expanded="false" aria-controls="pl-22">
+    <span class="lpts mono">1.5</span>
+    <span class="ltype"><b>Breach of their own written standard</b><span class="lmeta mono">T7 · Adjudicated · A minister · S2</span></span>
+    <span class="lcase"><a href="https://deadcoast.github.io/politaccount/#c-morneau-french-villa" target="_blank" rel="noopener" onclick="event.stopPropagation()">Finance minister didn&#x27;t declare the company holding his villa in France for two years. Fined $200.</a><span class="lmeta">His ministers &amp; MPs · 2017–2018</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="lbody" id="pl-22" hidden>
+    <span class="lbl">The elements, on the record</span><p>The disclosure rule of the Conflict of Interest Act, broken; found by the commissioner. No private benefit shown.</p>
+    
+    <div class="chips"><span class="chip mono">1.5 × 1 × 0.5 × S2 = 1.5</span></div>
+  </div>
+</div><div class="lrow cls-neutral">
+  <button class="lhead" type="button" aria-expanded="false" aria-controls="pl-23">
+    <span class="lpts mono">1.0</span>
+    <span class="ltype"><b>False statements to the public</b><span class="lmeta mono">T5 · Admitted / own record · A minister · S1</span></span>
+    <span class="lcase"><a href="https://deadcoast.github.io/politaccount/#c-sajjan-operation-medusa" target="_blank" rel="noopener" onclick="event.stopPropagation()">Defence minister claimed to be &#x27;the architect&#x27; of a major Afghan battle. He wasn&#x27;t.</a><span class="lmeta">His ministers &amp; MPs · 2017</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="lbody" id="pl-23" hidden>
+    <span class="lbl">The elements, on the record</span><p>A public statement of fact (&#x27;the architect&#x27; of Operation Medusa), retracted by the minister himself, about his own service.</p>
+    
+    <div class="chips"><span class="chip mono">2 × 1 × 0.5 × S1 = 1.0</span></div>
+  </div>
+</div><div class="lrow cls-neutral">
+  <button class="lhead" type="button" aria-expanded="false" aria-controls="pl-24">
+    <span class="lpts mono">1.0</span>
+    <span class="ltype"><b>False statements to the public</b><span class="lmeta mono">T5 · Admitted / own record · A minister · S1</span></span>
+    <span class="lcase"><a href="https://deadcoast.github.io/politaccount/#c-mendicino-police-request-claim" target="_blank" rel="noopener" onclick="event.stopPropagation()">Public safety minister said police asked for the Emergencies Act. The police said they didn&#x27;t.</a><span class="lmeta">His ministers &amp; MPs · 2022</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="lbody" id="pl-24" hidden>
+    <span class="lbl">The elements, on the record</span><p>&#x27;Police asked for it&#x27; — contradicted by the police chiefs&#x27; testimony and walked back by his own deputy. The minister was in a position to know.</p>
+    
+    <div class="chips"><span class="chip mono">2 × 1 × 0.5 × S1 = 1.0</span></div>
+  </div>
+</div><div class="lrow cls-neutral">
+  <button class="lhead" type="button" aria-expanded="false" aria-controls="pl-25">
+    <span class="lpts mono">0.6</span>
+    <span class="ltype"><b>False statements to the public</b><span class="lmeta mono">T5 · Documented · A minister · S1</span></span>
+    <span class="lcase"><a href="https://deadcoast.github.io/politaccount/#c-mendicino-bernardo-transfer" target="_blank" rel="noopener" onclick="event.stopPropagation()">His public safety minister&#x27;s office was told months ahead that Paul Bernardo was moving to a medium-security prison. The minister said he found out from the news.</a><span class="lmeta">His ministers &amp; MPs · 2023</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="lbody" id="pl-25" hidden>
+    <span class="lbl">The elements, on the record</span><p>&#x27;Found out from the news&#x27; — Corrections&#x27; records show his office was briefed months before. Whether the minister himself was told was never examined.</p>
+    
+    <div class="chips"><span class="chip mono">2 × 0.6 × 0.5 × S1 = 0.6</span></div>
+  </div>
+</div></div>
+  <h3 class="h3">Listed, not scored</h3>
+  <p class="sec-sub" style="margin-bottom:6px">Reported by major outlets, denied or unanswered, examined by no one. They stay on the record with that label and add nothing to the score.</p>
+  <div class="ledger"><div class="listed"><span class="lbl">Self-dealing and conflicts · never examined</span><a href="https://deadcoast.github.io/politaccount/#c-trudeau-foundation-donation" target="_blank" rel="noopener">Beijing directed a $200,000 gift to the Trudeau Foundation, CSIS intercepts showed. The whole board quit.</a><p>If proven: a benefit to a family foundation, directed by a foreign state. His own role is not on the record.</p></div><div class="listed"><span class="lbl">Public money to insiders, or without the rules · never examined</span><a href="https://deadcoast.github.io/politaccount/#c-liberalist-judicial-vetting" target="_blank" rel="noopener">His office ran would-be judges through the Liberal Party&#x27;s voter database before appointing them.</a><p>If proven: appointments steered to party-connected candidates. The vetting is admitted; that appointments were skewed by it is not on this record.</p></div><div class="listed"><span class="lbl">Public money to insiders, or without the rules · never examined</span><a href="https://deadcoast.github.io/politaccount/#c-baylis-ventilators" target="_blank" rel="noopener">A $237-million ventilator contract went to a firm that subcontracted to a company co-owned by a former Liberal MP.</a><p>If proven: a $237-million contract steered to a party-connected firm. The chain of contracts is documented; favouritism was never examined.</p></div><div class="listed"><span class="lbl">Public money to insiders, or without the rules · never examined</span><a href="https://deadcoast.github.io/politaccount/#c-sajjan-afghan-sikhs" target="_blank" rel="noopener">During the Kabul evacuation, the defence minister reportedly told special forces to go rescue 225 Afghan Sikhs with no ties to Canada. The mission failed.</a><p>If proven: military resources directed for a domestic political constituency. Reported; denied; never examined.</p></div><div class="listed"><span class="lbl">Public money to insiders, or without the rules · never examined</span><a href="https://deadcoast.github.io/politaccount/#c-hussen-constituency-contracts" target="_blank" rel="noopener">A minister&#x27;s office paid $93,000 to a firm run by his policy director&#x27;s sister.</a><p>If proven: $93,050 to a firm run by a staffer&#x27;s sister. The payments are documented; impropriety was never examined.</p></div></div>
+</section>
+
+<section id="accountability">
+  <div class="sec-head"><h2>Accountability ledger</h2><span class="lbl">41 owed cases · lowest first</span></div>
+  <p class="sec-sub">One line per case where accountability was owed. Three marks: what landed on the person responsible (0, ½ on a minister or official, 1 on him), what he did with it before a ruling (owned, nothing, fought), and whether anything changed in office (0 or 1). Open a line for the facts and dates. Weight S is 1 to 3: 1, plus one if people were harmed or $10 million or more was at stake, plus one if a body found against them.</p>
+  <div class="controls"><span class="lbl">Show</span>
+    <button class="ctl" data-who="all" aria-pressed="true" type="button">All</button><button class="ctl" data-who="pm" aria-pressed="false" type="button">Trudeau himself</button><button class="ctl" data-who="gov" aria-pressed="false" type="button">His government</button><button class="ctl" data-who="min" aria-pressed="false" type="button">His ministers &amp; MPs</button>
+    <span class="lbl" style="margin-left:12px">Order</span><button class="ctl" data-sort="score" aria-pressed="true" type="button">Lowest score first</button><button class="ctl" data-sort="date" aria-pressed="false" type="button">By date</button>
+  </div>
+  <div class="pips-key"><span>Marks, left to right: Consequence · Posture · Change</span></div>
+  <div class="ledger" id="aledger"><div class="arow" data-who="pm" data-score="0.0" data-no="1">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-0">
+    <span class="ascore mono s-critical">0.0</span>
+    <span class="acase"><span class="ahl">Promised to end every long-term boil-water advisory on reserves within five years. The deadline passed with 58 still in place.</span><span class="lmeta">Trudeau himself · 2015–2021 · <span class="mono">S3</span></span></span>
+    <span class="amarks"><span class="mk mk-critical" title="Consequence: nobody">0</span><span class="mk mk-critical" title="Posture">fought</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-0" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-critical">nobody</b></span><p>Nobody. The minister restated the commitment and set no date.</p></div><div><span class="lbl">Posture · <b class="s-critical">fought</b> <span class="mono">2021-03-10</span></span><p>&#x27;Remains firm&#x27; — the deadline missed that month; no new date. Minimized.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>More money pledged; the funding formula the Auditor General flagged was left as it was.</p></div></div>
+    <p class="note">Weight S3: harm on the record · a body found against them.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-boil-water-advisories-promise" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="pm" data-score="0.0" data-no="2">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-1">
+    <span class="ascore mono s-critical">0.0</span>
+    <span class="acase"><span class="ahl">Promised small deficits and a balanced budget by 2019. Never balanced one.</span><span class="lmeta">Trudeau himself · 2015–2025 · <span class="mono">S3</span></span></span>
+    <span class="amarks"><span class="mk mk-critical" title="Consequence: nobody">0</span><span class="mk mk-critical" title="Posture">fought</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-1" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-critical">nobody</b></span><p>Nobody.</p></div><div><span class="lbl">Posture · <b class="s-critical">fought</b></span><p>The balanced-budget target was replaced with a &#x27;debt-to-GDP anchor&#x27; rather than acknowledged as missed.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>A second written ceiling ($40.1 billion, 2023–24) was missed by $21.8 billion.</p></div></div>
+    <p class="note">Weight S3: ≥ $10M public money · a body found against them.</p><p class="note">Recurred in: <a href="https://deadcoast.github.io/politaccount/#c-freeland-resignation" target="_blank" rel="noopener">His finance minister quit the morning of the fiscal update, calling hi…</a></p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-fiscal-record-2015-promise" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="pm" data-score="0.0" data-no="3">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-2">
+    <span class="ascore mono s-critical">0.0</span>
+    <span class="acase"><span class="ahl">Promised 2015 would be the last election under first past the post. Killed the promise in 2017.</span><span class="lmeta">Trudeau himself · 2015–2017 · <span class="mono">S2</span></span></span>
+    <span class="amarks"><span class="mk mk-critical" title="Consequence: nobody">0</span><span class="mk mk-critical" title="Posture">fought</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-2" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-critical">nobody</b></span><p>Nobody.</p></div><div><span class="lbl">Posture · <b class="s-critical">fought</b> <span class="mono">2017-02-01</span></span><p>Cancelled by his own mandate letter and blamed on the absence of consensus.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>Two more written commitments missed after this one: the balanced budget, the water advisories.</p></div></div>
+    <p class="note">Weight S2: a body found against them.</p><p class="note">Recurred in: <a href="https://deadcoast.github.io/politaccount/#c-fiscal-record-2015-promise" target="_blank" rel="noopener">Promised small deficits and a balanced budget by 2019. Never balanced …</a>, <a href="https://deadcoast.github.io/politaccount/#c-boil-water-advisories-promise" target="_blank" rel="noopener">Promised to end every long-term boil-water advisory on reserves within…</a></p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-electoral-reform" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="gov" data-score="0.0" data-no="4">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-3">
+    <span class="ascore mono s-critical">0.0</span>
+    <span class="acase"><span class="ahl">Switched on a pay system that failed hundreds of thousands of public servants. The fix has cost $5 billion.</span><span class="lmeta">His government · 2016 – · <span class="mono">S3</span></span></span>
+    <span class="amarks"><span class="mk mk-critical" title="Consequence: nobody">0</span><span class="mk mk-neutral" title="Posture">nothing</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-3" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-critical">nobody</b></span><p>No minister or deputy minister was removed.</p></div><div><span class="lbl">Posture · <b class="s-neutral">nothing</b></span><p>The reports were accepted once made.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>Phoenix still running at the end of the tenure with a backlog above 233,000; the replacement not delivered.</p></div></div>
+    <p class="note">Weight S3: harm on the record · ≥ $10M public money · a body found against them.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-phoenix-pay-system" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="pm" data-score="0.0" data-no="10">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-4">
+    <span class="ascore mono s-critical">0.0</span>
+    <span class="acase"><span class="ahl">Took a free holiday on a billionaire&#x27;s private island while the billionaire&#x27;s foundation lobbied his office. Broke the ethics law. Paid nothing.</span><span class="lmeta">Trudeau himself · 2016–2017 · <span class="mono">S2</span></span></span>
+    <span class="amarks"><span class="mk mk-critical" title="Consequence: nobody">0</span><span class="mk mk-critical" title="Posture">fought</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-4" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-critical">nobody</b></span><p>Nothing. No penalty exists; none imposed; nothing repaid.</p></div><div><span class="lbl">Posture · <b class="s-critical">fought</b> <span class="mono">2017-01-10</span></span><p>&#x27;A long-time family friend&#x27; — rejected by the commissioner. Accepted the report only once it ruled.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>Broke the same Act again within two years (SNC-Lavalin).</p></div></div>
+    <p class="note">Weight S2: a body found against them.</p><p class="note">Recurred in: <a href="https://deadcoast.github.io/politaccount/#c-snc-lavalin-affair" target="_blank" rel="noopener">Leaned on his attorney general to spare SNC-Lavalin a criminal trial. …</a>, <a href="https://deadcoast.github.io/politaccount/#c-jamaica-vacation" target="_blank" rel="noopener">Took a free luxury vacation at a family friend&#x27;s Jamaica estate. His o…</a></p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-aga-khan-vacation" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="gov" data-score="0.0" data-no="11">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-5">
+    <span class="ascore mono s-critical">0.0</span>
+    <span class="acase"><span class="ahl">His government prosecuted a vice-admiral for leaking, after Trudeau twice predicted the case would go to court before any charge existed. The case collapsed.</span><span class="lmeta">His government · 2017–2019 · <span class="mono">S2</span></span></span>
+    <span class="amarks"><span class="mk mk-critical" title="Consequence: nobody">0</span><span class="mk mk-critical" title="Posture">fought</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-5" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-critical">nobody</b></span><p>Nothing on anyone in government. Norman&#x27;s legal fees were paid by the treasury: a cost to you, not a consequence to them.</p></div><div><span class="lbl">Posture · <b class="s-critical">fought</b> <span class="mono">2019-05-08</span></span><p>&#x27;Entirely independent of my office.&#x27; Left the chamber before the apology vote.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>Nothing changed.</p></div></div>
+    <p class="note">Owed because: The Crown stayed the charge for no reasonable prospect of conviction and the House apologized unanimously: the failure is on the record.</p><p class="note">Weight S2: harm on the record.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-mark-norman-prosecution" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="pm" data-score="0.0" data-no="18">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-6">
+    <span class="ascore mono s-critical">0.0</span>
+    <span class="acase"><span class="ahl">A man convicted of trying to murder an Indian cabinet minister got invited to Trudeau&#x27;s reception in India.</span><span class="lmeta">Trudeau himself · 2018 · <span class="mono">S2</span></span></span>
+    <span class="amarks"><span class="mk mk-critical" title="Consequence: nobody">0</span><span class="mk mk-critical" title="Posture">fought</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-6" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-critical">nobody</b></span><p>Nobody in the PMO was disciplined for the screening failures the committee identified.</p></div><div><span class="lbl">Posture · <b class="s-critical">fought</b> <span class="mono">2018-02</span></span><p>The national security adviser briefed reporters that factions in India had orchestrated it.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>The committee recommended background checks for guest lists; no change on this record.</p></div></div>
+    <p class="note">Weight S2: a body found against them.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-india-trip-atwal" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="gov" data-score="0.0" data-no="20">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-7">
+    <span class="ascore mono s-critical">0.0</span>
+    <span class="acase"><span class="ahl">Told in 2018 that the top general faced a misconduct allegation, his defence minister refused to look at the evidence. The general stayed three more years.</span><span class="lmeta">His government · 2018–2022 · <span class="mono">S2</span></span></span>
+    <span class="amarks"><span class="mk mk-critical" title="Consequence: nobody">0</span><span class="mk mk-critical" title="Posture">fought</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-7" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-critical">nobody</b></span><p>The minister was moved, not sanctioned. No PMO or PCO official disciplined.</p></div><div><span class="lbl">Posture · <b class="s-critical">fought</b> <span class="mono">2021-03</span></span><p>&#x27;Confidence in Sajjan&#x27; after the ombudsman&#x27;s testimony; the minister: allegations were &#x27;very quickly put forward to the proper authorities&#x27;.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>48 recommendations &#x27;accepted&#x27;, &#x27;under implementation&#x27;. Accepted is not changed.</p></div></div>
+    <p class="note">Owed because: The general pleaded guilty to obstruction; the ombudsman&#x27;s sworn account of the minister refusing the evidence stands unrebutted; Arbour&#x27;s review found the system failed.</p><p class="note">Weight S2: harm on the record.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-vance-allegations-2018" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="min" data-score="0.0" data-no="26">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-8">
+    <span class="ascore mono s-critical">0.0</span>
+    <span class="acase"><span class="ahl">Trade minister gave $23,000 in contracts to her friend&#x27;s PR firm. Broke the ethics law. Kept her job.</span><span class="lmeta">His ministers &amp; MPs · 2019–2022 · <span class="mono">S2</span></span></span>
+    <span class="amarks"><span class="mk mk-critical" title="Consequence: nobody">0</span><span class="mk mk-neutral" title="Posture">nothing</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-8" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-critical">nobody</b></span><p>Apology. No repayment, no penalty, kept in cabinet.</p></div><div><span class="lbl">Posture · <b class="s-neutral">nothing</b></span><p>Apologized once the finding was made.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>Nothing changed.</p></div></div>
+    <p class="note">Weight S2: a body found against them.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-ng-pomp-circumstance" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="gov" data-score="0.0" data-no="29">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-9">
+    <span class="ascore mono s-critical">0.0</span>
+    <span class="acase"><span class="ahl">The pandemic early-warning system stayed silent, the risk was rated &#x27;low&#x27; until March 12, 2020, and two-thirds of quarantined travellers were never checked.</span><span class="lmeta">His government · 2020–2021 · <span class="mono">S2</span></span></span>
+    <span class="amarks"><span class="mk mk-critical" title="Consequence: nobody">0</span><span class="mk mk-neutral" title="Posture">nothing</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-9" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-critical">nobody</b></span><p>Nothing on any minister.</p></div><div><span class="lbl">Posture · <b class="s-neutral">nothing</b></span><p>Recommendations accepted once the report was made.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>No change on this record.</p></div></div>
+    <p class="note">Weight S2: a body found against them.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-pandemic-preparedness-audit" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="gov" data-score="0.0" data-no="31">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-10">
+    <span class="ascore mono s-critical">0.0</span>
+    <span class="acase"><span class="ahl">$4.6 billion in pandemic benefits went to people who weren&#x27;t eligible, and $27 billion more needs checking. The tax agency said checking wasn&#x27;t worth it.</span><span class="lmeta">His government · 2020 – · <span class="mono">S3</span></span></span>
+    <span class="amarks"><span class="mk mk-critical" title="Consequence: nobody">0</span><span class="mk mk-critical" title="Posture">fought</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-10" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-critical">nobody</b></span><p>Nothing on any minister.</p></div><div><span class="lbl">Posture · <b class="s-critical">fought</b> <span class="mono">2022-12-06</span></span><p>The tax agency disputed the Auditor General&#x27;s figure and told MPs a full review would not be worth it.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>Recovery letters went out; the position that full verification is not worthwhile stood.</p></div></div>
+    <p class="note">Weight S3: ≥ $10M public money · a body found against them.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-covid-benefit-overpayments" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="gov" data-score="0.0" data-no="38">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-11">
+    <span class="ascore mono s-critical">0.0</span>
+    <span class="acase"><span class="ahl">Canada&#x27;s information watchdog: the access-to-information system &#x27;no longer serves its intended purpose&#x27;, and transparency &#x27;is not a priority for the government&#x27;.</span><span class="lmeta">His government · 2021–2023 · <span class="mono">S2</span></span></span>
+    <span class="amarks"><span class="mk mk-critical" title="Consequence: nobody">0</span><span class="mk mk-neutral" title="Posture">nothing</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-11" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-critical">nobody</b></span><p>Nobody.</p></div><div><span class="lbl">Posture · <b class="s-neutral">nothing</b></span><p>The report was left unanswered; the law unchanged.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>A House order for documents was not fully met the following year.</p></div></div>
+    <p class="note">Weight S2: a body found against them.</p><p class="note">Recurred in: <a href="https://deadcoast.github.io/politaccount/#c-sdtc-green-fund" target="_blank" rel="noopener">The government&#x27;s billion-dollar green-tech fund gave $59 million to in…</a></p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-access-to-information-decline" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="gov" data-score="0.0" data-no="40">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-12">
+    <span class="ascore mono s-critical">0.0</span>
+    <span class="acase"><span class="ahl">A CSIS spy warrant sat in the public safety minister&#x27;s office for 54 days. The inquiry called it &#x27;unacceptable&#x27;.</span><span class="lmeta">His government · 2021–2025 · <span class="mono">S2</span></span></span>
+    <span class="amarks"><span class="mk mk-critical" title="Consequence: nobody">0</span><span class="mk mk-critical" title="Posture">fought</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-12" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-critical">nobody</b></span><p>No sanction; the minister stayed to the end.</p></div><div><span class="lbl">Posture · <b class="s-critical">fought</b> <span class="mono">2024-10</span></span><p>Said he did not learn of the warrant until days before signing; the inquiry placed 54 days in his office.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>A tracking process was recommended; none on this record.</p></div></div>
+    <p class="note">Weight S2: a body found against them.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-blair-csis-warrant-delay" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="pm" data-score="0.0" data-no="45">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-13">
+    <span class="ascore mono s-critical">0.0</span>
+    <span class="acase"><span class="ahl">Invoked the Emergencies Act against the convoy protests and froze people&#x27;s bank accounts. Two courts have ruled it was illegal. Nobody paid for it.</span><span class="lmeta">Trudeau himself · 2022 – · <span class="mono">S3</span></span></span>
+    <span class="amarks"><span class="mk mk-critical" title="Consequence: nobody">0</span><span class="mk mk-critical" title="Posture">fought</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-13" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-critical">nobody</b></span><p>No minister resigned. No sanction after either ruling.</p></div><div><span class="lbl">Posture · <b class="s-critical">fought</b> <span class="mono">2024-01-23</span></span><p>Appealed the first ruling; &#x27;that continues to be my belief today&#x27;. Sought leave to appeal the second.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>The Act was not amended; the inquiry&#x27;s recommendations accepted in principle.</p></div></div>
+    <p class="note">Weight S3: harm on the record · a body found against them.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-emergencies-act-2022" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="min" data-score="0.0" data-no="46">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-14">
+    <span class="ascore mono s-critical">0.0</span>
+    <span class="acase"><span class="ahl">Public safety minister said police asked for the Emergencies Act. The police said they didn&#x27;t.</span><span class="lmeta">His ministers &amp; MPs · 2022 · <span class="mono">S1</span></span></span>
+    <span class="amarks"><span class="mk mk-critical" title="Consequence: nobody">0</span><span class="mk mk-neutral" title="Posture">nothing</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-14" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-critical">nobody</b></span><p>Nothing. The minister stayed a year, and was dropped over a different matter.</p></div><div><span class="lbl">Posture · <b class="s-neutral">nothing</b></span><p>Walked back by his deputy minister, not by him.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>Individual conduct.</p></div></div>
+    <p class="note">Weight S1: no aggravating fact.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-mendicino-police-request-claim" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="gov" data-score="0.0" data-no="50">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-15">
+    <span class="ascore mono s-critical">0.0</span>
+    <span class="acase"><span class="ahl">Federal contracts to McKinsey went from $2 million in the nine years before he took office to more than $100 million under him. The Auditor General found the rules were routinely ignored.</span><span class="lmeta">His government · 2023–2024 · <span class="mono">S3</span></span></span>
+    <span class="amarks"><span class="mk mk-critical" title="Consequence: nobody">0</span><span class="mk mk-neutral" title="Posture">nothing</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-15" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-critical">nobody</b></span><p>Nobody sanctioned.</p></div><div><span class="lbl">Posture · <b class="s-neutral">nothing</b></span><p>Ministers were asked to review the contracts.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>No rule changed on this record.</p></div></div>
+    <p class="note">Weight S3: ≥ $10M public money · a body found against them.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-mckinsey-outsourcing" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="min" data-score="16.7" data-no="16">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-16">
+    <span class="ascore mono s-critical">16.7</span>
+    <span class="acase"><span class="ahl">Finance minister didn&#x27;t declare the company holding his villa in France for two years. Fined $200.</span><span class="lmeta">His ministers &amp; MPs · 2017–2018 · <span class="mono">S2</span></span></span>
+    <span class="amarks"><span class="mk mk-warning" title="Consequence: on others">½</span><span class="mk mk-neutral" title="Posture">nothing</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-16" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-warning">on others</b> <span class="mono">2017-10-26</span></span><p>A $200 penalty on the minister; the only fine on any member of the ministry in the tenure. Kept the job.</p></div><div><span class="lbl">Posture · <b class="s-neutral">nothing</b></span><p>Disclosed after CBC inquiries; &#x27;early administrative confusion&#x27;.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>The same minister broke the same Act three ways in 2020.</p></div></div>
+    <p class="note">Weight S2: a body found against them.</p><p class="note">Recurred in: <a href="https://deadcoast.github.io/politaccount/#c-morneau-we-charity" target="_blank" rel="noopener">Finance minister took free trips from WE, let his staff run interferen…</a></p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-morneau-french-villa" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="min" data-score="16.7" data-no="17">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-17">
+    <span class="ascore mono s-critical">16.7</span>
+    <span class="acase"><span class="ahl">Sport minister quit cabinet over sexual harassment allegations. The report was never released.</span><span class="lmeta">His ministers &amp; MPs · 2018 · <span class="mono">S1</span></span></span>
+    <span class="amarks"><span class="mk mk-warning" title="Consequence: on others">½</span><span class="mk mk-critical" title="Posture">fought</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-17" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-warning">on others</b> <span class="mono">2018-01-25</span></span><p>Out of cabinet for good; kept in caucus.</p></div><div><span class="lbl">Posture · <b class="s-critical">fought</b> <span class="mono">2018-06-06</span></span><p>The PMO commissioned the report and withheld it.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>Individual conduct.</p></div></div>
+    <p class="note">Owed because: The PMO&#x27;s own investigation concluded and he was not returned to cabinet; the report itself was withheld.</p><p class="note">Weight S1: no aggravating fact.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-hehr-resignation" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="min" data-score="16.7" data-no="19">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-18">
+    <span class="ascore mono s-critical">16.7</span>
+    <span class="acase"><span class="ahl">Fisheries minister handed a lucrative clam licence to a company run by his wife&#x27;s cousin. Broke the ethics law. Kept his job.</span><span class="lmeta">His ministers &amp; MPs · 2018 · <span class="mono">S2</span></span></span>
+    <span class="amarks"><span class="mk mk-warning" title="Consequence: on others">½</span><span class="mk mk-neutral" title="Posture">nothing</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-18" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-warning">on others</b> <span class="mono">2018-07</span></span><p>The licence award was withdrawn and the process restarted. The minister was kept through 2025.</p></div><div><span class="lbl">Posture · <b class="s-neutral">nothing</b></span><p>Accepted the finding &#x27;without reservation&#x27; once it was made.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>Two more ministers failed to recuse and were found in breach: Ng (2022), Morneau (2021).</p></div></div>
+    <p class="note">Weight S2: a body found against them.</p><p class="note">Recurred in: <a href="https://deadcoast.github.io/politaccount/#c-ng-pomp-circumstance" target="_blank" rel="noopener">Trade minister gave $23,000 in contracts to her friend&#x27;s PR firm. Brok…</a>, <a href="https://deadcoast.github.io/politaccount/#c-morneau-we-charity" target="_blank" rel="noopener">Finance minister took free trips from WE, let his staff run interferen…</a></p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-leblanc-surf-clam" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="pm" data-score="16.7" data-no="24">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-19">
+    <span class="ascore mono s-critical">16.7</span>
+    <span class="acase"><span class="ahl">Leaned on his attorney general to spare SNC-Lavalin a criminal trial. Broke the ethics law. Two ministers who wouldn&#x27;t go along were pushed out.</span><span class="lmeta">Trudeau himself · 2019 · <span class="mono">S2</span></span></span>
+    <span class="amarks"><span class="mk mk-warning" title="Consequence: on others">½</span><span class="mk mk-critical" title="Posture">fought</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-19" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-warning">on others</b> <span class="mono">2019-02-18</span></span><p>His principal secretary resigned; the clerk retired. Nothing on him. The two ministers who resisted were expelled.</p></div><div><span class="lbl">Posture · <b class="s-critical">fought</b> <span class="mono">2019-02-07</span></span><p>&#x27;The allegations are false.&#x27; Cabinet confidence waived only in part; the commissioner and the RCMP both said it blocked them. &#x27;I won&#x27;t apologize.&#x27;</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>Within a year he sat in on a $912-million decision involving an organization that had paid his family.</p></div></div>
+    <p class="note">Weight S2: a body found against them.</p><p class="note">Recurred in: <a href="https://deadcoast.github.io/politaccount/#c-we-charity" target="_blank" rel="noopener">Handed a $912-million student program to a charity that had paid his m…</a></p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-snc-lavalin-affair" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="gov" data-score="16.7" data-no="27">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-20">
+    <span class="ascore mono s-critical">16.7</span>
+    <span class="acase"><span class="ahl">Two scientists with ties to Chinese military researchers were fired from Canada&#x27;s top-security lab. His government fought Parliament in court to keep the files secret.</span><span class="lmeta">His government · 2019–2024 · <span class="mono">S2</span></span></span>
+    <span class="amarks"><span class="mk mk-warning" title="Consequence: on others">½</span><span class="mk mk-critical" title="Posture">fought</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-20" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-warning">on others</b> <span class="mono">2021-06-21</span></span><p>The agency&#x27;s president was admonished at the bar of the House. Nothing on the ministers who withheld the records.</p></div><div><span class="lbl">Posture · <b class="s-critical">fought</b> <span class="mono">2021-06</span></span><p>Refused two orders of the House and sued the Speaker in Federal Court, the first such application ever.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>In 2024 another House order for documents (the green fund) was not fully met.</p></div></div>
+    <p class="note">Weight S2: a body found against them.</p><p class="note">Recurred in: <a href="https://deadcoast.github.io/politaccount/#c-sdtc-green-fund" target="_blank" rel="noopener">The government&#x27;s billion-dollar green-tech fund gave $59 million to in…</a></p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-winnipeg-lab-documents" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="pm" data-score="16.7" data-no="32">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-21">
+    <span class="ascore mono s-critical">16.7</span>
+    <span class="acase"><span class="ahl">Handed a $912-million student program to a charity that had paid his mother and brother over $280,000 in speaking fees. Didn&#x27;t recuse. Cleared, and now the courts get to check that.</span><span class="lmeta">Trudeau himself · 2020–2021 · <span class="mono">S2</span></span></span>
+    <span class="amarks"><span class="mk mk-warning" title="Consequence: on others">½</span><span class="mk mk-critical" title="Posture">fought</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-21" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-warning">on others</b> <span class="mono">2020-08-17</span></span><p>The finance minister resigned; the programme was withdrawn from WE. Nothing on him.</p></div><div><span class="lbl">Posture · <b class="s-critical">fought</b> <span class="mono">2020-08-18</span></span><p>Apologized on July 13, then prorogued Parliament, ending four committee studies, and made a motion for a special committee a confidence vote.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>No rule changed. The next free stay was cleared in advance; that is a phone call, not a rule.</p></div></div>
+    <p class="note">Owed because: He admitted he should have recused; his finance minister was found in breach over the same decision.</p><p class="note">Weight S2: ≥ $10M public money.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-we-charity" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="gov" data-score="16.7" data-no="34">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-22">
+    <span class="ascore mono s-critical">16.7</span>
+    <span class="acase"><span class="ahl">An app first estimated at $80,000 ended up costing about $60 million. A two-man firm got $19 million. Nobody has been charged.</span><span class="lmeta">His government · 2020 – · <span class="mono">S3</span></span></span>
+    <span class="amarks"><span class="mk mk-warning" title="Consequence: on others">½</span><span class="mk mk-neutral" title="Posture">nothing</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-22" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-warning">on others</b> <span class="mono">2024</span></span><p>Two agency executives suspended without pay; the contractor barred and admonished by the House. No minister sanctioned.</p></div><div><span class="lbl">Posture · <b class="s-neutral">nothing</b></span><p>&#x27;Unacceptable&#x27;, once the audit was out.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>No procurement rule changed on this record.</p></div></div>
+    <p class="note">Weight S3: ≥ $10M public money · a body found against them.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-arrivecan" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="gov" data-score="16.7" data-no="54">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-23">
+    <span class="ascore mono s-critical">16.7</span>
+    <span class="acase"><span class="ahl">To head off a public inquiry into Chinese interference, he appointed a family friend and Trudeau Foundation member to review it. The House voted him out within three months.</span><span class="lmeta">His government · 2023 · <span class="mono">S2</span></span></span>
+    <span class="amarks"><span class="mk mk-warning" title="Consequence: on others">½</span><span class="mk mk-critical" title="Posture">fought</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-23" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-warning">on others</b> <span class="mono">2023-06-09</span></span><p>The rapporteur resigned; the inquiry he had recommended against was called in September. His decision, reversed.</p></div><div><span class="lbl">Posture · <b class="s-critical">fought</b> <span class="mono">2023-05-31</span></span><p>Defended the appointment against a 174–150 vote of the House.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>Nothing changed in how such appointments are made.</p></div></div>
+    <p class="note">Weight S2: a body found against them.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-david-johnston-rapporteur" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="gov" data-score="16.7" data-no="61">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-24">
+    <span class="ascore mono s-critical">16.7</span>
+    <span class="acase"><span class="ahl">His finance minister quit the morning of the fiscal update, calling his spending plans &#x27;costly political gimmicks&#x27;.</span><span class="lmeta">His government · 2024 · <span class="mono">S1</span></span></span>
+    <span class="amarks"><span class="mk mk-warning" title="Consequence: on others">½</span><span class="mk mk-neutral" title="Posture">nothing</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-24" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-warning">on others</b> <span class="mono">2024-12-16</span></span><p>The finance minister left. Nothing on him.</p></div><div><span class="lbl">Posture · <b class="s-neutral">nothing</b></span><p>No dispute of the figure; no acknowledgment of it either.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>End of tenure.</p></div></div>
+    <p class="note">Owed because: Her own ceiling, missed by $21.8 billion, on the government&#x27;s own statement.</p><p class="note">Weight S1: no aggravating fact.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-freeland-resignation" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="pm" data-score="33.3" data-no="5">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-25">
+    <span class="ascore mono s-warning">33.3</span>
+    <span class="acase"><span class="ahl">Grabbed one MP and elbowed another on the floor of the House.</span><span class="lmeta">Trudeau himself · 2016 · <span class="mono">S1</span></span></span>
+    <span class="amarks"><span class="mk mk-critical" title="Consequence: nobody">0</span><span class="mk mk-good" title="Posture">owned</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-25" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-critical">nobody</b> <span class="mono">2016-05-19</span></span><p>Two apologies. Words.</p></div><div><span class="lbl">Posture · <b class="s-good">owned</b> <span class="mono">2016-05-18</span></span><p>Apologized in the House the same evening, before the committee referral.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>Nothing to change; nothing recurred.</p></div></div>
+    <p class="note">Weight S1: no aggravating fact.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-elbowgate" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="min" data-score="33.3" data-no="12">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-26">
+    <span class="ascore mono s-warning">33.3</span>
+    <span class="acase"><span class="ahl">Defence minister claimed to be &#x27;the architect&#x27; of a major Afghan battle. He wasn&#x27;t.</span><span class="lmeta">His ministers &amp; MPs · 2017 · <span class="mono">S1</span></span></span>
+    <span class="amarks"><span class="mk mk-critical" title="Consequence: nobody">0</span><span class="mk mk-good" title="Posture">owned</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-26" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-critical">nobody</b> <span class="mono">2017-05-02</span></span><p>Retraction and apology. Words. Kept the portfolio.</p></div><div><span class="lbl">Posture · <b class="s-good">owned</b> <span class="mono">2017-05-02</span></span><p>Retracted within days; no body was involved.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>Individual conduct.</p></div></div>
+    <p class="note">Weight S1: no aggravating fact.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-sajjan-operation-medusa" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="pm" data-score="33.3" data-no="28">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-27">
+    <span class="ascore mono s-warning">33.3</span>
+    <span class="acase"><span class="ahl">Wore blackface at least three times. Couldn&#x27;t say how many.</span><span class="lmeta">Trudeau himself · 2019 · <span class="mono">S1</span></span></span>
+    <span class="amarks"><span class="mk mk-critical" title="Consequence: nobody">0</span><span class="mk mk-good" title="Posture">owned</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-27" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-critical">nobody</b> <span class="mono">2019-09-19</span></span><p>Two apologies. Words.</p></div><div><span class="lbl">Posture · <b class="s-good">owned</b> <span class="mono">2019-09-18</span></span><p>Admitted it the night it was published.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>Personal conduct; nothing to change in office.</p></div></div>
+    <p class="note">Weight S1: no aggravating fact.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-blackface-images" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="gov" data-score="33.3" data-no="39">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-28">
+    <span class="ascore mono s-warning">33.3</span>
+    <span class="acase"><span class="ahl">CSIS knew in 2021 that a Chinese diplomat was targeting MP Michael Chong&#x27;s family in Hong Kong. Chong found out from a newspaper two years later.</span><span class="lmeta">His government · 2021–2025 · <span class="mono">S3</span></span></span>
+    <span class="amarks"><span class="mk mk-critical" title="Consequence: nobody">0</span><span class="mk mk-neutral" title="Posture">nothing</span><span class="mk mk-good" title="Change: changed">1</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-28" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-critical">nobody</b></span><p>No minister, adviser or official disciplined. The diplomat was expelled; that is a consequence for China, not for them.</p></div><div><span class="lbl">Posture · <b class="s-neutral">nothing</b></span><p>Said he learned of it from the newspaper; the inquiry recorded the same.</p></div><div><span class="lbl">Change · <b class="s-good">changed</b> <span class="mono">2024-06-20</span></span><p>The Countering Foreign Interference Act, in law, in office. No repeat.</p></div></div>
+    <p class="note">Weight S3: harm on the record · a body found against them.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-michael-chong-zhao-wei" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="gov" data-score="33.3" data-no="41">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-29">
+    <span class="ascore mono s-warning">33.3</span>
+    <span class="acase"><span class="ahl">Called an election the day Kabul fell. The airlift ended eleven days later with people left behind.</span><span class="lmeta">His government · 2021–2022 · <span class="mono">S3</span></span></span>
+    <span class="amarks"><span class="mk mk-critical" title="Consequence: nobody">0</span><span class="mk mk-neutral" title="Posture">nothing</span><span class="mk mk-good" title="Change: changed">1</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-29" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-critical">nobody</b></span><p>No minister resigned; two were moved to other portfolios.</p></div><div><span class="lbl">Posture · <b class="s-neutral">nothing</b></span><p>The committee reported; the government did not dispute it.</p></div><div><span class="lbl">Change · <b class="s-good">changed</b> <span class="mono">2023-06</span></span><p>Bill C-41 exempted humanitarian aid from the terrorism-financing provisions the committee flagged. No repeat.</p></div></div>
+    <p class="note">Weight S3: harm on the record · a body found against them.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-afghanistan-evacuation-2021" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="pm" data-score="33.3" data-no="44">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-30">
+    <span class="ascore mono s-warning">33.3</span>
+    <span class="acase"><span class="ahl">Spent the first National Day for Truth and Reconciliation surfing in Tofino while his schedule said &#x27;private meetings&#x27; in Ottawa.</span><span class="lmeta">Trudeau himself · 2021 · <span class="mono">S1</span></span></span>
+    <span class="amarks"><span class="mk mk-critical" title="Consequence: nobody">0</span><span class="mk mk-good" title="Posture">owned</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-30" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-critical">nobody</b> <span class="mono">2021-10-06</span></span><p>Apology and a visit. Words.</p></div><div><span class="lbl">Posture · <b class="s-good">owned</b> <span class="mono">2021-10-06</span></span><p>&#x27;A mistake, and I regret it&#x27; — six days later; no body was involved.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>Nothing recurred; nothing changed.</p></div></div>
+    <p class="note">Weight S1: no aggravating fact.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-tofino-truth-reconciliation-day" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="gov" data-score="33.3" data-no="49">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-31">
+    <span class="ascore mono s-warning">33.3</span>
+    <span class="acase"><span class="ahl">Warned by CSIS about Chinese interference in two elections, his government was &#x27;slow to act&#x27; and &#x27;insufficiently transparent&#x27;, in a public inquiry&#x27;s words.</span><span class="lmeta">His government · 2022–2025 · <span class="mono">S2</span></span></span>
+    <span class="amarks"><span class="mk mk-critical" title="Consequence: nobody">0</span><span class="mk mk-critical" title="Posture">fought</span><span class="mk mk-good" title="Change: changed">1</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-31" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-critical">nobody</b></span><p>No minister resigned.</p></div><div><span class="lbl">Posture · <b class="s-critical">fought</b> <span class="mono">2023-03-15</span></span><p>Refused a public inquiry and appointed a rapporteur instead; agreed to the inquiry six months later under a House vote.</p></div><div><span class="lbl">Change · <b class="s-good">changed</b> <span class="mono">2024-06-20</span></span><p>The Countering Foreign Interference Act, in law, in office.</p></div></div>
+    <p class="note">Weight S2: a body found against them.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-foreign-interference-response" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="min" data-score="50.0" data-no="7">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-32">
+    <span class="ascore mono s-neutral">50.0</span>
+    <span class="acase"><span class="ahl">Fisheries minister quit cabinet and caucus over an &#x27;inappropriate relationship&#x27; with a staffer.</span><span class="lmeta">His ministers &amp; MPs · 2016 · <span class="mono">S1</span></span></span>
+    <span class="amarks"><span class="mk mk-warning" title="Consequence: on others">½</span><span class="mk mk-good" title="Posture">owned</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-32" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-warning">on others</b> <span class="mono">2016-05-31</span></span><p>The minister left cabinet and caucus the same day.</p></div><div><span class="lbl">Posture · <b class="s-good">owned</b> <span class="mono">2016-05-31</span></span><p>Resigned at once; no investigation was needed to make him.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>Individual conduct.</p></div></div>
+    <p class="note">Owed because: He resigned over a relationship with a staffer he acknowledged; the fault is his own admission.</p><p class="note">Weight S1: no aggravating fact.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-tootoo-resignation" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="gov" data-score="50.0" data-no="9">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-33">
+    <span class="ascore mono s-neutral">50.0</span>
+    <span class="acase"><span class="ahl">His two top aides billed $207,000 to move from Toronto to Ottawa.</span><span class="lmeta">His government · 2016 · <span class="mono">S1</span></span></span>
+    <span class="amarks"><span class="mk mk-warning" title="Consequence: on others">½</span><span class="mk mk-good" title="Posture">owned</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-33" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-warning">on others</b> <span class="mono">2016-09-22</span></span><p>$64,992 repaid by the two aides; $142,060 stood.</p></div><div><span class="lbl">Posture · <b class="s-good">owned</b> <span class="mono">2016-09-22</span></span><p>Repaid part and called it unreasonable the day the figures were reported; no finding forced it.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>A new relocation policy was ordered; its outcome is not on this record.</p></div></div>
+    <p class="note">Weight S1: no aggravating fact.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-butts-telford-moving-expenses" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="gov" data-score="50.0" data-no="14">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-34">
+    <span class="ascore mono s-neutral">50.0</span>
+    <span class="acase"><span class="ahl">Skipped the vetting committee and picked a governor general who quit over a toxic workplace. She keeps a $150,000 pension for life.</span><span class="lmeta">His government · 2017–2021 · <span class="mono">S2</span></span></span>
+    <span class="amarks"><span class="mk mk-warning" title="Consequence: on others">½</span><span class="mk mk-critical" title="Posture">fought</span><span class="mk mk-good" title="Change: changed">1</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-34" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-warning">on others</b> <span class="mono">2021-01-21</span></span><p>The governor general and her secretary resigned. Nothing on the office that skipped the vetting.</p></div><div><span class="lbl">Posture · <b class="s-critical">fought</b> <span class="mono">2020-09-02</span></span><p>&#x27;We have an excellent governor general right now&#x27; — two months after the abuse reports, four and a half months before she resigned.</p></div><div><span class="lbl">Change · <b class="s-good">changed</b> <span class="mono">2021-07</span></span><p>An advisory group was used for the next appointment (Mary Simon, July 2021). No repeat.</p></div></div>
+    <p class="note">Owed because: The independent review found the workplace toxic and abusive; the skipped vetting was admitted by the promise to strengthen it.</p><p class="note">Weight S2: harm on the record.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-julie-payette" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="min" data-score="50.0" data-no="15">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-35">
+    <span class="ascore mono s-neutral">50.0</span>
+    <span class="acase"><span class="ahl">Liberal MP found to have harassed a constituency staffer. Left caucus.</span><span class="lmeta">His ministers &amp; MPs · 2017–2018 · <span class="mono">S2</span></span></span>
+    <span class="amarks"><span class="mk mk-warning" title="Consequence: on others">½</span><span class="mk mk-good" title="Posture">owned</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-35" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-warning">on others</b> <span class="mono">2018-08-31</span></span><p>Out of caucus for good; the House finding upheld on appeal.</p></div><div><span class="lbl">Posture · <b class="s-good">owned</b> <span class="mono">2017-08-31</span></span><p>Left the caucus the day the allegations surfaced, seven months before the finding.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>Individual conduct.</p></div></div>
+    <p class="note">Owed because: A House of Commons investigation found harassment, upheld on appeal.</p><p class="note">Weight S2: harm on the record.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-kang-harassment" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="min" data-score="50.0" data-no="36">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-36">
+    <span class="ascore mono s-neutral">50.0</span>
+    <span class="acase"><span class="ahl">Finance minister took free trips from WE, let his staff run interference for WE&#x27;s funding, then helped hand WE a $912-million program. Broke the law three ways. Resigned.</span><span class="lmeta">His ministers &amp; MPs · 2020–2021 · <span class="mono">S3</span></span></span>
+    <span class="amarks"><span class="mk mk-warning" title="Consequence: on others">½</span><span class="mk mk-good" title="Posture">owned</span><span class="mk mk-critical" title="Change: nothing">0</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-36" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-warning">on others</b> <span class="mono">2020-08-17</span></span><p>The minister resigned as minister and MP.</p></div><div><span class="lbl">Posture · <b class="s-good">owned</b> <span class="mono">2020-07-22</span></span><p>Repaid $41,366 for the trips ten months before the finding.</p></div><div><span class="lbl">Change · <b class="s-critical">nothing</b></span><p>He left office.</p></div></div>
+    <p class="note">Weight S3: ≥ $10M public money · a body found against them.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-morneau-we-charity" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="gov" data-score="50.0" data-no="56">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-37">
+    <span class="ascore mono s-neutral">50.0</span>
+    <span class="acase"><span class="ahl">The government&#x27;s billion-dollar green-tech fund gave $59 million to ineligible projects and $76 million in deals where board members had conflicts. Parliament seized up for four months over the documents.</span><span class="lmeta">His government · 2023 – · <span class="mono">S3</span></span></span>
+    <span class="amarks"><span class="mk mk-warning" title="Consequence: on others">½</span><span class="mk mk-critical" title="Posture">fought</span><span class="mk mk-good" title="Change: changed">1</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-37" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-warning">on others</b> <span class="mono">2023-11</span></span><p>The chair resigned and was found in breach; the foundation was dissolved. Nothing on the minister.</p></div><div><span class="lbl">Posture · <b class="s-critical">fought</b> <span class="mono">2024-09-26</span></span><p>The House order for the documents was not fully met; the privilege debate ran to prorogation.</p></div><div><span class="lbl">Change · <b class="s-good">changed</b> <span class="mono">2024-06-04</span></span><p>The foundation was wound down into the National Research Council; the conduct did not recur.</p></div></div>
+    <p class="note">Weight S3: ≥ $10M public money · a body found against them.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-sdtc-green-fund" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="pm" data-score="66.7" data-no="60">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-38">
+    <span class="ascore mono s-proceeding">66.7</span>
+    <span class="acase"><span class="ahl">After population growth hit its highest rate since 1957, he admitted his government &#x27;could have acted quicker and turned off the taps faster&#x27;.</span><span class="lmeta">Trudeau himself · 2024 · <span class="mono">S1</span></span></span>
+    <span class="amarks"><span class="mk mk-critical" title="Consequence: nobody">0</span><span class="mk mk-good" title="Posture">owned</span><span class="mk mk-good" title="Change: changed">1</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-38" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-critical">nobody</b> <span class="mono">2024-11-17</span></span><p>An admission on video. Words.</p></div><div><span class="lbl">Posture · <b class="s-good">owned</b> <span class="mono">2024-11-17</span></span><p>&#x27;We could have acted quicker and turned off the taps faster.&#x27;</p></div><div><span class="lbl">Change · <b class="s-good">changed</b> <span class="mono">2024-10-24</span></span><p>Permanent-resident targets cut by about a fifth; a target set for temporary residents. In office.</p></div></div>
+    <p class="note">Weight S1: no aggravating fact.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-immigration-could-have-acted-quicker" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="pm" data-score="83.3" data-no="6">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-39">
+    <span class="ascore mono s-good">83.3</span>
+    <span class="acase"><span class="ahl">Sold face time at $1,500 a ticket in private homes, including to a Chinese billionaire who then gave $200,000 to the Trudeau Foundation.</span><span class="lmeta">Trudeau himself · 2016–2017 · <span class="mono">S1</span></span></span>
+    <span class="amarks"><span class="mk mk-warning" title="Consequence: on others">½</span><span class="mk mk-good" title="Posture">owned</span><span class="mk mk-good" title="Change: changed">1</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-39" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-warning">on others</b> <span class="mono">2017-01-27</span></span><p>The private-home format ended: his own decision reversed under pressure.</p></div><div><span class="lbl">Posture · <b class="s-good">owned</b> <span class="mono">2017-01-27</span></span><p>Ended the format before the commissioner&#x27;s letter of February 14, 2017.</p></div><div><span class="lbl">Change · <b class="s-good">changed</b> <span class="mono">2018-06</span></span><p>Bill C-50: advance notice and reporting of leaders&#x27; fundraisers, in law. No repeat in the record.</p></div></div>
+    <p class="note">Owed because: His own written standard, Open and Accountable Government, was breached (see the corruption ledger); accountability was owed under his own rules.</p><p class="note">Weight S1: no aggravating fact.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-cash-for-access-fundraisers" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div><div class="arow" data-who="gov" data-score="83.3" data-no="37">
+  <button class="ahead" type="button" aria-expanded="false" aria-controls="al-40">
+    <span class="ascore mono s-good">83.3</span>
+    <span class="acase"><span class="ahl">Awarded a Chinese state-linked firm the contract to supply X-ray scanners for Canadian embassies. Reversed after it hit the news.</span><span class="lmeta">His government · 2020 · <span class="mono">S1</span></span></span>
+    <span class="amarks"><span class="mk mk-warning" title="Consequence: on others">½</span><span class="mk mk-good" title="Posture">owned</span><span class="mk mk-good" title="Change: changed">1</span></span>
+    <span class="chev" aria-hidden="true"></span>
+  </button>
+  <div class="abody" id="al-40" hidden>
+    <div class="anotes"><div><span class="lbl">Consequence · <b class="s-warning">on others</b> <span class="mono">2020-11-17</span></span><p>The standing offer was set aside; no equipment bought.</p></div><div><span class="lbl">Posture · <b class="s-good">owned</b> <span class="mono">2020-11-17</span></span><p>Reversed once reported; the Deloitte review confirmed the gap.</p></div><div><span class="lbl">Change · <b class="s-good">changed</b> <span class="mono">2020-11-17</span></span><p>The department designed a new procurement route with a national-security exemption. No repeat.</p></div></div>
+    <p class="note">Weight S1: no aggravating fact.</p>
+    <p class="note"><a href="https://deadcoast.github.io/politaccount/#c-nuctech-standing-offer" target="_blank" rel="noopener">Open the case on the record →</a></p>
+  </div>
+</div></div>
+  <h3 class="h3">Out of the score</h3>
+  <p class="sec-sub" style="margin-bottom:6px">Cleared, upheld, never examined, or a cost with no finding of fault: nothing was established to answer for. They count neither for nor against.</p>
+  <div class="ledger"><div class="listed"><span class="lbl">Never investigated · Trudeau himself · 2016–2023</span><a href="https://deadcoast.github.io/politaccount/#c-trudeau-foundation-donation" target="_blank" rel="noopener">Beijing directed a $200,000 gift to the Trudeau Foundation, CSIS intercepts showed. The whole board quit.</a><p>Never examined by any body; nothing established to answer for.</p></div><div class="listed"><span class="lbl">Cost on record · His government · 2017</span><a href="https://deadcoast.github.io/politaccount/#c-khadr-settlement" target="_blank" rel="noopener">Paid Omar Khadr $10.5 million and apologized, settling a lawsuit over Charter breaches the Supreme Court had already found.</a><p>A settlement of Charter breaches found against earlier governments; no fault of this one on the record.</p></div><div class="listed"><span class="lbl">Likely loss · His government · 2018 –</span><a href="https://deadcoast.github.io/politaccount/#c-trans-mountain" target="_blank" rel="noopener">Bought a pipeline for $4.5 billion. The expansion cost $34 billion. Taxpayers will likely take a loss.</a><p>A purchase on the record; no finding of fault.</p></div><div class="listed"><span class="lbl">Never investigated · Trudeau himself · 2018</span><a href="https://deadcoast.github.io/politaccount/#c-kokanee-summit-allegation" target="_blank" rel="noopener">A 2000 editorial said he groped a reporter at a festival. In 2018 the reporter confirmed it happened. Nobody investigated.</a><p>Never examined by any body.</p></div><div class="listed"><span class="lbl">Charged, acquitted · His ministers &amp; MPs · 2018–2023</span><a href="https://deadcoast.github.io/politaccount/#c-grewal-charges" target="_blank" rel="noopener">Liberal MP quit over gambling debts, was charged with breach of trust, and was acquitted.</a><p>Acquitted.</p></div><div class="listed"><span class="lbl">Never investigated · His government · 2019–2021</span><a href="https://deadcoast.github.io/politaccount/#c-liberalist-judicial-vetting" target="_blank" rel="noopener">His office ran would-be judges through the Liberal Party&#x27;s voter database before appointing them.</a><p>Never examined by any body.</p></div><div class="listed"><span class="lbl">Never investigated · His government · 2020</span><a href="https://deadcoast.github.io/politaccount/#c-baylis-ventilators" target="_blank" rel="noopener">A $237-million ventilator contract went to a firm that subcontracted to a company co-owned by a former Liberal MP.</a><p>Never examined by any body.</p></div><div class="listed"><span class="lbl">Inquiry: no interference · His government · 2020–2023</span><a href="https://deadcoast.github.io/politaccount/#c-lucki-nova-scotia-call" target="_blank" rel="noopener">After the Nova Scotia massacre, the RCMP commissioner said she&#x27;d promised his office details on the guns to help sell gun legislation. Inquiry found no interference.</a><p>The inquiry found no attempted political interference.</p></div><div class="listed"><span class="lbl">Cost on record · His government · 2020 –</span><a href="https://deadcoast.github.io/politaccount/#c-firearms-buyback-program" target="_blank" rel="noopener">Banned 1,500 models of firearm in 2020 and promised a buyback. Four years and $67 million later, it had collected no guns.</a><p>A cost on the record; no finding of fault.</p></div><div class="listed"><span class="lbl">Cost on record · Trudeau himself · 2021</span><a href="https://deadcoast.github.io/politaccount/#c-snap-election-2021" target="_blank" rel="noopener">Called a $600-million pandemic election two years early and got the same Parliament back.</a><p>Lawful; a cost on the record; no finding of fault.</p></div><div class="listed"><span class="lbl">Never investigated · His ministers &amp; MPs · 2021–2024</span><a href="https://deadcoast.github.io/politaccount/#c-sajjan-afghan-sikhs" target="_blank" rel="noopener">During the Kabul evacuation, the defence minister reportedly told special forces to go rescue 225 Afghan Sikhs with no ties to Canada. The mission failed.</a><p>Never examined by any body.</p></div><div class="listed"><span class="lbl">Cleared; left cabinet · His ministers &amp; MPs · 2022–2025</span><a href="https://deadcoast.github.io/politaccount/#c-boissonnault-global-health-imports" target="_blank" rel="noopener">A minister&#x27;s business partner texted about &#x27;Randy&#x27; during a deal while the minister was in cabinet. Then his claim to be Cree fell apart. He left cabinet.</a><p>Closed by the commissioner with no evidence of a breach.</p></div><div class="listed"><span class="lbl">Cost on record · Trudeau himself · 2022–2023</span><a href="https://deadcoast.github.io/politaccount/#c-london-hotel-queen-funeral" target="_blank" rel="noopener">Stayed in a $6,000-a-night hotel suite for the Queen&#x27;s funeral, and his office wouldn&#x27;t say who was in it.</a><p>A cost on the record; no finding of fault.</p></div><div class="listed"><span class="lbl">Never investigated · His ministers &amp; MPs · 2023</span><a href="https://deadcoast.github.io/politaccount/#c-hussen-constituency-contracts" target="_blank" rel="noopener">A minister&#x27;s office paid $93,000 to a firm run by his policy director&#x27;s sister.</a><p>Never examined by any body.</p></div><div class="listed"><span class="lbl">Inquiry: undetermined · His government · 2023–2025</span><a href="https://deadcoast.github.io/politaccount/#c-han-dong" target="_blank" rel="noopener">CSIS warned the Liberals in 2019 that Beijing had bused students to a nomination vote. Trudeau kept the candidate.</a><p>The inquiry left the irregularities undetermined.</p></div><div class="listed"><span class="lbl">Dropped from cabinet · His ministers &amp; MPs · 2023</span><a href="https://deadcoast.github.io/politaccount/#c-mendicino-bernardo-transfer" target="_blank" rel="noopener">His public safety minister&#x27;s office was told months ahead that Paul Bernardo was moving to a medium-security prison. The minister said he found out from the news.</a><p>Never formally examined; the minister&#x27;s own statement is scored on the corruption scale.</p></div><div class="listed"><span class="lbl">Speaker resigned · His government · 2023</span><a href="https://deadcoast.github.io/politaccount/#c-hunka-recognition" target="_blank" rel="noopener">Parliament gave a standing ovation to a Waffen-SS veteran during Zelenskyy&#x27;s visit. The Speaker resigned; Trudeau apologized for Parliament.</a><p>The Speaker&#x27;s invitation; the Speaker resigned. No fault of the government on the record.</p></div><div class="listed"><span class="lbl">Reversed · His government · 2023</span><a href="https://deadcoast.github.io/politaccount/#c-carbon-charge-heating-oil" target="_blank" rel="noopener">Exempted home heating oil from the carbon tax, a fuel used mostly in Atlantic Liberal ridings. A minister then told the Prairies to &#x27;elect more Liberals&#x27; if they wanted the same.</a><p>A policy reversal on the record; no fault found or admitted.</p></div><div class="listed"><span class="lbl">Cleared in advance · Trudeau himself · 2023–2024</span><a href="https://deadcoast.github.io/politaccount/#c-jamaica-vacation" target="_blank" rel="noopener">Took a free luxury vacation at a family friend&#x27;s Jamaica estate. His office gave three different stories about who paid.</a><p>Cleared in advance; the office&#x27;s three statements are scored on the corruption scale.</p></div><div class="listed"><span class="lbl">Inquiry: overstated · His government · 2024–2025</span><a href="https://deadcoast.github.io/politaccount/#c-nsicop-2024-parliamentarians" target="_blank" rel="noopener">A committee with top-secret clearance said some MPs were &#x27;witting&#x27; helpers of foreign governments. Trudeau wouldn&#x27;t name them. The inquiry later said the claim overshot the evidence.</a><p>The inquiry found the committee&#x27;s claim overshot the intelligence.</p></div><div class="listed"><span class="lbl">Upheld by court · Trudeau himself · 2025</span><a href="https://deadcoast.github.io/politaccount/#c-prorogation-2025" target="_blank" rel="noopener">Shut down Parliament for eleven weeks to run a leadership race. A court said that was within his power.</a><p>Upheld by the court.</p></div><div class="listed"><span class="lbl">Resigned · Trudeau himself · 2025</span><a href="https://deadcoast.github.io/politaccount/#c-trudeau-resignation" target="_blank" rel="noopener">With his own MPs demanding he go, he quit and prorogued Parliament to give the party time to replace him.</a><p>A resignation under caucus pressure after nine years; the record ties it to no single case.</p></div></div>
+</section>
+
+<section id="rules">
+  <div class="sec-head"><h2>The rules</h2><span class="lbl">Scales v1.1.0 · scales.py</span></div>
+  <div class="method">
+    <p><b>What the scales are for.</b> A leader of a first-world democracy is measured against the standard that office claims for itself: the rule of law, independent officers and courts, a free press, an oath. Not against a dictator or a warlord. The scales are neutral in one specific way: they score conduct, never policy, and every rule below was fixed before any leader was scored.</p>
+    <p><b>What counts as evidence.</b> Only the record: a court, an officer of Parliament, an auditor, a public inquiry, a recorded vote, sworn testimony, released documents, or their own words and acts. An allegation nobody examined is listed and scores nothing. Legality is not a test. When a statute's definition is narrower than the word, the admitted facts still score, and the line says the act was cleared under the Act.</p>
+    <p><b>How the two scales differ.</b> Accountability counts what happened where it was owed: consequences, posture, change, each dated, in office. Cleared and upheld cases are out of it, neither for nor against. Corruption asks only what corrupt acts are proven, by whom, and how strongly. A leader can score badly on one and not the other.</p>
+    <p><b>Time.</b> Nothing after the last day in office counts. Owning it counts only before the finding. Cooperating with a process the law requires is not owning it.</p>
+  </div>
+
+  <h3 class="h3">Operational Accountability — three things counted per owed case</h3>
+  <p class="sec-sub" style="margin-bottom:4px">A body found against the leader, the government or a minister, or they admitted the fault. Cleared, upheld, never-examined and cost-only cases are out: neither for nor against.</p>
+  <div class="rules"><div class="rub"><h4>Consequence<span>What landed on the person responsible, in office.</span></h4><ol><li><b class="mono">1</b>On the leader personally: resigned over it, fined, sanctioned, repaid, or his own decision reversed under pressure.</li><li><b class="mono">0.5</b>On the responsible minister or official: resigned or removed over it, sanctioned; or the specific decision reversed.</li><li><b class="mono">0</b>Nothing. Words are nothing: an apology, &#x27;accepting&#x27; a report, a review ordered, a recommendation accepted. Money paid by the treasury is nothing. Anything after leaving office is nothing.</li></ol></div><div class="rub"><h4>Posture<span>What he did with it before a body ruled.</span></h4><ol><li><b class="mono">owned</b>Admitted it or acted on it before any finding, and did not obstruct.</li><li><b class="mono">nothing</b>Said nothing of substance, or accepted the finding only once it was made.</li><li><b class="mono">fought</b>Denied, minimized, blamed others, appealed, litigated, withheld records, invoked cabinet confidence, prorogued, or refused an order.</li></ol></div><div class="rub"><h4>Change<span>Whether anything actually changed, in office.</span></h4><ol><li><b class="mono">1</b>A law, a rule, a process or a decision changed, and the conduct did not recur.</li><li><b class="mono">0</b>Nothing changed; a change promised, accepted or &#x27;under implementation&#x27;; the same conduct recurred; or the change came after leaving office.</li></ol></div></div>
+
+  <h3 class="h3">Provable Observable Corruption — the seven types and their elements</h3>
+  <p class="sec-sub" style="margin-bottom:4px">An act scores only if every element is on the record at documented grade or better; its grade is the lowest grade among its elements. A case may carry up to two further acts of a different type, each at half weight.</p>
+  <div class="types"><div class="typ"><h4><span class="mono">T1</span>Self-dealing and conflicts<b class="mono">base 3</b></h4><ol><li>a benefit — a gift, money, travel, a contract, a licence, a programme — to the office-holder, their family, their party, or a close associate</li><li>the giver or recipient had, or sought, business with the government</li><li>the office-holder did not refuse it, or did not recuse from the decision</li></ol></div><div class="typ"><h4><span class="mono">T2</span>Interference with an independent process<b class="mono">base 4</b></h4><ol><li>the office-holder or their office intervened in, pressured, or publicly pre-judged</li><li>a decision reserved to an independent actor: a prosecutor, a judge, the police, an officer of Parliament, an arm&#x27;s-length appointment</li><li>without lawful authority to direct that decision</li></ol></div><div class="typ"><h4><span class="mono">T3</span>Abuse of state power against people<b class="mono">base 4</b></h4><ol><li>state power was used against people: detention, property, bank accounts, prosecution, surveillance</li><li>a court found the legal conditions for using it were not met, or that it breached their rights</li></ol></div><div class="typ"><h4><span class="mono">T4</span>Public money to insiders, or without the rules<b class="mono">base 3</b></h4><ol><li>public funds, contracts, grants or appointments went</li><li>to insiders, friends, party-connected people, ineligible recipients, or without the controls the rules require</li><li>as found by an auditor, an officer of Parliament, a court, a recorded vote of Parliament, or admitted — beyond ordinary error</li></ol></div><div class="typ"><h4><span class="mono">T5</span>False statements to the public<b class="mono">base 2</b></h4><ol><li>a public statement of fact by the office-holder, their office, or a minister</li><li>contradicted by a document, a finding, or their own later statement on the record</li><li>about a matter they were in a position to know</li></ol></div><div class="typ"><h4><span class="mono">T6</span>Obstruction of scrutiny<b class="mono">base 3</b></h4><ol><li>an investigator, a committee, a court, an inquiry, or Parliament sought records or answers</li><li>the office-holder or government withheld them, redacted beyond the order, ended the process (prorogation, a confidence vote, dissolution), or went to court against disclosure</li><li>as shown by an order, a ruling, a formal admonishment, or the record</li></ol></div><div class="typ"><h4><span class="mono">T7</span>Breach of their own written standard<b class="mono">base 1.5</b></h4><ol><li>a written standard the office-holder set, signed, or swore to</li><li>was broken, per a finding or an admission</li><li>with none of the types above present</li></ol></div></div>
+
+  <h3 class="h3">Evidence grades</h3><div class="kvs"><div class="kv"><span class="mono">E4 × 1</span><b>Adjudicated</b><p>A court, an officer of Parliament, an auditor, or a public inquiry found it.</p></div><div class="kv"><span class="mono">E3 × 1</span><b>Admitted / own record</b><p>They admitted it, or it is their own act or document on the record: a settlement paid, a lawsuit filed, an itinerary issued, a statement made.</p></div><div class="kv"><span class="mono">E2 × 0.6</span><b>Documented, no ruling</b><p>On the public record — sworn testimony, released documents, a recorded vote of the House — but no body with authority ruled on it.</p></div><div class="kv"><span class="mono">E1 × 0</span><b>Reported, never examined</b><p>Reported by major outlets, denied or unanswered, examined by nobody. Listed. Scores nothing.</p></div></div>
+  <h3 class="h3">Who did it</h3><div class="kvs"><div class="kv"><span class="mono">× 1</span><b>The leader personally: his own act or statement, or a decision he announced and defended as his own</b></div><div class="kv"><span class="mono">× 0.8</span><b>His staff, or a cabinet decision carried by a minister</b></div><div class="kv"><span class="mono">× 0.5</span><b>A minister or MP, personally</b></div><div class="kv"><span class="mono">× 0.4</span><b>A department, agency or body under the government</b></div></div>
+  <h3 class="h3">Weight of the matter</h3>
+  <div class="method"><p>S = 1 + [people harmed, or $10 million or more of public money] + [a body found against them], capped at 3. It multiplies both scales. Points on the corruption scale are base × evidence × who × S; the bands are expressed in units of a leader-level major act, 12 points: the gravest type, adjudicated, the leader personally, on a matter of weight 3.</p></div>
+</section>
+</main>
+
+<footer class="wrap"><span>politaccount · Accountability through History.</span><span>Record 001 · Scales v1.1.0 · computed September 18, 2026 · data: scales_trudeau.json</span></footer>
+
+<script>
+(function(){
+  var root=document.documentElement, themeBtn=document.getElementById('themeBtn'), mode='charcoal';
+  try{ if(localStorage.getItem('pa-theme')==='light') mode='light'; }catch(e){}
+  function applyTheme(){ if(mode==='light') root.setAttribute('data-theme','light'); else root.removeAttribute('data-theme'); themeBtn.textContent='Theme: '+mode; }
+  applyTheme(); themeBtn.addEventListener('click',function(){ mode = mode==='light' ? 'charcoal' : 'light'; try{localStorage.setItem('pa-theme',mode);}catch(e){} applyTheme(); });
+  document.querySelectorAll('.lhead,.ahead').forEach(function(b){ var body=document.getElementById(b.getAttribute('aria-controls'));
+    b.addEventListener('click',function(){ var open=b.getAttribute('aria-expanded')==='true'; b.setAttribute('aria-expanded',String(!open)); body.hidden=open; }); });
+  var ledger=document.getElementById('aledger'), rows=Array.prototype.slice.call(ledger.children), who='all', sort='score';
+  function render(){ rows.sort(function(a,b){ return sort==='date' ? (+a.dataset.no)-(+b.dataset.no) : (+a.dataset.score)-(+b.dataset.score); });
+    rows.forEach(function(r){ r.hidden = !(who==='all' || r.dataset.who===who); ledger.appendChild(r); }); }
+  document.querySelectorAll('.ctl[data-who]').forEach(function(b){ b.addEventListener('click',function(){ who=b.dataset.who; document.querySelectorAll('.ctl[data-who]').forEach(function(x){x.setAttribute('aria-pressed',String(x===b));}); render(); }); });
+  document.querySelectorAll('.ctl[data-sort]').forEach(function(b){ b.addEventListener('click',function(){ sort=b.dataset.sort; document.querySelectorAll('.ctl[data-sort]').forEach(function(x){x.setAttribute('aria-pressed',String(x===b));}); render(); }); });
+})();
+</script>

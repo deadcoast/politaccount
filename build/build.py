@@ -8,7 +8,7 @@ from said_trudeau import SAID
 
 OUT_DIR = os.path.join(os.path.dirname(__file__), "..", "out")
 os.makedirs(OUT_DIR, exist_ok=True)
-VERSION = "1.1.0"
+VERSION = "1.2.0"
 GENERATED_ISO = "2026-09-18"
 GENERATED = "September 18, 2026"
 

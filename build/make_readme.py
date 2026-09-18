@@ -9,6 +9,8 @@ by_id = {e["id"]: e for e in E}
 SITE = "https://deadcoast.github.io/politaccount/"
 REPO = "https://github.com/deadcoast/politaccount"
 
+SC = json.load(open(os.path.join(HERE, "..", "out", "scales_trudeau.json"), encoding="utf-8"))
+SOA, SPOC = SC["oa"], SC["poc"]
 n_sources = sum(len(e["sources"]) for e in E)
 n_primary = sum(1 for e in E for s in e["sources"] if s["primary"])
 VERSION = d["version"]; CURRENT = d["current_as_of"]
@@ -111,6 +113,7 @@ readme = f"""<div align="center">
 
 <p>
 <a href="#tally">Tally</a> &nbsp;·&nbsp;
+<a href="#two-scales">Two scales</a> &nbsp;·&nbsp;
 <a href="#large-cases">Large cases</a> &nbsp;·&nbsp;
 <a href="#what-a-case-looks-like">What a case looks like</a> &nbsp;·&nbsp;
 <a href="#nine-years">Nine years</a> &nbsp;·&nbsp;
@@ -166,6 +169,23 @@ pie showData
     "Admitted, on the record, or never investigated" : {S['by_class']['neutral']}
     "Cleared or upheld" : {S['by_class']['good']}
 ```
+
+---
+
+## Two scales
+
+Every leader is scored on the same two scales, with rules fixed before anyone was scored. Conduct, never policy. Every point traces to a case, a date and a source. The method is in [`SCALES.md`](SCALES.md); the page is [`scales.html`]({SITE}scales.html).
+
+<table align="center">
+<tr>
+<td align="center" width="50%"><sub>OPERATIONAL ACCOUNTABILITY</sub><h1>{SOA['score']}<sub> / 100</sub></h1><b>{SOA['band']}</b><br><sub>{SOA['band_line']}</sub></td>
+<td align="center" width="50%"><sub>PROVABLE OBSERVABLE CORRUPTION</sub><h1>{SPOC['points']}<sub> points</sub></h1><b>{SPOC['band']}</b><br><sub>{SPOC['band_line']}</sub></td>
+</tr>
+</table>
+
+**Accountability** is counted, not graded. In the {SOA['owed']} cases where a body found against him, his government or a minister, or they admitted the fault: a consequence landed on him personally in **{SOA['consequence_on_him']}**, on a minister or official in {SOA['consequence_on_others']}, on no one in {SOA['consequence_none']}. He fought {SOA['fought']}, said nothing in {SOA['silent']}, owned {SOA['owned']} before a ruling. {SOA['changed']} changed in office; the same conduct recurred after {len(SOA['repeats'])}. Words count for nothing; nothing after the last day in office counts.
+
+**Corruption** is an elements test in plain words, graded by evidence. {SPOC['scored_acts']} proven acts across {SPOC['scored_cases']} cases, {SPOC['by_evidence']['E4']} of them adjudicated; {SPOC['per_year']} points a year in office. The band is five yes-or-no tests on the ledger, every one of them met.
 
 ---
 
@@ -282,7 +302,11 @@ flowchart LR
     T["template.html"] --> B
     B --> J[("trudeau.json")]
     B --> H["index.html"]
+    J --> S["scales.py<br/>+ codes_trudeau.py + oa_trudeau.py"]
+    S --> K[("scales_trudeau.json")]
+    K --> L["scales.html"]
     H --> G(["deadcoast.github.io/politaccount"])
+    L --> G
     style D fill:#EDEFE8,stroke:#98A094,color:#151A17
     style P fill:#EDEFE8,stroke:#98A094,color:#151A17
     style Q fill:#EDEFE8,stroke:#98A094,color:#151A17
@@ -290,19 +314,29 @@ flowchart LR
     style B fill:#151A17,stroke:#151A17,color:#EDEFE8
     style J fill:#F7F8F3,stroke:#A11C15,color:#151A17
     style H fill:#F7F8F3,stroke:#A11C15,color:#151A17
+    style S fill:#151A17,stroke:#151A17,color:#EDEFE8
+    style K fill:#F7F8F3,stroke:#A11C15,color:#151A17
+    style L fill:#F7F8F3,stroke:#A11C15,color:#151A17
     style G fill:#2E7D4F,stroke:#2E7D4F,color:#ffffff
 ```
 
 ```text
 politaccount/
-├── index.html              the page, self-contained: no build step to view it
+├── index.html              the record, self-contained: no build step to view it
+├── scales.html             the two scales, computed from the record
 ├── trudeau.json            the dataset the page is generated from
+├── scales_trudeau.json     both scales: scores, bands, ledgers, definitions
+├── SCALES.md               the method: rules, weights, bands, the ledger
 ├── build/
 │   ├── data_trudeau.py     {S['cases']} cases: what happened, the finding, the consequence, the sources
 │   ├── plain_trudeau.py    the reader-facing layer: headline, telling, three answers, label
 │   ├── said_trudeau.py     dated statements against the record, {S['cases_with_said_vs_record']} cases
 │   ├── template.html       layout, styles, filters, timeline, light and dark themes
 │   ├── build.py            data → trudeau.json + index.html
+│   ├── scales.py           every rule, weight and band of the two scales
+│   ├── codes_trudeau.py    corruption codes: which elements are on the record, at what grade
+│   ├── oa_trudeau.py       accountability codes: consequence, posture, change, each dated
+│   ├── make_scales_page.py scales_trudeau.json → scales.html + SCALES.md
 │   └── make_readme.py      trudeau.json → README.md
 └── README.md
 ```
@@ -310,7 +344,7 @@ politaccount/
 One command rebuilds everything:
 
 ```sh
-python3 build/build.py
+python3 build/build.py && python3 build/scales.py && python3 build/make_scales_page.py && python3 build/make_readme.py
 ```
 
 Three layers, in the order a reader meets them:
