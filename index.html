@@ -134,6 +134,21 @@ section{padding-block:44px;border-top:1px solid var(--rule)}
 .ev-btn:hover{border-color:var(--rule-strong);color:var(--ink)}
 .ev-btn[aria-expanded="true"]{background:var(--surface-2);color:var(--ink)}
 
+
+/* ── said vs the record ── */
+.saidrec{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);border-top:0;margin-top:0}
+.saidrec>div{background:var(--surface);padding:14px 16px 14px}
+.saidrec .lbl{display:block;margin-bottom:8px}
+.sd-said ol{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.sd-said li{display:grid;gap:3px;padding-left:14px;border-left:2px solid var(--rule-strong)}
+.sd-meta{font:500 12px/1.3 var(--mono);color:var(--ink-3)}
+.sd-q{font:400 15px/1.5 var(--serif);color:var(--ink)}
+.sd-src{font:12px/1.3 var(--sans);color:var(--ink-3);text-decoration-color:var(--rule-strong);width:fit-content}
+.sd-rec{border-left:3px solid var(--c-neutral)}
+.sd-rec.rec-critical{border-left-color:var(--c-critical)}.sd-rec.rec-warning{border-left-color:var(--c-warning)}.sd-rec.rec-proceeding{border-left-color:var(--c-proceeding)}.sd-rec.rec-good{border-left-color:var(--c-good)}
+.sd-rec p{margin:0;font:600 15px/1.5 var(--sans);color:var(--ink)}
+@media (max-width:720px){.saidrec{grid-template-columns:1fr}}
+
 /* ── big cases ── */
 .bigs{display:grid;grid-template-columns:1fr;gap:18px}
 .big{background:var(--surface);border:1px solid var(--rule);border-top:3px solid var(--c-neutral);padding:22px 24px 22px}
@@ -254,7 +269,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <p class="lede-note">Every case below is sourced to the body that decided it. The ones where he was investigated and cleared are here too, at the same size.</p>
   <nav class="index" aria-label="What is on this page">
     <a class="ix" href="#score"><span class="ix-name">The score</span><span class="ix-text">The tally, counted from the cases: fines or charges he ever faced, ethics-law breaches, actions ruled illegal, audits, inquiries, ministers out, allegations never investigated, times cleared.</span><span class="ix-n">9 numbers</span></a>
-    <a class="ix" href="#big"><span class="ix-name">The big ones</span><span class="ix-text">The twelve that matter most, each told plain, with what was found, what it cost you and what happened to him, and the evidence one click down.</span><span class="ix-n">12 cases</span></a>
+    <a class="ix" href="#big"><span class="ix-name">The big ones</span><span class="ix-text">The twelve that matter most, each told plain, with what was found, what it cost you, what happened to him, and what he said at the time against what the record shows.</span><span class="ix-n">12 cases</span></a>
     <a class="ix" href="#timeline"><span class="ix-name">Timeline</span><span class="ix-text">All 59 placed across the nine years in three rows: him, his government, his ministers. A mark jumps to its case.</span><span class="ix-n">2015–2025</span></a>
     <a class="ix" href="#all"><span class="ix-name">All 59 cases</span><span class="ix-text">Every case, grouped by what was found, most damning first: broke the law, ruled illegal, audits, inquiries, promises, quit or charged, admitted, never investigated, costs, cleared. Filter by who, search, or switch to date order.</span><span class="ix-n">10 groups</span></a>
     <a class="ix" href="#paid"><span class="ix-name">Who paid</span><span class="ix-text">One table, every case: what was found, what happened to him, what happened to everyone else.</span><span class="ix-n">59 rows</span></a>
@@ -293,6 +308,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>$215,398 in security and travel.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>The sections he broke carry no penalty. He said he accepted the report.</small></p></div>
 </div>
+  <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">January 10, 2017 · Trudeau</span><span class="sd-q">“The Aga Khan has been a long-time family friend. He was a pallbearer for my father’s funeral. He has known me since I was a toddler. And this was our family vacation.”</span><a class="sd-src" href="https://globalnews.ca/news/3174207/justin-trudeau-conflict-of-interest-ethics-vacation-aga-khan/amp/" target="_blank" rel="noopener">Global News, January 2017</a></li></ol></div>
+  <div class="sd-rec rec-critical"><span class="lbl">The record</span><p>The ethics commissioner found there had been no private interactions between the two men until Trudeau became Liberal leader, and that “their relationship cannot be described as one of friends for the purposes of the Act.” The friendship exception failed; four sections of the law were broken.</p></div>
+</div>
   <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-big-aga-khan-vacation">Show the evidence</button>
   <div class="evidence" id="ev-big-aga-khan-vacation" hidden>
   <div>
@@ -316,6 +335,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What they found</span><p>Ethics commissioner: broke the Conflict of Interest Act. RCMP: not enough evidence for a charge; cabinet secrecy blocked much of the investigation and Trudeau was never interviewed.</p></div>
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>The section he broke carries no penalty. He said he took responsibility and would not apologize &#x27;for standing up for Canadian jobs&#x27;.</small></p></div>
+</div>
+  <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">February 7, 2019 · Trudeau, Vaughan, Ont.</span><span class="sd-q">“The allegations in the Globe story this morning are false. Neither the current, nor the previous attorney general was ever directed by me or by anyone in my office to take a decision in this matter.”</span><a class="sd-src" href="https://www.nationalobserver.com/2019/02/07/news/trudeau-denies-directing-wilson-raybould-intervene-prosecution-snc-lavalin" target="_blank" rel="noopener">Canada’s National Observer, February 7, 2019</a></li><li><span class="sd-meta">August 14, 2019 · Trudeau</span><span class="sd-q">Said he took responsibility for what happened and could not apologize “for standing up for Canadian jobs.”</span><a class="sd-src" href="https://www.aljazeera.com/news/2019/8/15/canadas-pm-trudeau-found-guilty-by-ethics-commissioner" target="_blank" rel="noopener">Al Jazeera, August 15, 2019</a></li></ol></div>
+  <div class="sd-rec rec-critical"><span class="lbl">The record</span><p>His denial used the word “directed.” The ethics commissioner found “there were many ways in which Mr. Trudeau, either directly or through the actions of those under his direction, sought to influence the Attorney General,” and that this broke section 9 of the Act.</p></div>
 </div>
   <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-big-snc-lavalin-affair">Show the evidence</button>
   <div class="evidence" id="ev-big-snc-lavalin-affair" hidden>
@@ -341,6 +364,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>More than 200 bank accounts, about $7.8 million, frozen.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>No minister resigned. Freeland: &#x27;We believed we were doing something necessary and something legal at the time. That continues to be my belief today.&#x27;</small></p></div>
 </div>
+  <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">February 14, 2022 · Trudeau</span><span class="sd-q">Said the measures “will be time-limited, geographically targeted, as well as reasonable and proportionate to the threats they are meant to address.”</span><a class="sd-src" href="https://www.pbs.org/newshour/amp/world/canadian-prime-minister-trudeau-invokes-emergency-powers-to-quell-covid-restriction-protests" target="_blank" rel="noopener">PBS NewsHour / Associated Press, February 14, 2022</a></li><li><span class="sd-meta">January 23, 2024 · Freeland, after the Federal Court ruling</span><span class="sd-q">“We believed we were doing something necessary and something legal at the time. That continues to be my belief today.”</span><a class="sd-src" href="https://www.cbc.ca/lite/story/1.7091891" target="_blank" rel="noopener">CBC News, January 23, 2024</a></li></ol></div>
+  <div class="sd-rec rec-critical"><span class="lbl">The record</span><p>Federal Court: no national emergency existed; the decision was “unreasonable and ultra vires”; the account freezes breached the Charter. Federal Court of Appeal, January 2026: the government “did not demonstrate that it had reasonable grounds to believe that a threat to national security or a national emergency existed,” and the freezing process was “ad hoc and fraught with confusion.”</p></div>
+</div>
   <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-big-emergencies-act-2022">Show the evidence</button>
   <div class="evidence" id="ev-big-emergencies-act-2022" hidden>
   <div>
@@ -364,6 +391,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What they found</span><p>Ethics commissioner: Trudeau cleared; Morneau broke the Act. Supreme Court, July 2026: the clause that shielded that clearance from the courts is unconstitutional; the Federal Court of Appeal now decides whether the clearance was lawful.</p></div>
   <div><span class="lbl">What it cost you</span><p>Program cancelled; up to $43.5 million in fees never paid.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>Cleared. Apologized. Prorogued Parliament.</small></p></div>
+</div>
+  <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">June 29, 2020 · Trudeau</span><span class="sd-q">“When our public servants looked at the potential partners, only the WE organization had the capacity to deliver the ambitious program that young people need for the summer.”</span><a class="sd-src" href="https://www.cbc.ca/lite/story/1.5631278" target="_blank" rel="noopener">CBC News, June 29, 2020</a></li><li><span class="sd-meta">July 13, 2020 · Trudeau</span><span class="sd-q">Apologized for not recusing himself from the decision and said he was “sincerely sorry.”</span><a class="sd-src" href="https://globalnews.ca/news/7170235/trudeau-apologizes-not-recusing-we-charity" target="_blank" rel="noopener">Global News, July 13, 2020</a></li><li><span class="sd-meta">July 30, 2020 · Trudeau, Finance committee</span><span class="sd-q">Testified that he had “pushed back” on the recommendation in May and let it proceed without recusing.</span><a class="sd-src" href="https://www.cbc.ca/news/politics/trudeau-testimony-finance-committee-we-charity-scheer-1.5668889" target="_blank" rel="noopener">CBC News, July 30, 2020</a></li></ol></div>
+  <div class="sd-rec rec-good"><span class="lbl">The record</span><p>Cabinet approved WE on May 22, 2020 with Trudeau and Morneau at the table. The ethics commissioner cleared Trudeau because his relatives’ fees were not legally his “private interest,” and found Morneau broke the law three ways over the same decision. In July 2026 the Supreme Court sent the Trudeau clearance back to the courts for review.</p></div>
 </div>
   <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-big-we-charity">Show the evidence</button>
   <div class="evidence" id="ev-big-we-charity" hidden>
@@ -389,6 +420,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>About $59.5 million, against an $80,000 estimate.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>No minister was sanctioned.</small></p></div>
 </div>
+  
   <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-big-arrivecan">Show the evidence</button>
   <div class="evidence" id="ev-big-arrivecan" hidden>
   <div>
@@ -413,6 +445,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>About $123 million in ineligible or conflicted funding.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
 </div>
+  
   <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-big-sdtc-green-fund">Show the evidence</button>
   <div class="evidence" id="ev-big-sdtc-green-fund" hidden>
   <div>
@@ -436,6 +469,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What they found</span><p>Hogue inquiry: the government &#x27;has sometimes taken too long to act&#x27;, is &#x27;a poor communicator and insufficiently transparent&#x27;. Security-cleared MPs&#x27; committee: &#x27;expected the government to act. It was slow to do so.&#x27;</p></div>
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>No finding of personal wrongdoing.</small></p></div>
+</div>
+  <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">November 20, 2022 · Trudeau</span><span class="sd-q">“I do not have any information, nor have I been briefed on any federal candidates receiving any money from China.”</span><a class="sd-src" href="https://globalnews.ca/news/9293238/justin-trudeau-china-interference-allegations" target="_blank" rel="noopener">Global News, November 20, 2022</a></li></ol></div>
+  <div class="sd-rec rec-warning"><span class="lbl">The record</span><p>On that point the inquiry backed him: “there is no intelligence that the $250,000 went to any of the 11 candidates.” On the government as a whole it found it “has sometimes taken too long to act” and was “a poor communicator and insufficiently transparent when it comes to foreign interference.”</p></div>
 </div>
   <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-big-foreign-interference-response">Show the evidence</button>
   <div class="evidence" id="ev-big-foreign-interference-response" hidden>
@@ -461,6 +498,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>He said he still had confidence in Sajjan.</small></p></div>
 </div>
+  <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">March 2021 · Sajjan</span><span class="sd-q">Said any allegations were “very quickly put forward to the proper authorities.”</span><a class="sd-src" href="https://globalnews.ca/news/7673801/vance-investigation-walbourne-testify" target="_blank" rel="noopener">Global News, March 3, 2021</a></li><li><span class="sd-meta">May 7, 2021 · Katie Telford, chief of staff</span><span class="sd-q">“We didn’t know the nature of the allegation.”</span><a class="sd-src" href="https://globalnews.ca/news/7842824/canadian-forces-sexual-misconduct-justin-trudeau-katie-telford" target="_blank" rel="noopener">Global News, May 7, 2021</a></li></ol></div>
+  <div class="sd-rec rec-proceeding"><span class="lbl">The record</span><p>The ombudsman, under oath: “I reached into my pocket to show him the evidence I was holding. He pushed back from the table and said, No.” Vance stayed in command until 2021 and later pleaded guilty to obstructing justice.</p></div>
+</div>
   <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-big-vance-allegations-2018">Show the evidence</button>
   <div class="evidence" id="ev-big-vance-allegations-2018" hidden>
   <div>
@@ -484,6 +525,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What they found</span><p>Charge stayed by the Crown. Unanimous House apology.</p></div>
   <div><span class="lbl">What it cost you</span><p>Norman&#x27;s legal fees, reported above $500,000, plus a confidential settlement.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>He said the prosecution was &#x27;entirely independent of my office&#x27;.</small></p></div>
+</div>
+  <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">February 2, 2018 · Trudeau, Edmonton town hall</span><span class="sd-q">Said the matter would “inevitably” lead to “court processes.” No charge existed; the RCMP laid one a month later.</span><a class="sd-src" href="https://www.cbc.ca/lite/story/1.4516573" target="_blank" rel="noopener">CBC News, February 2, 2018</a></li><li><span class="sd-meta">May 8, 2019 · Trudeau</span><span class="sd-q">“The process involved in a public prosecution like this is entirely independent of my office.”</span><a class="sd-src" href="https://globalnews.ca/news/5253178/mark-norman-charges-dropped" target="_blank" rel="noopener">Global News, May 8, 2019</a></li></ol></div>
+  <div class="sd-rec rec-proceeding"><span class="lbl">The record</span><p>The Crown stayed the charge: “There is no reasonable prospect of conviction.” The House of Commons apologized to Norman unanimously.</p></div>
 </div>
   <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-big-mark-norman-prosecution">Show the evidence</button>
   <div class="evidence" id="ev-big-mark-norman-prosecution" hidden>
@@ -509,6 +554,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>$4.6 billion confirmed overpaid; $10.35 billion still outstanding.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
 </div>
+  
   <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-big-covid-benefit-overpayments">Show the evidence</button>
   <div class="evidence" id="ev-big-covid-benefit-overpayments" hidden>
   <div>
@@ -533,6 +579,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>$5.1 billion to fix so far; $4.2 billion for the replacement.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
 </div>
+  
   <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-big-phoenix-pay-system">Show the evidence</button>
   <div class="evidence" id="ev-big-phoenix-pay-system" hidden>
   <div>
@@ -556,6 +603,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What they found</span><p>Admitted it. No investigation.</p></div>
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him "><span class="lbl">What happened to him</span><p>Two apologies. Nothing else.</p></div>
+</div>
+  <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">September 18, 2019 · Trudeau</span><span class="sd-q">“I shouldn’t have done that. I should have known better… I’m really sorry.”</span><a class="sd-src" href="https://amp.cbc.ca/lite/story/1.5289165" target="_blank" rel="noopener">CBC News, September 18, 2019</a></li><li><span class="sd-meta">September 19, 2019 · Trudeau, Winnipeg</span><span class="sd-q">Asked how many times he had worn blackface or brownface, said he could not say definitively.</span><a class="sd-src" href="https://www.pbs.org/newshour/amp/world/canadian-prime-minister-justin-trudeau-apologizes-for-2001-brownface-photo" target="_blank" rel="noopener">PBS NewsHour / Associated Press, September 19, 2019</a></li></ol></div>
+  <div class="sd-rec rec-neutral"><span class="lbl">The record</span><p>He acknowledged two instances on the 18th. A third surfaced on video on the 19th.</p></div>
 </div>
   <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-big-blackface-images">Show the evidence</button>
   <div class="evidence" id="ev-big-blackface-images" hidden>
@@ -620,6 +671,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>$215,398 in security and travel.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>The sections he broke carry no penalty. He said he accepted the report.</small></p></div>
 </div>
+    <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">January 10, 2017 · Trudeau</span><span class="sd-q">“The Aga Khan has been a long-time family friend. He was a pallbearer for my father’s funeral. He has known me since I was a toddler. And this was our family vacation.”</span><a class="sd-src" href="https://globalnews.ca/news/3174207/justin-trudeau-conflict-of-interest-ethics-vacation-aga-khan/amp/" target="_blank" rel="noopener">Global News, January 2017</a></li></ol></div>
+  <div class="sd-rec rec-critical"><span class="lbl">The record</span><p>The ethics commissioner found there had been no private interactions between the two men until Trudeau became Liberal leader, and that “their relationship cannot be described as one of friends for the purposes of the Act.” The friendship exception failed; four sections of the law were broken.</p></div>
+</div>
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-aga-khan-vacation">Show the evidence</button>
     <div class="evidence" id="ev-row-aga-khan-vacation" hidden>
   <div>
@@ -650,6 +705,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-morneau-french-villa">Show the evidence</button>
     <div class="evidence" id="ev-row-morneau-french-villa" hidden>
   <div>
@@ -680,6 +736,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>Kept LeBlanc in cabinet through 2025.</small></p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-leblanc-surf-clam">Show the evidence</button>
     <div class="evidence" id="ev-row-leblanc-surf-clam" hidden>
   <div>
@@ -709,6 +766,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What they found</span><p>Ethics commissioner: broke the Conflict of Interest Act. RCMP: not enough evidence for a charge; cabinet secrecy blocked much of the investigation and Trudeau was never interviewed.</p></div>
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>The section he broke carries no penalty. He said he took responsibility and would not apologize &#x27;for standing up for Canadian jobs&#x27;.</small></p></div>
+</div>
+    <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">February 7, 2019 · Trudeau, Vaughan, Ont.</span><span class="sd-q">“The allegations in the Globe story this morning are false. Neither the current, nor the previous attorney general was ever directed by me or by anyone in my office to take a decision in this matter.”</span><a class="sd-src" href="https://www.nationalobserver.com/2019/02/07/news/trudeau-denies-directing-wilson-raybould-intervene-prosecution-snc-lavalin" target="_blank" rel="noopener">Canada’s National Observer, February 7, 2019</a></li><li><span class="sd-meta">August 14, 2019 · Trudeau</span><span class="sd-q">Said he took responsibility for what happened and could not apologize “for standing up for Canadian jobs.”</span><a class="sd-src" href="https://www.aljazeera.com/news/2019/8/15/canadas-pm-trudeau-found-guilty-by-ethics-commissioner" target="_blank" rel="noopener">Al Jazeera, August 15, 2019</a></li></ol></div>
+  <div class="sd-rec rec-critical"><span class="lbl">The record</span><p>His denial used the word “directed.” The ethics commissioner found “there were many ways in which Mr. Trudeau, either directly or through the actions of those under his direction, sought to influence the Attorney General,” and that this broke section 9 of the Act.</p></div>
 </div>
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-snc-lavalin-affair">Show the evidence</button>
     <div class="evidence" id="ev-row-snc-lavalin-affair" hidden>
@@ -740,6 +801,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>$22,790 of public money to the friend&#x27;s firm.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>Kept her in cabinet.</small></p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-ng-pomp-circumstance">Show the evidence</button>
     <div class="evidence" id="ev-row-ng-pomp-circumstance" hidden>
   <div>
@@ -769,6 +831,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What they found</span><p>Ethics commissioner: preferential treatment, a decision made in a conflict, failure to recuse.</p></div>
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
+</div>
+    <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">July 22, 2020 · Morneau</span><span class="sd-q">Said he had believed the costs of his family’s WE trips were already paid. He repaid $41,366 that day.</span><a class="sd-src" href="https://www.ourcommons.ca/documentviewer/en/43-2/ETHI/report-2/page-51" target="_blank" rel="noopener">House of Commons ETHI Report 2, p. 51</a></li></ol></div>
+  <div class="sd-rec rec-critical"><span class="lbl">The record</span><p>The ethics commissioner found he gave WE “preferential treatment,” made a decision while in a conflict of interest and failed to recuse. Three sections broken.</p></div>
 </div>
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-morneau-we-charity">Show the evidence</button>
     <div class="evidence" id="ev-row-morneau-we-charity" hidden>
@@ -800,6 +866,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>More than 200 bank accounts, about $7.8 million, frozen.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>No minister resigned. Freeland: &#x27;We believed we were doing something necessary and something legal at the time. That continues to be my belief today.&#x27;</small></p></div>
 </div>
+    <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">February 14, 2022 · Trudeau</span><span class="sd-q">Said the measures “will be time-limited, geographically targeted, as well as reasonable and proportionate to the threats they are meant to address.”</span><a class="sd-src" href="https://www.pbs.org/newshour/amp/world/canadian-prime-minister-trudeau-invokes-emergency-powers-to-quell-covid-restriction-protests" target="_blank" rel="noopener">PBS NewsHour / Associated Press, February 14, 2022</a></li><li><span class="sd-meta">January 23, 2024 · Freeland, after the Federal Court ruling</span><span class="sd-q">“We believed we were doing something necessary and something legal at the time. That continues to be my belief today.”</span><a class="sd-src" href="https://www.cbc.ca/lite/story/1.7091891" target="_blank" rel="noopener">CBC News, January 23, 2024</a></li></ol></div>
+  <div class="sd-rec rec-critical"><span class="lbl">The record</span><p>Federal Court: no national emergency existed; the decision was “unreasonable and ultra vires”; the account freezes breached the Charter. Federal Court of Appeal, January 2026: the government “did not demonstrate that it had reasonable grounds to believe that a threat to national security or a national emergency existed,” and the freezing process was “ad hoc and fraught with confusion.”</p></div>
+</div>
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-emergencies-act-2022">Show the evidence</button>
     <div class="evidence" id="ev-row-emergencies-act-2022" hidden>
   <div>
@@ -830,6 +900,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>$5.1 billion to fix so far; $4.2 billion for the replacement.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-phoenix-pay-system">Show the evidence</button>
     <div class="evidence" id="ev-row-phoenix-pay-system" hidden>
   <div>
@@ -860,6 +931,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>$4.6 billion confirmed overpaid; $10.35 billion still outstanding.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-covid-benefit-overpayments">Show the evidence</button>
     <div class="evidence" id="ev-row-covid-benefit-overpayments" hidden>
   <div>
@@ -890,6 +962,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>About $59.5 million, against an $80,000 estimate.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>No minister was sanctioned.</small></p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-arrivecan">Show the evidence</button>
     <div class="evidence" id="ev-row-arrivecan" hidden>
   <div>
@@ -920,6 +993,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>$209 million to McKinsey, 2011–2023; $20.7 billion a year in outsourcing by 2023–24.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>Asked ministers to review the contracts.</small></p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-mckinsey-outsourcing">Show the evidence</button>
     <div class="evidence" id="ev-row-mckinsey-outsourcing" hidden>
   <div>
@@ -950,6 +1024,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>About $123 million in ineligible or conflicted funding.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-sdtc-green-fund">Show the evidence</button>
     <div class="evidence" id="ev-row-sdtc-green-fund" hidden>
   <div>
@@ -979,6 +1054,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What they found</span><p>Security-cleared committee: the PMO &#x27;should have more properly addressed&#x27; its screening failures; the RCMP erred; no evidence the PMO ordered the media briefing.</p></div>
   <div><span class="lbl">What it cost you</span><p>$1.66 million for the trip.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>Nobody in the PMO was disciplined.</small></p></div>
+</div>
+    <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">February 27, 2018 · Trudeau, House of Commons</span><span class="sd-q">“When one of our top diplomats and security officials says something to Canadians it’s because they know it to be true.”</span><a class="sd-src" href="https://www.cbc.ca/lite/story/1.4553946" target="_blank" rel="noopener">CBC News, February 27, 2018</a></li></ol></div>
+  <div class="sd-rec rec-warning"><span class="lbl">The record</span><p>The security-cleared committee of parliamentarians found the adviser briefed reporters “under difficult circumstances,” consulted no department first, and told the committee himself that he should have spoken on the record. It found the PMO “should have more properly addressed” its own failure to screen invitees. Its findings on Indian involvement are redacted.</p></div>
 </div>
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-india-trip-atwal">Show the evidence</button>
     <div class="evidence" id="ev-row-india-trip-atwal" hidden>
@@ -1010,6 +1089,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-lucki-nova-scotia-call">Show the evidence</button>
     <div class="evidence" id="ev-row-lucki-nova-scotia-call" hidden>
   <div>
@@ -1039,6 +1119,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What they found</span><p>Information Commissioner: the system &#x27;no longer serves its intended purpose&#x27;.</p></div>
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>The law was left unchanged.</small></p></div>
+</div>
+    <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">October 2015 · Liberal platform, p. 24</span><span class="sd-q">“Government data and information should be open by default, in formats that are modern and easy to use. […] We will update the Access to Information Act to meet this standard.”</span><a class="sd-src" href="https://liberal.ca/wp-content/uploads/sites/292/2020/09/New-plan-for-a-strong-middle-class.pdf" target="_blank" rel="noopener">Real Change (2015 platform)</a></li></ol></div>
+  <div class="sd-rec rec-warning"><span class="lbl">The record</span><p>The Act was amended once, in 2019. In 2023 the Information Commissioner reported the system “no longer serves its intended purpose” and that transparency was “not a priority for the government.”</p></div>
 </div>
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-access-to-information-decline">Show the evidence</button>
     <div class="evidence" id="ev-row-access-to-information-decline" hidden>
@@ -1070,6 +1154,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>Found to have learned about it from the newspaper.</small></p></div>
 </div>
+    <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">May 2023 · Trudeau</span><span class="sd-q">Said CSIS had decided the report did not meet “a threshold that required them to pass it up – up out of CSIS.”</span><a class="sd-src" href="https://foreigninterferencecommission.ca/fileadmin/PIFI_-_Final_Report_Vol._4__2025_.pdf" target="_blank" rel="noopener">Foreign Interference Commission, Final Report Vol. 4</a></li></ol></div>
+  <div class="sd-rec rec-warning"><span class="lbl">The record</span><p>The inquiry found CSIS sent the intelligence to the Public Safety minister’s office in May 2021 specifically to make him aware of it, and that “the information never reached the Minister.” It left CSIS. It stalled inside the government.</p></div>
+</div>
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-michael-chong-zhao-wei">Show the evidence</button>
     <div class="evidence" id="ev-row-michael-chong-zhao-wei" hidden>
   <div>
@@ -1100,6 +1188,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-blair-csis-warrant-delay">Show the evidence</button>
     <div class="evidence" id="ev-row-blair-csis-warrant-delay" hidden>
   <div>
@@ -1130,6 +1219,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-afghanistan-evacuation-2021">Show the evidence</button>
     <div class="evidence" id="ev-row-afghanistan-evacuation-2021" hidden>
   <div>
@@ -1159,6 +1249,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What they found</span><p>Hogue inquiry: the government &#x27;has sometimes taken too long to act&#x27;, is &#x27;a poor communicator and insufficiently transparent&#x27;. Security-cleared MPs&#x27; committee: &#x27;expected the government to act. It was slow to do so.&#x27;</p></div>
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>No finding of personal wrongdoing.</small></p></div>
+</div>
+    <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">November 20, 2022 · Trudeau</span><span class="sd-q">“I do not have any information, nor have I been briefed on any federal candidates receiving any money from China.”</span><a class="sd-src" href="https://globalnews.ca/news/9293238/justin-trudeau-china-interference-allegations" target="_blank" rel="noopener">Global News, November 20, 2022</a></li></ol></div>
+  <div class="sd-rec rec-warning"><span class="lbl">The record</span><p>On that point the inquiry backed him: “there is no intelligence that the $250,000 went to any of the 11 candidates.” On the government as a whole it found it “has sometimes taken too long to act” and was “a poor communicator and insufficiently transparent when it comes to foreign interference.”</p></div>
 </div>
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-foreign-interference-response">Show the evidence</button>
     <div class="evidence" id="ev-row-foreign-interference-response" hidden>
@@ -1190,6 +1284,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>His decision to keep Dong was recorded without criticism.</small></p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-han-dong">Show the evidence</button>
     <div class="evidence" id="ev-row-han-dong" hidden>
   <div>
@@ -1220,6 +1315,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-nsicop-2024-parliamentarians">Show the evidence</button>
     <div class="evidence" id="ev-row-nsicop-2024-parliamentarians" hidden>
   <div>
@@ -1249,6 +1345,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What they found</span><p>Finance Canada&#x27;s own books: no balanced budget in any year, 2015–2025.</p></div>
   <div><span class="lbl">What it cost you</span><p>Debt up about $640 billion; interest costs $53 billion in 2024–25.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>The target was replaced with a &#x27;debt-to-GDP anchor&#x27;.</small></p></div>
+</div>
+    <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">October 2015 · Liberal platform</span><span class="sd-q">Promised deficits “of less than $10 billion in each of the next two fiscal years” and a “balanced budget in 2019.”</span><a class="sd-src" href="https://liberal.ca/wp-content/uploads/sites/292/2020/09/New-plan-for-a-strong-middle-class.pdf" target="_blank" rel="noopener">Real Change (2015 platform)</a></li></ol></div>
+  <div class="sd-rec rec-warning"><span class="lbl">The record</span><p>Deficits of $19 billion, $19 billion and $14 billion in the three years before the pandemic, then $39 billion in 2019–20. No balanced budget in any year of the tenure.</p></div>
 </div>
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-fiscal-record-2015-promise">Show the evidence</button>
     <div class="evidence" id="ev-row-fiscal-record-2015-promise" hidden>
@@ -1280,6 +1380,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
 </div>
+    <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">October 2015 · Liberal platform, p. 27</span><span class="sd-q">“We are committed to ensuring that 2015 will be the last federal election conducted under the first-past-the-post voting system.”</span><a class="sd-src" href="https://liberal.ca/wp-content/uploads/sites/292/2020/09/New-plan-for-a-strong-middle-class.pdf" target="_blank" rel="noopener">Real Change (2015 platform)</a></li><li><span class="sd-meta">February 1, 2017 · Trudeau, mandate letter to the Minister of Democratic Institutions</span><span class="sd-q">“Changing the electoral system will not be in your mandate.”</span><a class="sd-src" href="https://www.pm.gc.ca/en/mandate-letters/2017/02/01/archived-minister-democratic-institutions-mandate-letter" target="_blank" rel="noopener">Prime Minister of Canada, February 1, 2017</a></li><li><span class="sd-meta">January 6, 2025 · Trudeau</span><span class="sd-q">“I do wish that we’d been able to change the way we elect our governments in this country so that people could simply choose a second choice or a third choice on the same ballot.”</span><a class="sd-src" href="https://amp.cbc.ca/lite/story/1.7426407" target="_blank" rel="noopener">CBC News, January 7, 2025</a></li></ol></div>
+  <div class="sd-rec rec-warning"><span class="lbl">The record</span><p>Three elections since, all under first past the post.</p></div>
+</div>
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-electoral-reform">Show the evidence</button>
     <div class="evidence" id="ev-row-electoral-reform" hidden>
   <div>
@@ -1310,6 +1414,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-tootoo-resignation">Show the evidence</button>
     <div class="evidence" id="ev-row-tootoo-resignation" hidden>
   <div>
@@ -1339,6 +1444,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What they found</span><p>Charge stayed by the Crown. Unanimous House apology.</p></div>
   <div><span class="lbl">What it cost you</span><p>Norman&#x27;s legal fees, reported above $500,000, plus a confidential settlement.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>He said the prosecution was &#x27;entirely independent of my office&#x27;.</small></p></div>
+</div>
+    <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">February 2, 2018 · Trudeau, Edmonton town hall</span><span class="sd-q">Said the matter would “inevitably” lead to “court processes.” No charge existed; the RCMP laid one a month later.</span><a class="sd-src" href="https://www.cbc.ca/lite/story/1.4516573" target="_blank" rel="noopener">CBC News, February 2, 2018</a></li><li><span class="sd-meta">May 8, 2019 · Trudeau</span><span class="sd-q">“The process involved in a public prosecution like this is entirely independent of my office.”</span><a class="sd-src" href="https://globalnews.ca/news/5253178/mark-norman-charges-dropped" target="_blank" rel="noopener">Global News, May 8, 2019</a></li></ol></div>
+  <div class="sd-rec rec-proceeding"><span class="lbl">The record</span><p>The Crown stayed the charge: “There is no reasonable prospect of conviction.” The House of Commons apologized to Norman unanimously.</p></div>
 </div>
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-mark-norman-prosecution">Show the evidence</button>
     <div class="evidence" id="ev-row-mark-norman-prosecution" hidden>
@@ -1370,6 +1479,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>About $150,000 a year in pension plus up to $206,000 a year in expenses, for life.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>He said vetting would be strengthened.</small></p></div>
 </div>
+    <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">September 2, 2020 · Trudeau, RED FM interview</span><span class="sd-q">“We have an excellent governor general right now and I think on top of the COVID crisis, nobody is looking at any constitutional crises.”</span><a class="sd-src" href="https://globalnews.ca/news/7311912/justin-trudeau-defends-julie-payette/amp" target="_blank" rel="noopener">Global News, September 2, 2020</a></li></ol></div>
+  <div class="sd-rec rec-proceeding"><span class="lbl">The record</span><p>The independent review his own Privy Council Office commissioned found she “belittled, berated and publicly humiliated” staff in a “toxic, verbally abusive workplace.” She resigned four and a half months after he called her excellent.</p></div>
+</div>
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-julie-payette">Show the evidence</button>
     <div class="evidence" id="ev-row-julie-payette" hidden>
   <div>
@@ -1400,6 +1513,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-kang-harassment">Show the evidence</button>
     <div class="evidence" id="ev-row-kang-harassment" hidden>
   <div>
@@ -1430,6 +1544,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-hehr-resignation">Show the evidence</button>
     <div class="evidence" id="ev-row-hehr-resignation" hidden>
   <div>
@@ -1459,6 +1574,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What they found</span><p>Vance pleaded guilty to obstruction of justice. No body made a finding against Sajjan or the PMO.</p></div>
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>He said he still had confidence in Sajjan.</small></p></div>
+</div>
+    <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">March 2021 · Sajjan</span><span class="sd-q">Said any allegations were “very quickly put forward to the proper authorities.”</span><a class="sd-src" href="https://globalnews.ca/news/7673801/vance-investigation-walbourne-testify" target="_blank" rel="noopener">Global News, March 3, 2021</a></li><li><span class="sd-meta">May 7, 2021 · Katie Telford, chief of staff</span><span class="sd-q">“We didn’t know the nature of the allegation.”</span><a class="sd-src" href="https://globalnews.ca/news/7842824/canadian-forces-sexual-misconduct-justin-trudeau-katie-telford" target="_blank" rel="noopener">Global News, May 7, 2021</a></li></ol></div>
+  <div class="sd-rec rec-proceeding"><span class="lbl">The record</span><p>The ombudsman, under oath: “I reached into my pocket to show him the evidence I was holding. He pushed back from the table and said, No.” Vance stayed in command until 2021 and later pleaded guilty to obstructing justice.</p></div>
 </div>
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-vance-allegations-2018">Show the evidence</button>
     <div class="evidence" id="ev-row-vance-allegations-2018" hidden>
@@ -1490,6 +1609,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-grewal-charges">Show the evidence</button>
     <div class="evidence" id="ev-row-grewal-charges" hidden>
   <div>
@@ -1520,6 +1640,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>Legal contract for the review capped at $4.5 million; Johnston paid $1,600 a day.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>His alternative to an inquiry collapsed and he called the inquiry anyway.</small></p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-david-johnston-rapporteur">Show the evidence</button>
     <div class="evidence" id="ev-row-david-johnston-rapporteur" hidden>
   <div>
@@ -1550,6 +1671,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him "><span class="lbl">What happened to him</span><p>An apology on Parliament&#x27;s behalf. Nothing else.</p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-hunka-recognition">Show the evidence</button>
     <div class="evidence" id="ev-row-hunka-recognition" hidden>
   <div>
@@ -1579,6 +1701,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What they found</span><p>Resignation letter, on the record.</p></div>
   <div><span class="lbl">What it cost you</span><p>$61.9-billion deficit against a $40.1-billion guardrail.</p></div>
   <div class="him "><span class="lbl">What happened to him</span><p>Announced his resignation on January 6, 2025.</p></div>
+</div>
+    <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">November 21, 2023 · Freeland, Fall Economic Statement</span><span class="sd-q">Committed to keeping the 2023–24 deficit at or below the spring budget’s $40.1 billion.</span><a class="sd-src" href="https://globalnews.ca/news/10106753/fall-economic-statement-2023-deficit" target="_blank" rel="noopener">Global News, November 21, 2023</a></li><li><span class="sd-meta">December 16, 2024 · Freeland, resignation letter</span><span class="sd-q">“That means eschewing costly political gimmicks, which we can ill afford.”</span><a class="sd-src" href="https://ca.finance.yahoo.com/news/chrystia-freeland-sends-resignation-letter-to-trudeau-calls-out-costly-political-gimmicks-162749861.html" target="_blank" rel="noopener">Yahoo Finance Canada, December 16, 2024</a></li></ol></div>
+  <div class="sd-rec rec-proceeding"><span class="lbl">The record</span><p>The 2023–24 deficit came in at $61.9 billion, $21.8 billion over her own ceiling.</p></div>
 </div>
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-freeland-resignation">Show the evidence</button>
     <div class="evidence" id="ev-row-freeland-resignation" hidden>
@@ -1610,6 +1736,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him "><span class="lbl">What happened to him</span><p>Left office March 14, 2025.</p></div>
 </div>
+    <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">October 24, 2024 · Trudeau, after the caucus meeting</span><span class="sd-q">Told reporters he would stay on as leader and take the Liberals into the next election.</span><a class="sd-src" href="https://www.cbc.ca/news/politics/trudeau-staying-on-as-leader-1.7362000" target="_blank" rel="noopener">CBC News, October 24, 2024</a></li><li><span class="sd-meta">January 6, 2025 · Trudeau</span><span class="sd-q">“This country deserves a real choice in the next election, and it’s become clear to me that if I’m having to fight internal battles, I cannot be the best option in that election.”</span><a class="sd-src" href="https://www.cbc.ca/news/politics/trudeau-news-conference-1.7423680" target="_blank" rel="noopener">CBC News, January 6, 2025</a></li></ol></div>
+  <div class="sd-rec rec-proceeding"><span class="lbl">The record</span><p>Resigned 74 days after saying he would stay.</p></div>
+</div>
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-trudeau-resignation">Show the evidence</button>
     <div class="evidence" id="ev-row-trudeau-resignation" hidden>
   <div>
@@ -1640,6 +1770,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him "><span class="lbl">What happened to him</span><p>Two apologies. Nothing else.</p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-elbowgate">Show the evidence</button>
     <div class="evidence" id="ev-row-elbowgate" hidden>
   <div>
@@ -1669,6 +1800,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What they found</span><p>No investigation. Partial repayment.</p></div>
   <div><span class="lbl">What it cost you</span><p>$142,000 kept; $1.1 million for staff moves overall.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>Ordered a policy review.</small></p></div>
+</div>
+    <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">September 22, 2016 · Gerald Butts and Katie Telford</span><span class="sd-q">“While the rules were clear and we followed them, we both know that’s not always enough.”</span><a class="sd-src" href="https://amp.cbc.ca/lite/story/1.3774979" target="_blank" rel="noopener">CBC News, September 22, 2016</a></li></ol></div>
+  <div class="sd-rec rec-neutral"><span class="lbl">The record</span><p>They repaid $65,000 of the $207,000. The rest stayed paid.</p></div>
 </div>
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-butts-telford-moving-expenses">Show the evidence</button>
     <div class="evidence" id="ev-row-butts-telford-moving-expenses" hidden>
@@ -1700,6 +1835,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>Kept Sajjan in the job.</small></p></div>
 </div>
+    <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">April 18, 2017 · Sajjan, New Delhi</span><span class="sd-q">“I became the architect of an operation called Operation Medusa, where we removed about 1,500 fighters, Taliban fighters, off the battlefield.”</span><a class="sd-src" href="https://www.theglobeandmail.com/news/national/defence-minister-sajjan-apologizes-for-claiming-he-was-architect-of-operation-medusa/article34858041/" target="_blank" rel="noopener">The Globe and Mail, April 2017</a></li><li><span class="sd-meta">April 29, 2017 · Sajjan</span><span class="sd-q">“I made a mistake in describing my role. I wish to retract that description and apologize for it. I am truly sorry.”</span><a class="sd-src" href="https://www.theglobeandmail.com/news/national/defence-minister-sajjan-apologizes-for-claiming-he-was-architect-of-operation-medusa/article34858041/" target="_blank" rel="noopener">The Globe and Mail, April 2017</a></li></ol></div>
+  <div class="sd-rec rec-neutral"><span class="lbl">The record</span><p>Operation Medusa was commanded by Brig.-Gen. David Fraser. Sajjan was a reservist intelligence liaison.</p></div>
+</div>
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-sajjan-operation-medusa">Show the evidence</button>
     <div class="evidence" id="ev-row-sajjan-operation-medusa" hidden>
   <div>
@@ -1730,6 +1869,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-winnipeg-lab-documents">Show the evidence</button>
     <div class="evidence" id="ev-row-winnipeg-lab-documents" hidden>
   <div>
@@ -1759,6 +1899,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What they found</span><p>Admitted it. No investigation.</p></div>
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him "><span class="lbl">What happened to him</span><p>Two apologies. Nothing else.</p></div>
+</div>
+    <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">September 18, 2019 · Trudeau</span><span class="sd-q">“I shouldn’t have done that. I should have known better… I’m really sorry.”</span><a class="sd-src" href="https://amp.cbc.ca/lite/story/1.5289165" target="_blank" rel="noopener">CBC News, September 18, 2019</a></li><li><span class="sd-meta">September 19, 2019 · Trudeau, Winnipeg</span><span class="sd-q">Asked how many times he had worn blackface or brownface, said he could not say definitively.</span><a class="sd-src" href="https://www.pbs.org/newshour/amp/world/canadian-prime-minister-justin-trudeau-apologizes-for-2001-brownface-photo" target="_blank" rel="noopener">PBS NewsHour / Associated Press, September 19, 2019</a></li></ol></div>
+  <div class="sd-rec rec-neutral"><span class="lbl">The record</span><p>He acknowledged two instances on the 18th. A third surfaced on video on the 19th.</p></div>
 </div>
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-blackface-images">Show the evidence</button>
     <div class="evidence" id="ev-row-blackface-images" hidden>
@@ -1790,6 +1934,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>$250,000 for the review.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-nuctech-standing-offer">Show the evidence</button>
     <div class="evidence" id="ev-row-nuctech-standing-offer" hidden>
   <div>
@@ -1819,6 +1964,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What they found</span><p>Admitted it: &#x27;a mistake&#x27;.</p></div>
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him "><span class="lbl">What happened to him</span><p>Apology. Nothing else.</p></div>
+</div>
+    <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">September 30, 2021 · Prime Minister’s Office, public itinerary</span><span class="sd-q">Listed “private meetings” in Ottawa.</span><a class="sd-src" href="https://globalnews.ca/news/8247262/trudeau-tofino-truth-reconciliation-apology-mistake" target="_blank" rel="noopener">Global News, October 6, 2021</a></li><li><span class="sd-meta">October 6, 2021 · Trudeau</span><span class="sd-q">“Travelling on September 30th was a mistake, and I regret it.”</span><a class="sd-src" href="https://globalnews.ca/news/8247262/trudeau-tofino-truth-reconciliation-apology-mistake" target="_blank" rel="noopener">Global News, October 6, 2021</a></li></ol></div>
+  <div class="sd-rec rec-neutral"><span class="lbl">The record</span><p>He was in Tofino. The itinerary was corrected after Global News asked.</p></div>
 </div>
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-tofino-truth-reconciliation-day">Show the evidence</button>
     <div class="evidence" id="ev-row-tofino-truth-reconciliation-day" hidden>
@@ -1850,6 +1999,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
 </div>
+    <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">April 2022 · Mendicino, parliamentary committee</span><span class="sd-q">“The advice we received was to invoke the Emergencies Act.”</span><a class="sd-src" href="https://www.ctvnews.ca/politics/mendicino-was-misunderstood-in-saying-police-asked-for-emergencies-act-deputy-minister-1.5937524" target="_blank" rel="noopener">CTV News, June 7, 2022</a></li><li><span class="sd-meta">June 7, 2022 · Rob Stewart, his deputy minister</span><span class="sd-q">“I believe that the intention that he was trying to express was that law enforcement asked for the tools that were contained in the Emergencies Act.”</span><a class="sd-src" href="https://www.ctvnews.ca/politics/mendicino-was-misunderstood-in-saying-police-asked-for-emergencies-act-deputy-minister-1.5937524" target="_blank" rel="noopener">CTV News, June 7, 2022</a></li></ol></div>
+  <div class="sd-rec rec-neutral"><span class="lbl">The record</span><p>The RCMP commissioner and Ottawa’s interim police chief testified they never asked for the Act. The commissioner’s email to his office the day before invocation said police had not yet exhausted the tools they already had.</p></div>
+</div>
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-mendicino-police-request-claim">Show the evidence</button>
     <div class="evidence" id="ev-row-mendicino-police-request-claim" hidden>
   <div>
@@ -1879,6 +2032,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What they found</span><p>Policy reversal, on the record.</p></div>
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
+</div>
+    <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">October 26, 2023 · Trudeau</span><span class="sd-q">“We are nothing if not a government that listens to people, that is focused on our goals and is willing to adjust as necessary.”</span><a class="sd-src" href="https://globalnews.ca/news/10051832/trudeau-affordability-heating-oil-carbon-price" target="_blank" rel="noopener">Global News, October 26, 2023</a></li><li><span class="sd-meta">October 29, 2023 · Gudie Hutchings, minister, on CTV</span><span class="sd-q">“Perhaps they need to elect more Liberals in the Prairies so that we can have that conversation as well.”</span><a class="sd-src" href="https://www.ctvnews.ca/politics/prairies-should-elect-more-liberals-if-they-want-voices-heard-on-carbon-pricing-rural-economic-development-minister-1.6621490" target="_blank" rel="noopener">CTV News, October 29, 2023</a></li><li><span class="sd-meta">November 1, 2023 · Trudeau</span><span class="sd-q">“There will absolutely not be any other carve-outs or suspensions of the price on pollution.”</span><a class="sd-src" href="https://www.620ckrm.com/2023/11/01/absolutely-not-no-more-carve-outs-when-it-comes-to-carbon-pricing-trudeau-says/" target="_blank" rel="noopener">The Canadian Press, November 1, 2023</a></li></ol></div>
+  <div class="sd-rec rec-neutral"><span class="lbl">The record</span><p>The pause applied to heating oil only, the fuel used mostly in Atlantic Canada. Saskatchewan stopped remitting the charge on natural gas in response. The consumer charge was abolished altogether in April 2025.</p></div>
 </div>
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-carbon-charge-heating-oil">Show the evidence</button>
     <div class="evidence" id="ev-row-carbon-charge-heating-oil" hidden>
@@ -1910,6 +2067,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-immigration-could-have-acted-quicker">Show the evidence</button>
     <div class="evidence" id="ev-row-immigration-could-have-acted-quicker" hidden>
   <div>
@@ -1940,6 +2098,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>He had no role in running the foundation while in office.</small></p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-trudeau-foundation-donation">Show the evidence</button>
     <div class="evidence" id="ev-row-trudeau-foundation-donation" hidden>
   <div>
@@ -1969,6 +2128,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What they found</span><p>Never investigated. The reporter confirmed the account; Trudeau denied acting inappropriately.</p></div>
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
+</div>
+    <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">July 1, 2018 · Trudeau</span><span class="sd-q">“I remember that day in Creston well… I don’t remember any negative interactions that day at all.”</span><a class="sd-src" href="https://www.vice.com/en/article/the-woman-who-accused-trudeau-of-groping-speaks-out/" target="_blank" rel="noopener">Vice, July 6, 2018</a></li><li><span class="sd-meta">July 5, 2018 · Trudeau</span><span class="sd-q">Said he was “confident I did not act inappropriately” and that a woman, “particularly in a professional context, can experience it differently.”</span><a class="sd-src" href="https://www.vice.com/en/article/the-woman-who-accused-trudeau-of-groping-speaks-out/" target="_blank" rel="noopener">Vice, July 6, 2018</a></li></ol></div>
+  <div class="sd-rec rec-neutral"><span class="lbl">The record</span><p>The reporter, July 6, 2018: “The incident referred to in the editorial did occur, as reported… Mr. Trudeau did apologize the next day.”</p></div>
 </div>
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-kokanee-summit-allegation">Show the evidence</button>
     <div class="evidence" id="ev-row-kokanee-summit-allegation" hidden>
@@ -2000,6 +2163,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-liberalist-judicial-vetting">Show the evidence</button>
     <div class="evidence" id="ev-row-liberalist-judicial-vetting" hidden>
   <div>
@@ -2030,6 +2194,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>About $237 million.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-baylis-ventilators">Show the evidence</button>
     <div class="evidence" id="ev-row-baylis-ventilators" hidden>
   <div>
@@ -2059,6 +2224,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What they found</span><p>Never investigated.</p></div>
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
+</div>
+    <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">July 3, 2024 · Sajjan</span><span class="sd-q">Said he passed on information, never ordered the operation, and did not prioritize Sikhs above others.</span><a class="sd-src" href="https://www.cbc.ca/news/politics/sajjan-relayed-information-sikhs-in-afghanistan-1.7248417" target="_blank" rel="noopener">CBC News, July 3, 2024</a></li></ol></div>
+  <div class="sd-rec rec-neutral"><span class="lbl">The record</span><p>Three military sources told the Globe he “instructed Canadian special forces to rescue about 225 Afghan Sikhs” and relayed their location. No body has examined it.</p></div>
 </div>
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-sajjan-afghan-sikhs">Show the evidence</button>
     <div class="evidence" id="ev-row-sajjan-afghan-sikhs" hidden>
@@ -2090,6 +2259,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>$93,050 from his taxpayer-funded office budget.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-hussen-constituency-contracts">Show the evidence</button>
     <div class="evidence" id="ev-row-hussen-constituency-contracts" hidden>
   <div>
@@ -2119,6 +2289,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What they found</span><p>Never formally investigated. Corrections&#x27; records show the office was told.</p></div>
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>His own office had been briefed the day of the move.</small></p></div>
+</div>
+    <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">June 2023 · Mendicino</span><span class="sd-q">Said he learned of the transfer only after it happened and called it “shocking and incomprehensible.”</span><a class="sd-src" href="https://www.theglobeandmail.com/canada/article-corrections-head-questioned-how-mendicino-was-kept-in-dark-over/" target="_blank" rel="noopener">The Globe and Mail, June 2023</a></li></ol></div>
+  <div class="sd-rec rec-neutral"><span class="lbl">The record</span><p>Correctional Service Canada: his office was notified in early March and again in late May; the Prime Minister’s Office was briefed the day of the move.</p></div>
 </div>
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-mendicino-bernardo-transfer">Show the evidence</button>
     <div class="evidence" id="ev-row-mendicino-bernardo-transfer" hidden>
@@ -2150,6 +2324,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>$4.5 billion purchase; $34.2 billion expansion; valued below book.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
 </div>
+    <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">May 29, 2018 · Department of Finance, announcing the purchase</span><span class="sd-q">“It is not, however, the intention of the Government of Canada to be a long-term owner of this project.”</span><a class="sd-src" href="https://www.canada.ca/en/department-finance/news/2018/05/agreement-reached-to-create-and-protect-jobs-build-trans-mountain-expansion-project0.html" target="_blank" rel="noopener">Department of Finance Canada, May 29, 2018</a></li></ol></div>
+  <div class="sd-rec rec-neutral"><span class="lbl">The record</span><p>Eight years on, Ottawa still owns it. The Parliamentary Budget Officer says a sale at current valuations records a loss.</p></div>
+</div>
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-trans-mountain">Show the evidence</button>
     <div class="evidence" id="ev-row-trans-mountain" hidden>
   <div>
@@ -2180,6 +2358,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>$574 million plus $150 million in readiness (Elections Canada).</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-snap-election-2021">Show the evidence</button>
     <div class="evidence" id="ev-row-snap-election-2021" hidden>
   <div>
@@ -2210,6 +2389,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>$398,000 in hotels; about $30,000 for the suite.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.</p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-london-hotel-queen-funeral">Show the evidence</button>
     <div class="evidence" id="ev-row-london-hotel-queen-funeral" hidden>
   <div>
@@ -2240,6 +2420,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>Investigated and cleared.</small></p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-cash-for-access-fundraisers">Show the evidence</button>
     <div class="evidence" id="ev-row-cash-for-access-fundraisers" hidden>
   <div>
@@ -2269,6 +2450,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What they found</span><p>Ethics commissioner: Trudeau cleared; Morneau broke the Act. Supreme Court, July 2026: the clause that shielded that clearance from the courts is unconstitutional; the Federal Court of Appeal now decides whether the clearance was lawful.</p></div>
   <div><span class="lbl">What it cost you</span><p>Program cancelled; up to $43.5 million in fees never paid.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>Cleared. Apologized. Prorogued Parliament.</small></p></div>
+</div>
+    <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">June 29, 2020 · Trudeau</span><span class="sd-q">“When our public servants looked at the potential partners, only the WE organization had the capacity to deliver the ambitious program that young people need for the summer.”</span><a class="sd-src" href="https://www.cbc.ca/lite/story/1.5631278" target="_blank" rel="noopener">CBC News, June 29, 2020</a></li><li><span class="sd-meta">July 13, 2020 · Trudeau</span><span class="sd-q">Apologized for not recusing himself from the decision and said he was “sincerely sorry.”</span><a class="sd-src" href="https://globalnews.ca/news/7170235/trudeau-apologizes-not-recusing-we-charity" target="_blank" rel="noopener">Global News, July 13, 2020</a></li><li><span class="sd-meta">July 30, 2020 · Trudeau, Finance committee</span><span class="sd-q">Testified that he had “pushed back” on the recommendation in May and let it proceed without recusing.</span><a class="sd-src" href="https://www.cbc.ca/news/politics/trudeau-testimony-finance-committee-we-charity-scheer-1.5668889" target="_blank" rel="noopener">CBC News, July 30, 2020</a></li></ol></div>
+  <div class="sd-rec rec-good"><span class="lbl">The record</span><p>Cabinet approved WE on May 22, 2020 with Trudeau and Morneau at the table. The ethics commissioner cleared Trudeau because his relatives’ fees were not legally his “private interest,” and found Morneau broke the law three ways over the same decision. In July 2026 the Supreme Court sent the Trudeau clearance back to the courts for review.</p></div>
 </div>
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-we-charity">Show the evidence</button>
     <div class="evidence" id="ev-row-we-charity" hidden>
@@ -2300,6 +2485,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>Said Boissonnault was stepping away to clear his name.</small></p></div>
 </div>
+    <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">2018 · Boissonnault</span><span class="sd-q">Described himself as “non-status adopted Cree.” The Liberal Party listed him as Indigenous.</span><a class="sd-src" href="https://www.cp24.com/news/canada/2024/11/20/randy-boissonnault-leaves-liberal-cabinet-after-shifting-indigenous-identity-claims/" target="_blank" rel="noopener">The Canadian Press via CP24, November 20, 2024</a></li><li><span class="sd-meta">November 2024 · Boissonnault</span><span class="sd-q">Said his adoptive mother and brother are Métis, and apologized.</span><a class="sd-src" href="https://www.cp24.com/news/canada/2024/11/20/randy-boissonnault-leaves-liberal-cabinet-after-shifting-indigenous-identity-claims/" target="_blank" rel="noopener">The Canadian Press via CP24, November 20, 2024</a></li></ol></div>
+  <div class="sd-rec rec-good"><span class="lbl">The record</span><p>His former company described itself as “wholly Indigenous-owned” in federal bids and was barred from contracts until 2030. On the “Randy” texts, the ethics commissioner found no evidence he was running the company and closed the file.</p></div>
+</div>
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-boissonnault-global-health-imports">Show the evidence</button>
     <div class="evidence" id="ev-row-boissonnault-global-health-imports" hidden>
   <div>
@@ -2329,6 +2518,10 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What they found</span><p>Cleared in advance by the ethics commissioner.</p></div>
   <div><span class="lbl">What it cost you</span><p>$230,442 in security and flights.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>Cleared.</small></p></div>
+</div>
+    <div class="saidrec">
+  <div class="sd-said"><span class="lbl">Said</span><ol><li><span class="sd-meta">December 2023 · Prime Minister’s Office</span><span class="sd-q">Said the family was covering the cost of the stay.</span><a class="sd-src" href="https://lethbridgenewsnow.com/2024/01/03/pmo-clarifies-trudeau-and-family-stayed-at-no-cost-during-vacation-in-jamaica/" target="_blank" rel="noopener">The Canadian Press, January 3, 2024</a></li><li><span class="sd-meta">January 3, 2024 · Prime Minister’s Office</span><span class="sd-q">Said the family stayed “at no cost at a location owned by family friends.”</span><a class="sd-src" href="https://lethbridgenewsnow.com/2024/01/03/pmo-clarifies-trudeau-and-family-stayed-at-no-cost-during-vacation-in-jamaica/" target="_blank" rel="noopener">The Canadian Press, January 3, 2024</a></li><li><span class="sd-meta">January 2024 · Prime Minister’s Office</span><span class="sd-q">Then said the family stayed “with family friends, rather than at a location owned by the friends.”</span><a class="sd-src" href="https://globalnews.ca/news/10259902/justin-trudeau-jamaica-trip-committee" target="_blank" rel="noopener">Global News, January 30, 2024</a></li></ol></div>
+  <div class="sd-rec rec-good"><span class="lbl">The record</span><p>The ethics commissioner had cleared the trip in advance: “They consulted us. We gave advice. They went to Jamaica.” On the three descriptions: “I’m not responsible for the spokesman of the prime minister and the way he characterizes our interaction.”</p></div>
 </div>
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-jamaica-vacation">Show the evidence</button>
     <div class="evidence" id="ev-row-jamaica-vacation" hidden>
@@ -2360,6 +2553,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
   <div><span class="lbl">What it cost you</span><p>No public bill on the record.</p></div>
   <div class="him none"><span class="lbl">What happened to him</span><p>Nothing.<small>Upheld.</small></p></div>
 </div>
+    
     <button class="ev-btn" type="button" aria-expanded="false" aria-controls="ev-row-prorogation-2025">Show the evidence</button>
     <div class="evidence" id="ev-row-prorogation-2025" hidden>
   <div>
@@ -2397,6 +2591,8 @@ footer{border-top:1px solid var(--rule);padding-block:26px 40px;font:12.5px/1.6 
       <p>Something an official body ruled on, a court decided, an auditor reported, someone resigned over, or the government admitted in its own words, plus a promise made in writing and not kept. Allegations that major outlets reported and nobody ever investigated are kept too, and labelled “never investigated”, with the person’s answer and nothing more.</p>
       <h3>Three answers, every time</h3>
       <p><b>What they found</b> is the deciding body’s conclusion in plain words. <b>What it cost you</b> is the public bill where there is one. <b>What happened to him</b> means Trudeau: “Nothing” means no fine, no sanction, no resignation, no reversal. There is a separate line for everyone else.</p>
+      <h3>Said, against the record</h3>
+      <p>Where a case has documented statements, they sit in sequence, dated and sourced, beside what the evidence later showed. 28 of the 59 cases carry one. Where the record backed the statement, the block says so.</p>
       <h3>The evidence is one click down</h3>
       <p>Every case carries the deciding body’s own words and its sources, with the official document first wherever one exists. That layer is where the legal language lives. If a line here is disputed, that is where to check it.</p>
       <h3>Still moving</h3>
