@@ -24,7 +24,7 @@ PLAIN = {
 
 "phoenix-pay-system": dict(
  headline="Switched on a pay system that failed hundreds of thousands of public servants. The fix has cost $5 billion.",
- plain="Phoenix was bought under Harper and switched on by Trudeau's government in 2016. Public servants went unpaid, underpaid or overpaid for years. The Auditor General called it 'an incomprehensible failure of project management and oversight'. Fixing it has cost $5.1 billion so far; at the end of 2025 more than 233,000 pay problems were still open. The replacement is budgeted at another $4.2 billion.",
+ plain="Phoenix was procured in 2009 and switched on by his government in 2016. Public servants went unpaid, underpaid or overpaid for years. The Auditor General called it 'an incomprehensible failure of project management and oversight'. Fixing it has cost $5.1 billion so far; at the end of 2025 more than 233,000 pay problems were still open. The replacement is budgeted at another $4.2 billion.",
  found="Auditor General: 'an incomprehensible failure of project management and oversight'.",
  him="Nothing.",
  others="No minister or deputy minister lost their job.",
@@ -410,8 +410,8 @@ PLAIN = {
  label="Inquiry: slow, not transparent", big=True),
 
 "mckinsey-outsourcing": dict(
- headline="Federal contracts to McKinsey went from $2 million under Harper to more than $100 million under Trudeau. The Auditor General found the rules were routinely ignored.",
- plain="Radio-Canada found McKinsey's federal contracts jumped from $2.2 million over nine Harper years to $66 million in seven Trudeau years, later topping $100 million. McKinsey's former global boss, Dominic Barton, had chaired Trudeau's economic advisory council and was made ambassador to China. The Auditor General examined 97 McKinsey contracts worth $209 million: 70% were awarded without competition and most lacked the required justification. Federal spending on outside consultants hit a record $20.7 billion in 2023–24.",
+ headline="Federal contracts to McKinsey went from $2 million in the nine years before he took office to more than $100 million under him. The Auditor General found the rules were routinely ignored.",
+ plain="Radio-Canada found McKinsey's federal contracts jumped from $2.2 million over the nine years before he took office to $66 million in his first seven, later topping $100 million. McKinsey's former global boss, Dominic Barton, had chaired Trudeau's economic advisory council and was made ambassador to China. The Auditor General examined 97 McKinsey contracts worth $209 million: 70% were awarded without competition and most lacked the required justification. Federal spending on outside consultants hit a record $20.7 billion in 2023–24.",
  found="Auditor General: 'frequent disregard for procurement policies and guidance'.",
  him="Nothing. Asked ministers to review the contracts.",
  others="Nobody sanctioned.",
@@ -534,6 +534,41 @@ PLAIN = {
  others="Nothing.",
  cost=None,
  label="Upheld by court"),
+"boil-water-advisories-promise": dict(
+ headline="Promised to end every long-term boil-water advisory on reserves within five years. The deadline passed with 58 still in place.",
+ plain="In 2015 he promised that within five years of taking office no First Nation would be living under a long-term drinking-water advisory. The Auditor General reported in February 2021 that the department 'did not meet its commitment': 60 advisories were still in place that winter, 28 of them for more than a decade, and Ottawa had not changed the formula it uses to pay for running the water plants in thirty years. When the March 2021 deadline arrived, 58 advisories remained in 38 communities. The minister said the commitment 'remains firm' and set no new date.",
+ found="Auditor General: the department 'did not meet its commitment'; 60 advisories remained, 28 of them for over a decade.",
+ him="Nothing. The deadline passed; no new date was set.",
+ others="None. More than $1.5 billion more was pledged to finish the work.",
+ cost="More than $1.5 billion pledged to finish the work.",
+ label="Promise broken", big=True),
+
+"pandemic-preparedness-audit": dict(
+ headline="The pandemic early-warning system stayed silent, the risk was rated 'low' until March 12, 2020, and two-thirds of quarantined travellers were never checked.",
+ plain="Canada's Global Public Health Intelligence Network, built to give early warning of outbreaks, issued no alert when COVID-19 emerged in Wuhan. The Public Health Agency rated the risk to Canada as low until March 12, 2020. The Auditor General found the agency 'was not adequately prepared' and 'underestimated the potential impact of the virus', had never completed the planned test of its pandemic plans, did not know whether two-thirds of incoming travellers obeyed quarantine, and referred only four in ten of the people it flagged as high-risk to police.",
+ found="Auditor General: 'not adequately prepared'; no early-warning alert; risk rated low until March 12, 2020; two-thirds of quarantines unverified.",
+ him="Nothing.",
+ others="None to ministers.",
+ cost=None,
+ label="Audit: unprepared", big=True),
+
+"khadr-settlement": dict(
+ headline="Paid Omar Khadr $10.5 million and apologized, settling a lawsuit over Charter breaches the Supreme Court had already found.",
+ plain="Omar Khadr was taken to Guantanamo Bay at 15 and interrogated there by Canadian officials, who passed what they got to the Americans. The Supreme Court ruled twice, in 2008 and 2010, that this violated his Charter rights. He sued for $20 million. In July 2017 the government settled for $10.5 million and apologized; the justice minister said 'there are serious costs when the government violates the rights of its citizens.'",
+ found="Settlement and apology, July 7, 2017, resting on Supreme Court rulings of 2008 and 2010.",
+ him="Nothing.",
+ others="None.",
+ cost="$10.5 million.",
+ label="Cost on record"),
+
+"firearms-buyback-program": dict(
+ headline="Banned 1,500 models of firearm in 2020 and promised a buyback. Four years and $67 million later, it had collected no guns.",
+ plain="On May 1, 2020, two weeks after the Nova Scotia shooting, the cabinet banned about 1,500 models of firearm by order-in-council and told owners the government would buy them back. Figures tabled in Parliament in September 2024 put the program's cost at $67.2 million since 2020, with no firearms collected.",
+ found="Government figures, September 2024: $67.2 million spent, no firearms collected.",
+ him="Nothing.",
+ others="None.",
+ cost="$67.2 million to September 2024, no firearms collected.",
+ label="Cost on record"),
 }
 
 # Plain names for the finding classes (tags and groups)
@@ -565,6 +600,6 @@ GROUPS = [
                  lambda e: e["finding"]["result"] == "UNADJUDICATED"),
     ("cost",     "Costs on the record",                "No finding. The bill is the record.",
                  lambda e: e["finding"]["result"] == "RECORD"),
-    ("cleared",  "Investigated and cleared",           "Looked at and found clean, or upheld by a court. Same weight as everything above.",
+    ("cleared",  "Investigated and cleared",           "Looked at and found clean, or upheld by a court.",
                  lambda e: e["finding"]["result"] in ("CLEARED", "COURT_FOR_GOVERNMENT")),
 ]

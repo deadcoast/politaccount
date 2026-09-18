@@ -123,7 +123,7 @@ SAID = {
 
 "foreign-interference-response": dict(said=[
  dict(date="2022-11-20", who="Trudeau", quote="I do not have any information, nor have I been briefed on any federal candidates receiving any money from China.", src_title="Global News, November 20, 2022", src_url="https://globalnews.ca/news/9293238/justin-trudeau-china-interference-allegations"),
-], record="On that point the inquiry backed him: “there is no intelligence that the $250,000 went to any of the 11 candidates.” On the government as a whole it found it “has sometimes taken too long to act” and was “a poor communicator and insufficiently transparent when it comes to foreign interference.”"),
+], record="The inquiry found “there is no intelligence that the $250,000 went to any of the 11 candidates.” It found the government “has sometimes taken too long to act” and was “a poor communicator and insufficiently transparent when it comes to foreign interference.”"),
 
 "morneau-we-charity": dict(said=[
  dict(date="2020-07-22", who="Morneau", said="Said he had believed the costs of his family’s WE trips were already paid. He repaid $41,366 that day.", src_title="House of Commons ETHI Report 2, p. 51", src_url="https://www.ourcommons.ca/documentviewer/en/43-2/ETHI/report-2/page-51"),
@@ -136,4 +136,8 @@ SAID = {
 "sajjan-afghan-sikhs": dict(said=[
  dict(date="2024-07-03", who="Sajjan", said="Said he passed on information, never ordered the operation, and did not prioritize Sikhs above others.", src_title="CBC News, July 3, 2024", src_url="https://www.cbc.ca/news/politics/sajjan-relayed-information-sikhs-in-afghanistan-1.7248417"),
 ], record="Three military sources told the Globe he “instructed Canadian special forces to rescue about 225 Afghan Sikhs” and relayed their location. No body has examined it."),
+"boil-water-advisories-promise": dict(said=[
+ dict(date="2015-10", who="Trudeau, campaign", said="Promised to lift every long-term boil-water advisory on reserves within five years of taking office.", src_title="CBC News, March 10, 2021", src_url="https://amp.cbc.ca/lite/story/1.5943388"),
+ dict(date="2021-03-10", who="Marc Miller, Indigenous Services minister", quote="Our commitment to lift all long-term drinking-water advisories on public systems on reserve remains firm.", src_title="CBC News, March 10, 2021", src_url="https://amp.cbc.ca/lite/story/1.5943388"),
+], record="Auditor General, February 2021: the department “did not meet its commitment.” When the five-year deadline arrived, 58 advisories remained in 38 communities and no new date was set."),
 }

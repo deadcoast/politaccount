@@ -119,7 +119,7 @@ title="Phoenix pay system",
 date_start="2016-02-24", date_end=None,
 actors=["Public Services and Procurement Canada", "IBM Canada", "Michael Ferguson (Auditor General)", "Karen Hogan (Auditor General)"],
 summary=(
-"Phoenix was designed and procured under the Harper government from 2009 and launched by the Trudeau government "
+"Phoenix was procured from 2009 and switched on by the Trudeau government "
 "in February 2016. The Auditor General reported in November 2017 that the department had failed to resolve pay "
 "problems, and in May 2018 called the project “an incomprehensible failure of project management and oversight.” "
 "By 2025 the cost of fixing Phoenix had reached $5.1 billion. The Auditor General’s 2026 report counted more than "
@@ -130,7 +130,7 @@ finding=dict(body="Auditor General of Canada — Spring 2018 Report 1, Building 
     result="AUDIT_ADVERSE", label="Adverse audit",
     quote="An incomprehensible failure of project management and oversight."),
 consequence_pm="None.",
-consequence_others="No minister or deputy minister was removed. Provenance is shared: procured under the Harper government, launched and operated under the Trudeau government.",
+consequence_others="No minister or deputy minister was removed.",
 public_cost="$5.1 billion spent fixing Phoenix to 2025 (official testimony to a Commons committee); replacement estimated at $4.2 billion before transition costs (Auditor General, 2026).",
 status="Still in use as of September 2026 with a backlog above 233,000 transactions; the Dayforce transition is under way on a shortened timeline.",
 sources=[
@@ -1300,8 +1300,8 @@ title="McKinsey contracts and outsourcing",
 date_start="2023-01-04", date_end="2024-06-04",
 actors=["McKinsey & Company", "Dominic Barton", "Public Services and Procurement Canada", "Karen Hogan (Auditor General)"],
 summary=(
-"Radio-Canada reported in January 2023 that McKinsey’s federal contracts had grown from $2.2 million over nine years "
-"under the Harper government to $66 million over seven years under Trudeau; later tallies exceeded $100 million. "
+"Radio-Canada reported in January 2023 that McKinsey’s federal contracts had grown from $2.2 million over the nine "
+"years before Trudeau took office to $66 million over his first seven; later tallies exceeded $100 million. "
 "Dominic Barton, McKinsey’s global managing partner until 2018, chaired Trudeau’s Advisory Council on Economic Growth "
 "and served as ambassador to China. The Auditor General’s June 4, 2024 report examined 97 McKinsey contracts worth "
 "$209 million awarded between 2011 and 2023: 68 were non-competitive and 18 of 19 under the master standing offer "
@@ -1669,4 +1669,123 @@ S("A Lawful Prorogation: MacKinnon v. Canada (Attorney General), 2025 FC 422", "
 S("Court dismisses legal challenge to Trudeau’s prorogation decision", "CBC News", "https://www.cbc.ca/lite/story/1.7477263", "2025-03-06"),
 ]),
 
+dict(
+id="boil-water-advisories-promise",
+subject=PM, category="commitments",
+title="Long-term drinking-water advisories on reserves: the five-year promise",
+date_start="2015-10", date_end="2021-03-31",
+actors=["Justin Trudeau", "Marc Miller", "Indigenous Services Canada", "Karen Hogan (Auditor General)"],
+summary=(
+"In the 2015 campaign Trudeau promised to end every long-term drinking-water advisory on First Nations reserves "
+"within five years of taking office, a deadline of March 2021. The Auditor General reported on February 25, 2021 "
+"that Indigenous Services Canada “did not meet its commitment”: 60 long-term advisories remained as of November 1, "
+"2020, 28 of them in place for more than a decade, and the department had not changed the formula that funds the "
+"operation and maintenance of water systems in thirty years. When the deadline arrived, 58 advisories remained in "
+"38 communities. The minister said the commitment “remains firm” and set no new date."
+),
+finding=dict(body="Auditor General of Canada — 2021 Report 3, Access to Safe Drinking Water in First Nations Communities", date="2021-02-25",
+    result="BROKEN_COMMITMENT", label="Promise broken",
+    quote="“Indigenous Services Canada did not meet its commitment to eliminate long-term drinking water advisories in First Nations communities.” As of November 1, 2020, 60 long-term advisories remained in effect, 28 of them for more than a decade; the operations-and-maintenance funding formula “had not been amended since it was first developed 30 years ago.”"),
+consequence_pm="None. The deadline passed and no replacement date was set.",
+consequence_others="None. Minister Marc Miller pledged more than $1.5 billion to finish the work.",
+public_cost="More than $1.5 billion pledged in 2021 to finish the work.",
+status="The March 2021 deadline passed with 58 advisories in place in 38 communities; no new date was set during the tenure.",
+sources=[
+S("Report 3—Access to Safe Drinking Water in First Nations Communities, 2021 Reports of the Auditor General of Canada", "Office of the Auditor General of Canada", "https://www.canada.ca/en/auditor-general/our-work/audit-reports/parl-oag-202102-03-e.html", "2021-02-25", True),
+S("Appearance before the Standing Committee on Public Accounts on OAG Report 3 (April 29, 2021)", "Indigenous Services Canada", "https://www.sac-isc.gc.ca/eng/1624619832748/1624619978924", "2021-04-29", True),
+S("Federal government vows again to end boil water advisories but offers no new target date", "CBC News", "https://amp.cbc.ca/lite/story/1.5943388", "2021-03-10"),
+S("Too many First Nations lack clean drinking water and it’s Ottawa’s fault, says auditor general", "CBC News", "https://www.cbc.ca/news/politics/auditor-general-reports-2021-1.5927572", "2021-02-25"),
+]),
+
+dict(
+id="pandemic-preparedness-audit",
+subject=GOV, category="governance",
+title="Pandemic preparedness: the early-warning system and quarantine",
+date_start="2020-01", date_end="2021-03-25",
+actors=["Public Health Agency of Canada", "Patty Hajdu", "Karen Hogan (Auditor General)"],
+summary=(
+"The Auditor General reported on March 25, 2021 that the Public Health Agency of Canada “was not adequately "
+"prepared to respond to the pandemic, and it underestimated the potential impact of the virus at the onset of the "
+"pandemic.” The Global Public Health Intelligence Network, built to give early warning of outbreaks, “did not issue "
+"an alert” when COVID-19 emerged in Wuhan; the agency rated the risk to Canada “low” until March 12, 2020; it had not "
+"completed a planned test of its pandemic plans; it did not know whether two-thirds of incoming travellers followed "
+"quarantine orders; and it referred only 40 per cent of the travellers it flagged as high-risk to police."
+),
+finding=dict(body="Auditor General of Canada — 2021 Report 8, Pandemic Preparedness, Surveillance, and Border Control Measures", date="2021-03-25",
+    result="AUDIT_ADVERSE", label="Audit: unprepared",
+    quote="“The agency was not adequately prepared to respond to the pandemic, and it underestimated the potential impact of the virus at the onset of the pandemic.” The Global Public Health Intelligence Network “did not issue an alert to provide an early warning when COVID-19 first emerged in Wuhan, China.” The agency “did not know whether two-thirds of incoming travellers followed quarantine orders.”"),
+consequence_pm="None.",
+consequence_others="None to ministers. The agency accepted the recommendations.",
+public_cost=None,
+status="Closed as an audit matter.",
+sources=[
+S("Report 8—Pandemic Preparedness, Surveillance, and Border Control Measures, 2021 Reports of the Auditor General of Canada", "Office of the Auditor General of Canada", "https://www.canada.ca/en/auditor-general/our-work/audit-reports/parl-oag-202103-03-e.html", "2021-03-25", True),
+S("Key information — Standing Committee on Public Accounts: OAG audit on Pandemic Preparedness, Surveillance and Border Control (April 20, 2021)", "Canada Border Services Agency", "https://cbsa-asfc.gc.ca/transparency-transparence/pd-dp/bbp-rpp/pacp/2021-04-20/keyinfo-infocle-eng.html", "2021-04-20", True),
+S("Public Health Agency was unprepared for the pandemic and ‘underestimated’ the danger, auditor general says", "CBC News", "https://www.cbc.ca/lite/story/1.5963895", "2021-03-25"),
+S("Misuse of pandemic early warning system, inaccurate risk assessments hurt Canada’s response to COVID-19, Auditor-General says", "The Globe and Mail", "https://www.theglobeandmail.com/politics/article-misuse-of-pandemic-early-warning-system-inaccurate-risk-assessments/", "2021-03-25"),
+]),
+
+dict(
+id="khadr-settlement",
+subject=GOV, category="spending",
+title="The Omar Khadr settlement",
+date_start="2017-07-05", date_end="2017-07-07",
+actors=["Omar Khadr", "Ralph Goodale", "Jody Wilson-Raybould", "Justin Trudeau"],
+summary=(
+"On July 5, 2017 the government paid Omar Khadr $10.5 million, and on July 7 Public Safety Minister Ralph Goodale "
+"and Justice Minister Jody Wilson-Raybould announced the settlement, and the government issued a written apology signed by "
+"Goodale and Foreign Affairs Minister Chrystia Freeland. Khadr had been taken to "
+"Guantanamo Bay at 15; the Supreme Court of Canada ruled in 2008 and 2010 that Canadian officials violated his "
+"Charter rights by interrogating him there and sharing the results with the United States. His lawsuit had sought "
+"$20 million."
+),
+finding=dict(body="Government of Canada — Statement of Apology to Mr. Omar Khadr, issued by Ministers Freeland and Goodale; settlement announced by Goodale and Wilson-Raybould", date="2017-07-07",
+    result="RECORD", label="Cost on record",
+    quote="“Today, we are announcing that the Government of Canada has reached a settlement with Mr. Omar Khadr, bringing this civil case to a close. On behalf of the Government of Canada, we wish to apologize to Mr. Khadr for any role Canadian officials may have played in relation to his ordeal abroad and any resulting harm. […] The details of the settlement are confidential between Mr. Khadr and the Government.” At the announcement, Wilson-Raybould: “A Canadian citizen’s charter rights were violated … there are serious costs when the government violates the rights of its citizens.” Goodale: “It is not about the battlefield in Afghanistan. It is about the acts or omissions of the Canadian government after Mr. Khadr was captured and detained.”"),
+consequence_pm="None.",
+consequence_others="None.",
+public_cost="$10.5 million, paid July 5, 2017.",
+status="Closed.",
+sources=[
+S("Statement of Apology to Mr. Omar Khadr", "Public Safety Canada", "https://www.canada.ca/en/public-safety-canada/news/2017/07/statement_of_apologytomromarkhadr.html", "2017-07-07", primary=True),
+S("Government issues official apology, confirms settlement payout to Omar Khadr", "Global News", "https://globalnews.ca/news/3582295/government-issues-official-apology-to-omar-khadr/", "2017-07-07"),
+S("Omar Khadr received $10.5M from Ottawa on Wednesday, government confirms", "CBC News", "https://www.cbc.ca/news/politics/omar-khadr-settlement-1.4194142", "2017-07-06"),
+S("Government formally apologizes to Omar Khadr", "CBC News", "https://www.cbc.ca/news/politics/cabinet-explain-omar-khadr-settlement-1.4194467", "2017-07-07"),
+]),
+
+dict(
+id="firearms-buyback-program",
+subject=GOV, category="spending",
+title="The firearms buyback program",
+date_start="2020-05-01", date_end=None,
+actors=["Bill Blair", "Marco Mendicino", "Dominic LeBlanc", "Public Safety Canada"],
+summary=(
+"On May 1, 2020 the cabinet banned about 1,500 models of firearm by order-in-council and told owners the government "
+"would buy them back. Figures tabled in Parliament in response to an Order Paper question, reported by CTV News on "
+"September 20, 2024, put the program’s cost at $67.2 million since 2020, with no firearms collected."
+),
+finding=dict(body="Public Safety Canada figures tabled in response to an Order Paper question", date="2024-09-20",
+    result="RECORD", label="Cost on record",
+    quote="“The federal firearm buyback program has cost taxpayers nearly $67.2 million since it was announced in 2020, but it still hasn’t collected a single gun.” — CTV News, reporting the tabled figures."),
+consequence_pm="None.",
+consequence_others="None.",
+public_cost="$67.2 million to September 2024, with no firearms collected.",
+status="Figures current to September 2024; later phases of the program are not verified in this record.",
+sources=[
+S("Federal firearm buyback program has cost $67M since 2020, still hasn’t collected guns", "CTV News", "https://www.ctvnews.ca/politics/article/federal-firearm-buyback-program-has-cost-67m-since-2020-still-hasnt-collected-guns/", "2024-09-20"),
+S("Assault-Style Firearms Compensation Program", "Public Safety Canada", "https://www.canada.ca/en/public-safety-canada/campaigns/firearms-buyback.html", None, True),
+]),
+
 ]
+
+
+# Clean public-cost figures in CAD for machine use (null where no single figure exists).
+COST_CAD = {
+    "aga-khan-vacation": 215398, "india-trip-atwal": 1660000, "jamaica-vacation": 230442, "london-hotel-queen-funeral": 397843,
+    "butts-telford-moving-expenses": 207052, "arrivecan": 59500000, "phoenix-pay-system": 5100000000,
+    "covid-benefit-overpayments": 4600000000, "mckinsey-outsourcing": 209000000, "sdtc-green-fund": 123000000,
+    "trans-mountain": 38700000000, "snap-election-2021": 574200000, "mark-norman-prosecution": 500000,
+    "nuctech-standing-offer": 250000, "ng-pomp-circumstance": 22790, "hussen-constituency-contracts": 93050,
+    "baylis-ventilators": 237000000, "david-johnston-rapporteur": 4496888, "khadr-settlement": 10500000,
+    "firearms-buyback-program": 67200000, "fiscal-record-2015-promise": 637600000000,
+}

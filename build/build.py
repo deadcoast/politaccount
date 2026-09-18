@@ -1,14 +1,16 @@
 # -*- coding: utf-8 -*-
-"""Build index.html and trudeau.json from data_trudeau.py + plain_trudeau.py."""
+"""Build politaccount-trudeau.html and trudeau.json from data_trudeau.py + plain_trudeau.py."""
 import json, html, re, datetime, os, sys
 sys.path.insert(0, os.path.dirname(__file__))
-from data_trudeau import ENTRIES, SUBJECT, CABINET_DEPARTURES, PM, GOV, MIN
+from data_trudeau import ENTRIES, SUBJECT, CABINET_DEPARTURES, COST_CAD, PM, GOV, MIN
 from plain_trudeau import PLAIN, CLASS_PLAIN, GROUPS
 from said_trudeau import SAID
 
 OUT_DIR = os.path.join(os.path.dirname(__file__), "..", "out")
 os.makedirs(OUT_DIR, exist_ok=True)
-GENERATED = "September 17, 2026"
+VERSION = "1.1.0"
+GENERATED_ISO = "2026-09-18"
+GENERATED = "September 18, 2026"
 
 RESULT_META = {
     "VIOLATION_FOUND":          ("critical",   "Broke the ethics law"),
@@ -30,7 +32,8 @@ SUBJECT_KEY = {PM: "pm", GOV: "gov", MIN: "min"}
 WHO = {PM: "Trudeau himself", GOV: "His government", MIN: "His ministers & MPs"}
 BIG_ORDER = ["aga-khan-vacation", "snc-lavalin-affair", "emergencies-act-2022", "we-charity", "arrivecan",
              "sdtc-green-fund", "foreign-interference-response", "vance-allegations-2018", "mark-norman-prosecution",
-             "covid-benefit-overpayments", "phoenix-pay-system", "blackface-images"]
+             "covid-benefit-overpayments", "phoenix-pay-system", "blackface-images",
+             "boil-water-advisories-promise", "pandemic-preparedness-audit"]
 
 MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"]
 MON = [m[:3] for m in MONTHS]
@@ -55,6 +58,7 @@ def years(a, b):
     return str(ya) if ya == yb else f"{ya}–{yb}"
 def to_ordinal(dt): return (dt - datetime.date(2015, 1, 1)).days
 def is_none(s): return s.strip().lower().startswith(("nothing", "none"))
+WORDS = {1:"One",2:"Two",3:"Three",4:"Four",5:"Five",6:"Six",7:"Seven",8:"Eight",9:"Nine",10:"Ten",11:"Eleven",12:"Twelve",13:"Thirteen",14:"Fourteen",15:"Fifteen",16:"Sixteen"}
 
 # ── normalize ──
 entries = []
@@ -72,6 +76,7 @@ for e in ENTRIES:
     e["plain"] = {"headline": p["headline"], "telling": p["plain"], "found": p["found"], "him": p["him"],
                   "others": p["others"], "cost": p["cost"], "label": p["label"]}
     e["big"] = e["id"] in BIG_ORDER
+    e["cost_cad"] = COST_CAD.get(e["id"])
     e["said"] = SAID.get(e["id"])
     e.setdefault("secondary", [])
     for gi, (gkey, gtitle, gblurb, pred) in enumerate(GROUPS):
@@ -102,13 +107,19 @@ stats = {
     "days_in_office": days_in_office,
     "by_class": {c: count(lambda e, c=c: e["result_class"] == c) for c in CLASS_ORDER},
     "cases_with_said_vs_record": count(lambda e: bool(e.get("said"))),
+    "cases_with_cost_cad": count(lambda e: e.get("cost_cad") is not None),
+    "sources": sum(len(e["sources"]) for e in entries),
+    "official_sources": sum(1 for e in entries for s in e["sources"] if s.get("primary")),
 }
+unknown_cost = [k for k in COST_CAD if k not in by_id]
+assert not unknown_cost, f"COST_CAD ids not in ENTRIES: {unknown_cost}"
 
 dataset = {
-    "platform": "politaccount", "subject": SUBJECT, "generated": "2026-09-17", "current_as_of": "2026-09-17",
+    "platform": "politaccount", "version": VERSION, "subject": SUBJECT, "generated": GENERATED_ISO, "current_as_of": GENERATED_ISO,
     "labels": {k: {"class": v[0], "plain": v[1]} for k, v in RESULT_META.items()},
     "class_plain": CLASS_PLAIN,
     "groups": [{"key": g[0], "title": g[1], "blurb": g[2]} for g in GROUPS],
+    "large_cases": BIG_ORDER,
     "stats": stats, "cabinet_departures": CABINET_DEPARTURES, "entries": entries,
 }
 with open(os.path.join(OUT_DIR, "trudeau.json"), "w", encoding="utf-8") as f:
@@ -259,7 +270,8 @@ departures = "".join(f'<li><span class="mono">{esc(fmt_long(d["date"]))}</span> 
 
 page = open(os.path.join(os.path.dirname(__file__), "template.html"), encoding="utf-8").read()
 repl = {
-    "{{GENERATED}}": GENERATED, "{{N}}": str(stats["cases"]), "{{DAYS}}": f"{days_in_office:,}",
+    "{{GENERATED}}": GENERATED, "{{VERSION}}": VERSION, "{{N}}": str(stats["cases"]), "{{DAYS}}": f"{days_in_office:,}",
+    "{{AUDITS_WORD}}": WORDS.get(stats["audits"], str(stats["audits"])), "{{N_BIG_WORD}}": WORDS.get(len(BIG_ORDER), str(len(BIG_ORDER))), "{{N_BIG_WORD_LC}}": WORDS.get(len(BIG_ORDER), str(len(BIG_ORDER))).lower(),
     "{{PM_CONTRAVENTIONS}}": str(stats["pm_broke_ethics_law"]), "{{MIN_CONTRAVENTIONS}}": str(stats["ministers_broke_ethics_law"]),
     "{{COURT_AGAINST}}": str(stats["ruled_illegal"]), "{{AUDITS}}": str(stats["audits"]), "{{INQUIRIES}}": str(stats["inquiries"]),
     "{{CLEARED}}": str(stats["cleared_or_upheld"]), "{{DEPARTURES}}": str(stats["ministers_out"]), "{{UNADJ}}": str(stats["never_investigated"]),
@@ -270,5 +282,7 @@ repl = {
 }
 for k, v in repl.items(): page = page.replace(k, v)
 leftover = re.findall(r"\{\{[A-Z_]+\}\}", page); assert not leftover, leftover
-with open(os.path.join(OUT_DIR, "index.html"), "w", encoding="utf-8") as f: f.write(page)
-print(f"cases={stats['cases']} big={len(BIG_ORDER)} classes={json.dumps(stats['by_class'])} html={len(page)/1024:.0f}KB")
+for name in ("politaccount-trudeau.html", "index.html"):
+    with open(os.path.join(OUT_DIR, name), "w", encoding="utf-8") as f: f.write(page)
+print(f"v{VERSION} cases={stats['cases']} big={len(BIG_ORDER)} said={stats['cases_with_said_vs_record']} cost={stats['cases_with_cost_cad']} "
+      f"sources={stats['sources']} official={stats['official_sources']} classes={json.dumps(stats['by_class'])} html={len(page)/1024:.0f}KB")

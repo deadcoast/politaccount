@@ -1,5 +1,6 @@
 {
   "platform": "politaccount",
+  "version": "1.1.0",
   "subject": {
     "name": "Justin Trudeau",
     "office": "23rd Prime Minister of Canada",
@@ -26,8 +27,8 @@
     ],
     "resignation_announced": "2025-01-06"
   },
-  "generated": "2026-09-17",
-  "current_as_of": "2026-09-17",
+  "generated": "2026-09-18",
+  "current_as_of": "2026-09-18",
   "labels": {
     "VIOLATION_FOUND": {
       "class": "critical",
@@ -138,20 +139,36 @@
     {
       "key": "cleared",
       "title": "Investigated and cleared",
-      "blurb": "Looked at and found clean, or upheld by a court. Same weight as everything above."
+      "blurb": "Looked at and found clean, or upheld by a court."
     }
   ],
+  "large_cases": [
+    "aga-khan-vacation",
+    "snc-lavalin-affair",
+    "emergencies-act-2022",
+    "we-charity",
+    "arrivecan",
+    "sdtc-green-fund",
+    "foreign-interference-response",
+    "vance-allegations-2018",
+    "mark-norman-prosecution",
+    "covid-benefit-overpayments",
+    "phoenix-pay-system",
+    "blackface-images",
+    "boil-water-advisories-promise",
+    "pandemic-preparedness-audit"
+  ],
   "stats": {
-    "cases": 59,
+    "cases": 63,
     "by_subject": {
-      "Prime Minister": 19,
-      "Government": 26,
+      "Prime Minister": 20,
+      "Government": 29,
       "Ministers & caucus": 14
     },
     "pm_broke_ethics_law": 2,
     "ministers_broke_ethics_law": 4,
     "ruled_illegal": 1,
-    "audits": 5,
+    "audits": 6,
     "inquiries": 9,
     "cleared_or_upheld": 5,
     "never_investigated": 7,
@@ -161,12 +178,15 @@
     "days_in_office": 3418,
     "by_class": {
       "critical": 7,
-      "warning": 16,
+      "warning": 18,
       "proceeding": 11,
-      "neutral": 20,
+      "neutral": 22,
       "good": 5
     },
-    "cases_with_said_vs_record": 28
+    "cases_with_said_vs_record": 29,
+    "cases_with_cost_cad": 21,
+    "sources": 198,
+    "official_sources": 64
   },
   "cabinet_departures": [
     {
@@ -219,6 +239,101 @@
     }
   ],
   "entries": [
+    {
+      "id": "boil-water-advisories-promise",
+      "subject": "Prime Minister",
+      "category": "commitments",
+      "title": "Long-term drinking-water advisories on reserves: the five-year promise",
+      "date_start": "2015-10",
+      "date_end": "2021-03-31",
+      "actors": [
+        "Justin Trudeau",
+        "Marc Miller",
+        "Indigenous Services Canada",
+        "Karen Hogan (Auditor General)"
+      ],
+      "summary": "In the 2015 campaign Trudeau promised to end every long-term drinking-water advisory on First Nations reserves within five years of taking office, a deadline of March 2021. The Auditor General reported on February 25, 2021 that Indigenous Services Canada “did not meet its commitment”: 60 long-term advisories remained as of November 1, 2020, 28 of them in place for more than a decade, and the department had not changed the formula that funds the operation and maintenance of water systems in thirty years. When the deadline arrived, 58 advisories remained in 38 communities. The minister said the commitment “remains firm” and set no new date.",
+      "finding": {
+        "body": "Auditor General of Canada — 2021 Report 3, Access to Safe Drinking Water in First Nations Communities",
+        "date": "2021-02-25",
+        "result": "BROKEN_COMMITMENT",
+        "label": "Promise broken",
+        "quote": "“Indigenous Services Canada did not meet its commitment to eliminate long-term drinking water advisories in First Nations communities.” As of November 1, 2020, 60 long-term advisories remained in effect, 28 of them for more than a decade; the operations-and-maintenance funding formula “had not been amended since it was first developed 30 years ago.”"
+      },
+      "consequence_pm": "None. The deadline passed and no replacement date was set.",
+      "consequence_others": "None. Minister Marc Miller pledged more than $1.5 billion to finish the work.",
+      "public_cost": "More than $1.5 billion pledged in 2021 to finish the work.",
+      "status": "The March 2021 deadline passed with 58 advisories in place in 38 communities; no new date was set during the tenure.",
+      "sources": [
+        {
+          "title": "Report 3—Access to Safe Drinking Water in First Nations Communities, 2021 Reports of the Auditor General of Canada",
+          "publisher": "Office of the Auditor General of Canada",
+          "url": "https://www.canada.ca/en/auditor-general/our-work/audit-reports/parl-oag-202102-03-e.html",
+          "date": "2021-02-25",
+          "primary": true
+        },
+        {
+          "title": "Appearance before the Standing Committee on Public Accounts on OAG Report 3 (April 29, 2021)",
+          "publisher": "Indigenous Services Canada",
+          "url": "https://www.sac-isc.gc.ca/eng/1624619832748/1624619978924",
+          "date": "2021-04-29",
+          "primary": true
+        },
+        {
+          "title": "Federal government vows again to end boil water advisories but offers no new target date",
+          "publisher": "CBC News",
+          "url": "https://amp.cbc.ca/lite/story/1.5943388",
+          "date": "2021-03-10",
+          "primary": false
+        },
+        {
+          "title": "Too many First Nations lack clean drinking water and it’s Ottawa’s fault, says auditor general",
+          "publisher": "CBC News",
+          "url": "https://www.cbc.ca/news/politics/auditor-general-reports-2021-1.5927572",
+          "date": "2021-02-25",
+          "primary": false
+        }
+      ],
+      "result_class": "warning",
+      "result_generic": "Promise broken",
+      "subject_key": "pm",
+      "who": "Trudeau himself",
+      "years": "2015–2021",
+      "plain": {
+        "headline": "Promised to end every long-term boil-water advisory on reserves within five years. The deadline passed with 58 still in place.",
+        "telling": "In 2015 he promised that within five years of taking office no First Nation would be living under a long-term drinking-water advisory. The Auditor General reported in February 2021 that the department 'did not meet its commitment': 60 advisories were still in place that winter, 28 of them for more than a decade, and Ottawa had not changed the formula it uses to pay for running the water plants in thirty years. When the March 2021 deadline arrived, 58 advisories remained in 38 communities. The minister said the commitment 'remains firm' and set no new date.",
+        "found": "Auditor General: the department 'did not meet its commitment'; 60 advisories remained, 28 of them for over a decade.",
+        "him": "Nothing. The deadline passed; no new date was set.",
+        "others": "None. More than $1.5 billion more was pledged to finish the work.",
+        "cost": "More than $1.5 billion pledged to finish the work.",
+        "label": "Promise broken"
+      },
+      "big": true,
+      "cost_cad": null,
+      "said": {
+        "said": [
+          {
+            "date": "2015-10",
+            "who": "Trudeau, campaign",
+            "said": "Promised to lift every long-term boil-water advisory on reserves within five years of taking office.",
+            "src_title": "CBC News, March 10, 2021",
+            "src_url": "https://amp.cbc.ca/lite/story/1.5943388"
+          },
+          {
+            "date": "2021-03-10",
+            "who": "Marc Miller, Indigenous Services minister",
+            "quote": "Our commitment to lift all long-term drinking-water advisories on public systems on reserve remains firm.",
+            "src_title": "CBC News, March 10, 2021",
+            "src_url": "https://amp.cbc.ca/lite/story/1.5943388"
+          }
+        ],
+        "record": "Auditor General, February 2021: the department “did not meet its commitment.” When the five-year deadline arrived, 58 advisories remained in 38 communities and no new date was set."
+      },
+      "secondary": [],
+      "group": "promise",
+      "group_index": 4,
+      "no": 1
+    },
     {
       "id": "fiscal-record-2015-promise",
       "subject": "Prime Minister",
@@ -288,6 +403,7 @@
         "label": "Promise broken"
       },
       "big": false,
+      "cost_cad": 637600000000,
       "said": {
         "said": [
           {
@@ -303,7 +419,7 @@
       "secondary": [],
       "group": "promise",
       "group_index": 4,
-      "no": 1
+      "no": 2
     },
     {
       "id": "electoral-reform",
@@ -381,6 +497,7 @@
         "label": "Promise broken"
       },
       "big": false,
+      "cost_cad": null,
       "said": {
         "said": [
           {
@@ -410,7 +527,7 @@
       "secondary": [],
       "group": "promise",
       "group_index": 4,
-      "no": 2
+      "no": 3
     },
     {
       "id": "phoenix-pay-system",
@@ -425,7 +542,7 @@
         "Michael Ferguson (Auditor General)",
         "Karen Hogan (Auditor General)"
       ],
-      "summary": "Phoenix was designed and procured under the Harper government from 2009 and launched by the Trudeau government in February 2016. The Auditor General reported in November 2017 that the department had failed to resolve pay problems, and in May 2018 called the project “an incomprehensible failure of project management and oversight.” By 2025 the cost of fixing Phoenix had reached $5.1 billion. The Auditor General’s 2026 report counted more than 233,000 unresolved pay transactions as of September 30, 2025 and put the Dayforce replacement at $4.2 billion before transition costs.",
+      "summary": "Phoenix was procured from 2009 and switched on by the Trudeau government in February 2016. The Auditor General reported in November 2017 that the department had failed to resolve pay problems, and in May 2018 called the project “an incomprehensible failure of project management and oversight.” By 2025 the cost of fixing Phoenix had reached $5.1 billion. The Auditor General’s 2026 report counted more than 233,000 unresolved pay transactions as of September 30, 2025 and put the Dayforce replacement at $4.2 billion before transition costs.",
       "finding": {
         "body": "Auditor General of Canada — Spring 2018 Report 1, Building and Implementing the Phoenix Pay System",
         "date": "2018-05-29",
@@ -434,7 +551,7 @@
         "quote": "An incomprehensible failure of project management and oversight."
       },
       "consequence_pm": "None.",
-      "consequence_others": "No minister or deputy minister was removed. Provenance is shared: procured under the Harper government, launched and operated under the Trudeau government.",
+      "consequence_others": "No minister or deputy minister was removed.",
       "public_cost": "$5.1 billion spent fixing Phoenix to 2025 (official testimony to a Commons committee); replacement estimated at $4.2 billion before transition costs (Auditor General, 2026).",
       "status": "Still in use as of September 2026 with a backlog above 233,000 transactions; the Dayforce transition is under way on a shortened timeline.",
       "sources": [
@@ -481,7 +598,7 @@
       "years": "2016 –",
       "plain": {
         "headline": "Switched on a pay system that failed hundreds of thousands of public servants. The fix has cost $5 billion.",
-        "telling": "Phoenix was bought under Harper and switched on by Trudeau's government in 2016. Public servants went unpaid, underpaid or overpaid for years. The Auditor General called it 'an incomprehensible failure of project management and oversight'. Fixing it has cost $5.1 billion so far; at the end of 2025 more than 233,000 pay problems were still open. The replacement is budgeted at another $4.2 billion.",
+        "telling": "Phoenix was procured in 2009 and switched on by his government in 2016. Public servants went unpaid, underpaid or overpaid for years. The Auditor General called it 'an incomprehensible failure of project management and oversight'. Fixing it has cost $5.1 billion so far; at the end of 2025 more than 233,000 pay problems were still open. The replacement is budgeted at another $4.2 billion.",
         "found": "Auditor General: 'an incomprehensible failure of project management and oversight'.",
         "him": "Nothing.",
         "others": "No minister or deputy minister lost their job.",
@@ -489,11 +606,12 @@
         "label": "Audit: failure"
       },
       "big": true,
+      "cost_cad": 5100000000,
       "said": null,
       "secondary": [],
       "group": "audit",
       "group_index": 2,
-      "no": 3
+      "no": 4
     },
     {
       "id": "elbowgate",
@@ -557,11 +675,12 @@
         "label": "Apologized"
       },
       "big": false,
+      "cost_cad": null,
       "said": null,
       "secondary": [],
       "group": "admit",
       "group_index": 6,
-      "no": 4
+      "no": 5
     },
     {
       "id": "cash-for-access-fundraisers",
@@ -634,11 +753,12 @@
         "label": "Cleared"
       },
       "big": false,
+      "cost_cad": null,
       "said": null,
       "secondary": [],
       "group": "cleared",
       "group_index": 9,
-      "no": 5
+      "no": 6
     },
     {
       "id": "tootoo-resignation",
@@ -694,11 +814,12 @@
         "label": "Quit"
       },
       "big": false,
+      "cost_cad": null,
       "said": null,
       "secondary": [],
       "group": "exit",
       "group_index": 5,
-      "no": 6
+      "no": 7
     },
     {
       "id": "trudeau-foundation-donation",
@@ -764,11 +885,12 @@
         "label": "Never investigated"
       },
       "big": false,
+      "cost_cad": null,
       "said": null,
       "secondary": [],
       "group": "never",
       "group_index": 7,
-      "no": 7
+      "no": 8
     },
     {
       "id": "butts-telford-moving-expenses",
@@ -825,6 +947,7 @@
         "label": "Partly repaid"
       },
       "big": false,
+      "cost_cad": 207052,
       "said": {
         "said": [
           {
@@ -840,7 +963,7 @@
       "secondary": [],
       "group": "admit",
       "group_index": 6,
-      "no": 8
+      "no": 9
     },
     {
       "id": "aga-khan-vacation",
@@ -919,6 +1042,7 @@
         "label": "Broke the ethics law"
       },
       "big": true,
+      "cost_cad": 215398,
       "said": {
         "said": [
           {
@@ -934,7 +1058,7 @@
       "secondary": [],
       "group": "law",
       "group_index": 0,
-      "no": 9
+      "no": 10
     },
     {
       "id": "mark-norman-prosecution",
@@ -1007,6 +1131,7 @@
         "label": "Case collapsed"
       },
       "big": true,
+      "cost_cad": 500000,
       "said": {
         "said": [
           {
@@ -1029,7 +1154,7 @@
       "secondary": [],
       "group": "exit",
       "group_index": 5,
-      "no": 10
+      "no": 11
     },
     {
       "id": "sajjan-operation-medusa",
@@ -1085,6 +1210,7 @@
         "label": "Retracted"
       },
       "big": false,
+      "cost_cad": null,
       "said": {
         "said": [
           {
@@ -1107,7 +1233,84 @@
       "secondary": [],
       "group": "admit",
       "group_index": 6,
-      "no": 11
+      "no": 12
+    },
+    {
+      "id": "khadr-settlement",
+      "subject": "Government",
+      "category": "spending",
+      "title": "The Omar Khadr settlement",
+      "date_start": "2017-07-05",
+      "date_end": "2017-07-07",
+      "actors": [
+        "Omar Khadr",
+        "Ralph Goodale",
+        "Jody Wilson-Raybould",
+        "Justin Trudeau"
+      ],
+      "summary": "On July 5, 2017 the government paid Omar Khadr $10.5 million, and on July 7 Public Safety Minister Ralph Goodale and Justice Minister Jody Wilson-Raybould announced the settlement, and the government issued a written apology signed by Goodale and Foreign Affairs Minister Chrystia Freeland. Khadr had been taken to Guantanamo Bay at 15; the Supreme Court of Canada ruled in 2008 and 2010 that Canadian officials violated his Charter rights by interrogating him there and sharing the results with the United States. His lawsuit had sought $20 million.",
+      "finding": {
+        "body": "Government of Canada — Statement of Apology to Mr. Omar Khadr, issued by Ministers Freeland and Goodale; settlement announced by Goodale and Wilson-Raybould",
+        "date": "2017-07-07",
+        "result": "RECORD",
+        "label": "Cost on record",
+        "quote": "“Today, we are announcing that the Government of Canada has reached a settlement with Mr. Omar Khadr, bringing this civil case to a close. On behalf of the Government of Canada, we wish to apologize to Mr. Khadr for any role Canadian officials may have played in relation to his ordeal abroad and any resulting harm. […] The details of the settlement are confidential between Mr. Khadr and the Government.” At the announcement, Wilson-Raybould: “A Canadian citizen’s charter rights were violated … there are serious costs when the government violates the rights of its citizens.” Goodale: “It is not about the battlefield in Afghanistan. It is about the acts or omissions of the Canadian government after Mr. Khadr was captured and detained.”"
+      },
+      "consequence_pm": "None.",
+      "consequence_others": "None.",
+      "public_cost": "$10.5 million, paid July 5, 2017.",
+      "status": "Closed.",
+      "sources": [
+        {
+          "title": "Statement of Apology to Mr. Omar Khadr",
+          "publisher": "Public Safety Canada",
+          "url": "https://www.canada.ca/en/public-safety-canada/news/2017/07/statement_of_apologytomromarkhadr.html",
+          "date": "2017-07-07",
+          "primary": true
+        },
+        {
+          "title": "Government issues official apology, confirms settlement payout to Omar Khadr",
+          "publisher": "Global News",
+          "url": "https://globalnews.ca/news/3582295/government-issues-official-apology-to-omar-khadr/",
+          "date": "2017-07-07",
+          "primary": false
+        },
+        {
+          "title": "Omar Khadr received $10.5M from Ottawa on Wednesday, government confirms",
+          "publisher": "CBC News",
+          "url": "https://www.cbc.ca/news/politics/omar-khadr-settlement-1.4194142",
+          "date": "2017-07-06",
+          "primary": false
+        },
+        {
+          "title": "Government formally apologizes to Omar Khadr",
+          "publisher": "CBC News",
+          "url": "https://www.cbc.ca/news/politics/cabinet-explain-omar-khadr-settlement-1.4194467",
+          "date": "2017-07-07",
+          "primary": false
+        }
+      ],
+      "result_class": "neutral",
+      "result_generic": "On the record",
+      "subject_key": "gov",
+      "who": "His government",
+      "years": "2017",
+      "plain": {
+        "headline": "Paid Omar Khadr $10.5 million and apologized, settling a lawsuit over Charter breaches the Supreme Court had already found.",
+        "telling": "Omar Khadr was taken to Guantanamo Bay at 15 and interrogated there by Canadian officials, who passed what they got to the Americans. The Supreme Court ruled twice, in 2008 and 2010, that this violated his Charter rights. He sued for $20 million. In July 2017 the government settled for $10.5 million and apologized; the justice minister said 'there are serious costs when the government violates the rights of its citizens.'",
+        "found": "Settlement and apology, July 7, 2017, resting on Supreme Court rulings of 2008 and 2010.",
+        "him": "Nothing.",
+        "others": "None.",
+        "cost": "$10.5 million.",
+        "label": "Cost on record"
+      },
+      "big": false,
+      "cost_cad": 10500000,
+      "said": null,
+      "secondary": [],
+      "group": "cost",
+      "group_index": 8,
+      "no": 13
     },
     {
       "id": "julie-payette",
@@ -1165,6 +1368,7 @@
         "label": "Resigned"
       },
       "big": false,
+      "cost_cad": null,
       "said": {
         "said": [
           {
@@ -1180,7 +1384,7 @@
       "secondary": [],
       "group": "exit",
       "group_index": 5,
-      "no": 12
+      "no": 14
     },
     {
       "id": "kang-harassment",
@@ -1237,11 +1441,12 @@
         "label": "Left caucus; harassment found"
       },
       "big": false,
+      "cost_cad": null,
       "said": null,
       "secondary": [],
       "group": "exit",
       "group_index": 5,
-      "no": 13
+      "no": 15
     },
     {
       "id": "morneau-french-villa",
@@ -1305,11 +1510,12 @@
         "label": "Fined $200"
       },
       "big": false,
+      "cost_cad": null,
       "said": null,
       "secondary": [],
       "group": "law",
       "group_index": 0,
-      "no": 14
+      "no": 16
     },
     {
       "id": "hehr-resignation",
@@ -1365,11 +1571,12 @@
         "label": "Quit cabinet"
       },
       "big": false,
+      "cost_cad": null,
       "said": null,
       "secondary": [],
       "group": "exit",
       "group_index": 5,
-      "no": 15
+      "no": 17
     },
     {
       "id": "india-trip-atwal",
@@ -1428,6 +1635,7 @@
         "label": "Inquiry: PMO failed to vet"
       },
       "big": false,
+      "cost_cad": 1660000,
       "said": {
         "said": [
           {
@@ -1443,7 +1651,7 @@
       "secondary": [],
       "group": "inquiry",
       "group_index": 3,
-      "no": 16
+      "no": 18
     },
     {
       "id": "leblanc-surf-clam",
@@ -1508,11 +1716,12 @@
         "label": "Broke the ethics law"
       },
       "big": false,
+      "cost_cad": null,
       "said": null,
       "secondary": [],
       "group": "law",
       "group_index": 0,
-      "no": 17
+      "no": 19
     },
     {
       "id": "vance-allegations-2018",
@@ -1593,6 +1802,7 @@
         "label": "Vance pleaded guilty"
       },
       "big": true,
+      "cost_cad": null,
       "said": {
         "said": [
           {
@@ -1615,7 +1825,7 @@
       "secondary": [],
       "group": "exit",
       "group_index": 5,
-      "no": 18
+      "no": 20
     },
     {
       "id": "trans-mountain",
@@ -1673,6 +1883,7 @@
         "label": "Likely loss"
       },
       "big": false,
+      "cost_cad": 38700000000,
       "said": {
         "said": [
           {
@@ -1688,7 +1899,7 @@
       "secondary": [],
       "group": "cost",
       "group_index": 8,
-      "no": 19
+      "no": 21
     },
     {
       "id": "kokanee-summit-allegation",
@@ -1745,6 +1956,7 @@
         "label": "Never investigated"
       },
       "big": false,
+      "cost_cad": null,
       "said": {
         "said": [
           {
@@ -1767,7 +1979,7 @@
       "secondary": [],
       "group": "never",
       "group_index": 7,
-      "no": 20
+      "no": 22
     },
     {
       "id": "grewal-charges",
@@ -1824,11 +2036,12 @@
         "label": "Charged, acquitted"
       },
       "big": false,
+      "cost_cad": null,
       "said": null,
       "secondary": [],
       "group": "exit",
       "group_index": 5,
-      "no": 21
+      "no": 23
     },
     {
       "id": "snc-lavalin-affair",
@@ -1910,6 +2123,7 @@
         "label": "Broke the ethics law"
       },
       "big": true,
+      "cost_cad": null,
       "said": {
         "said": [
           {
@@ -1932,7 +2146,7 @@
       "secondary": [],
       "group": "law",
       "group_index": 0,
-      "no": 22
+      "no": 24
     },
     {
       "id": "liberalist-judicial-vetting",
@@ -1996,11 +2210,12 @@
         "label": "Never investigated"
       },
       "big": false,
+      "cost_cad": null,
       "said": null,
       "secondary": [],
       "group": "never",
       "group_index": 7,
-      "no": 23
+      "no": 25
     },
     {
       "id": "ng-pomp-circumstance",
@@ -2057,11 +2272,12 @@
         "label": "Broke the ethics law"
       },
       "big": false,
+      "cost_cad": 22790,
       "said": null,
       "secondary": [],
       "group": "law",
       "group_index": 0,
-      "no": 24
+      "no": 26
     },
     {
       "id": "winnipeg-lab-documents",
@@ -2122,11 +2338,12 @@
         "label": "Files withheld, then released"
       },
       "big": false,
+      "cost_cad": null,
       "said": null,
       "secondary": [],
       "group": "admit",
       "group_index": 6,
-      "no": 25
+      "no": 27
     },
     {
       "id": "blackface-images",
@@ -2188,6 +2405,7 @@
         "label": "Admitted"
       },
       "big": true,
+      "cost_cad": null,
       "said": {
         "said": [
           {
@@ -2210,7 +2428,83 @@
       "secondary": [],
       "group": "admit",
       "group_index": 6,
-      "no": 26
+      "no": 28
+    },
+    {
+      "id": "pandemic-preparedness-audit",
+      "subject": "Government",
+      "category": "governance",
+      "title": "Pandemic preparedness: the early-warning system and quarantine",
+      "date_start": "2020-01",
+      "date_end": "2021-03-25",
+      "actors": [
+        "Public Health Agency of Canada",
+        "Patty Hajdu",
+        "Karen Hogan (Auditor General)"
+      ],
+      "summary": "The Auditor General reported on March 25, 2021 that the Public Health Agency of Canada “was not adequately prepared to respond to the pandemic, and it underestimated the potential impact of the virus at the onset of the pandemic.” The Global Public Health Intelligence Network, built to give early warning of outbreaks, “did not issue an alert” when COVID-19 emerged in Wuhan; the agency rated the risk to Canada “low” until March 12, 2020; it had not completed a planned test of its pandemic plans; it did not know whether two-thirds of incoming travellers followed quarantine orders; and it referred only 40 per cent of the travellers it flagged as high-risk to police.",
+      "finding": {
+        "body": "Auditor General of Canada — 2021 Report 8, Pandemic Preparedness, Surveillance, and Border Control Measures",
+        "date": "2021-03-25",
+        "result": "AUDIT_ADVERSE",
+        "label": "Audit: unprepared",
+        "quote": "“The agency was not adequately prepared to respond to the pandemic, and it underestimated the potential impact of the virus at the onset of the pandemic.” The Global Public Health Intelligence Network “did not issue an alert to provide an early warning when COVID-19 first emerged in Wuhan, China.” The agency “did not know whether two-thirds of incoming travellers followed quarantine orders.”"
+      },
+      "consequence_pm": "None.",
+      "consequence_others": "None to ministers. The agency accepted the recommendations.",
+      "public_cost": null,
+      "status": "Closed as an audit matter.",
+      "sources": [
+        {
+          "title": "Report 8—Pandemic Preparedness, Surveillance, and Border Control Measures, 2021 Reports of the Auditor General of Canada",
+          "publisher": "Office of the Auditor General of Canada",
+          "url": "https://www.canada.ca/en/auditor-general/our-work/audit-reports/parl-oag-202103-03-e.html",
+          "date": "2021-03-25",
+          "primary": true
+        },
+        {
+          "title": "Key information — Standing Committee on Public Accounts: OAG audit on Pandemic Preparedness, Surveillance and Border Control (April 20, 2021)",
+          "publisher": "Canada Border Services Agency",
+          "url": "https://cbsa-asfc.gc.ca/transparency-transparence/pd-dp/bbp-rpp/pacp/2021-04-20/keyinfo-infocle-eng.html",
+          "date": "2021-04-20",
+          "primary": true
+        },
+        {
+          "title": "Public Health Agency was unprepared for the pandemic and ‘underestimated’ the danger, auditor general says",
+          "publisher": "CBC News",
+          "url": "https://www.cbc.ca/lite/story/1.5963895",
+          "date": "2021-03-25",
+          "primary": false
+        },
+        {
+          "title": "Misuse of pandemic early warning system, inaccurate risk assessments hurt Canada’s response to COVID-19, Auditor-General says",
+          "publisher": "The Globe and Mail",
+          "url": "https://www.theglobeandmail.com/politics/article-misuse-of-pandemic-early-warning-system-inaccurate-risk-assessments/",
+          "date": "2021-03-25",
+          "primary": false
+        }
+      ],
+      "result_class": "warning",
+      "result_generic": "Audit",
+      "subject_key": "gov",
+      "who": "His government",
+      "years": "2020–2021",
+      "plain": {
+        "headline": "The pandemic early-warning system stayed silent, the risk was rated 'low' until March 12, 2020, and two-thirds of quarantined travellers were never checked.",
+        "telling": "Canada's Global Public Health Intelligence Network, built to give early warning of outbreaks, issued no alert when COVID-19 emerged in Wuhan. The Public Health Agency rated the risk to Canada as low until March 12, 2020. The Auditor General found the agency 'was not adequately prepared' and 'underestimated the potential impact of the virus', had never completed the planned test of its pandemic plans, did not know whether two-thirds of incoming travellers obeyed quarantine, and referred only four in ten of the people it flagged as high-risk to police.",
+        "found": "Auditor General: 'not adequately prepared'; no early-warning alert; risk rated low until March 12, 2020; two-thirds of quarantines unverified.",
+        "him": "Nothing.",
+        "others": "None to ministers.",
+        "cost": null,
+        "label": "Audit: unprepared"
+      },
+      "big": true,
+      "cost_cad": null,
+      "said": null,
+      "secondary": [],
+      "group": "audit",
+      "group_index": 2,
+      "no": 29
     },
     {
       "id": "baylis-ventilators",
@@ -2268,11 +2562,12 @@
         "label": "Never investigated"
       },
       "big": false,
+      "cost_cad": 237000000,
       "said": null,
       "secondary": [],
       "group": "never",
       "group_index": 7,
-      "no": 27
+      "no": 30
     },
     {
       "id": "covid-benefit-overpayments",
@@ -2344,11 +2639,12 @@
         "label": "Audit: $4.6B overpaid"
       },
       "big": true,
+      "cost_cad": 4600000000,
       "said": null,
       "secondary": [],
       "group": "audit",
       "group_index": 2,
-      "no": 28
+      "no": 31
     },
     {
       "id": "we-charity",
@@ -2450,6 +2746,7 @@
         "label": "Cleared, now under court review"
       },
       "big": true,
+      "cost_cad": null,
       "said": {
         "said": [
           {
@@ -2478,7 +2775,7 @@
       },
       "group": "cleared",
       "group_index": 9,
-      "no": 29
+      "no": 32
     },
     {
       "id": "lucki-nova-scotia-call",
@@ -2544,11 +2841,12 @@
         "label": "Inquiry: no interference"
       },
       "big": false,
+      "cost_cad": null,
       "said": null,
       "secondary": [],
       "group": "inquiry",
       "group_index": 3,
-      "no": 30
+      "no": 33
     },
     {
       "id": "arrivecan",
@@ -2629,11 +2927,75 @@
         "label": "Audit: rules ignored"
       },
       "big": true,
+      "cost_cad": 59500000,
       "said": null,
       "secondary": [],
       "group": "audit",
       "group_index": 2,
-      "no": 31
+      "no": 34
+    },
+    {
+      "id": "firearms-buyback-program",
+      "subject": "Government",
+      "category": "spending",
+      "title": "The firearms buyback program",
+      "date_start": "2020-05-01",
+      "date_end": null,
+      "actors": [
+        "Bill Blair",
+        "Marco Mendicino",
+        "Dominic LeBlanc",
+        "Public Safety Canada"
+      ],
+      "summary": "On May 1, 2020 the cabinet banned about 1,500 models of firearm by order-in-council and told owners the government would buy them back. Figures tabled in Parliament in response to an Order Paper question, reported by CTV News on September 20, 2024, put the program’s cost at $67.2 million since 2020, with no firearms collected.",
+      "finding": {
+        "body": "Public Safety Canada figures tabled in response to an Order Paper question",
+        "date": "2024-09-20",
+        "result": "RECORD",
+        "label": "Cost on record",
+        "quote": "“The federal firearm buyback program has cost taxpayers nearly $67.2 million since it was announced in 2020, but it still hasn’t collected a single gun.” — CTV News, reporting the tabled figures."
+      },
+      "consequence_pm": "None.",
+      "consequence_others": "None.",
+      "public_cost": "$67.2 million to September 2024, with no firearms collected.",
+      "status": "Figures current to September 2024; later phases of the program are not verified in this record.",
+      "sources": [
+        {
+          "title": "Federal firearm buyback program has cost $67M since 2020, still hasn’t collected guns",
+          "publisher": "CTV News",
+          "url": "https://www.ctvnews.ca/politics/article/federal-firearm-buyback-program-has-cost-67m-since-2020-still-hasnt-collected-guns/",
+          "date": "2024-09-20",
+          "primary": false
+        },
+        {
+          "title": "Assault-Style Firearms Compensation Program",
+          "publisher": "Public Safety Canada",
+          "url": "https://www.canada.ca/en/public-safety-canada/campaigns/firearms-buyback.html",
+          "date": null,
+          "primary": true
+        }
+      ],
+      "result_class": "neutral",
+      "result_generic": "On the record",
+      "subject_key": "gov",
+      "who": "His government",
+      "years": "2020 –",
+      "plain": {
+        "headline": "Banned 1,500 models of firearm in 2020 and promised a buyback. Four years and $67 million later, it had collected no guns.",
+        "telling": "On May 1, 2020, two weeks after the Nova Scotia shooting, the cabinet banned about 1,500 models of firearm by order-in-council and told owners the government would buy them back. Figures tabled in Parliament in September 2024 put the program's cost at $67.2 million since 2020, with no firearms collected.",
+        "found": "Government figures, September 2024: $67.2 million spent, no firearms collected.",
+        "him": "Nothing.",
+        "others": "None.",
+        "cost": "$67.2 million to September 2024, no firearms collected.",
+        "label": "Cost on record"
+      },
+      "big": false,
+      "cost_cad": 67200000,
+      "said": null,
+      "secondary": [],
+      "group": "cost",
+      "group_index": 8,
+      "no": 35
     },
     {
       "id": "morneau-we-charity",
@@ -2701,6 +3063,7 @@
         "label": "Broke the ethics law"
       },
       "big": false,
+      "cost_cad": null,
       "said": {
         "said": [
           {
@@ -2715,7 +3078,7 @@
       },
       "group": "law",
       "group_index": 0,
-      "no": 32
+      "no": 36
     },
     {
       "id": "nuctech-standing-offer",
@@ -2780,11 +3143,12 @@
         "label": "Reversed"
       },
       "big": false,
+      "cost_cad": 250000,
       "said": null,
       "secondary": [],
       "group": "admit",
       "group_index": 6,
-      "no": 33
+      "no": 37
     },
     {
       "id": "access-to-information-decline",
@@ -2848,6 +3212,7 @@
         "label": "Watchdog: system failing"
       },
       "big": false,
+      "cost_cad": null,
       "said": {
         "said": [
           {
@@ -2863,7 +3228,7 @@
       "secondary": [],
       "group": "inquiry",
       "group_index": 3,
-      "no": 34
+      "no": 38
     },
     {
       "id": "michael-chong-zhao-wei",
@@ -2930,6 +3295,7 @@
         "label": "Inquiry: warning never delivered"
       },
       "big": false,
+      "cost_cad": null,
       "said": {
         "said": [
           {
@@ -2945,7 +3311,7 @@
       "secondary": [],
       "group": "inquiry",
       "group_index": 3,
-      "no": 35
+      "no": 39
     },
     {
       "id": "blair-csis-warrant-delay",
@@ -3004,11 +3370,12 @@
         "label": "Inquiry: 'unacceptable' delay"
       },
       "big": false,
+      "cost_cad": null,
       "said": null,
       "secondary": [],
       "group": "inquiry",
       "group_index": 3,
-      "no": 36
+      "no": 40
     },
     {
       "id": "afghanistan-evacuation-2021",
@@ -3074,11 +3441,12 @@
         "label": "Committee: planning failures"
       },
       "big": false,
+      "cost_cad": null,
       "said": null,
       "secondary": [],
       "group": "inquiry",
       "group_index": 3,
-      "no": 37
+      "no": 41
     },
     {
       "id": "snap-election-2021",
@@ -3134,11 +3502,12 @@
         "label": "Cost on record"
       },
       "big": false,
+      "cost_cad": 574200000,
       "said": null,
       "secondary": [],
       "group": "cost",
       "group_index": 8,
-      "no": 38
+      "no": 42
     },
     {
       "id": "sajjan-afghan-sikhs",
@@ -3195,6 +3564,7 @@
         "label": "Never investigated"
       },
       "big": false,
+      "cost_cad": null,
       "said": {
         "said": [
           {
@@ -3210,7 +3580,7 @@
       "secondary": [],
       "group": "never",
       "group_index": 7,
-      "no": 39
+      "no": 43
     },
     {
       "id": "tofino-truth-reconciliation-day",
@@ -3267,6 +3637,7 @@
         "label": "Admitted"
       },
       "big": false,
+      "cost_cad": null,
       "said": {
         "said": [
           {
@@ -3289,7 +3660,7 @@
       "secondary": [],
       "group": "admit",
       "group_index": 6,
-      "no": 40
+      "no": 44
     },
     {
       "id": "emergencies-act-2022",
@@ -3396,6 +3767,7 @@
         "label": "Court: illegal, upheld on appeal"
       },
       "big": true,
+      "cost_cad": null,
       "said": {
         "said": [
           {
@@ -3417,7 +3789,7 @@
       },
       "group": "court",
       "group_index": 1,
-      "no": 41
+      "no": 45
     },
     {
       "id": "mendicino-police-request-claim",
@@ -3475,6 +3847,7 @@
         "label": "Walked back"
       },
       "big": false,
+      "cost_cad": null,
       "said": {
         "said": [
           {
@@ -3497,7 +3870,7 @@
       "secondary": [],
       "group": "admit",
       "group_index": 6,
-      "no": 42
+      "no": 46
     },
     {
       "id": "boissonnault-global-health-imports",
@@ -3573,6 +3946,7 @@
         "label": "Cleared; left cabinet"
       },
       "big": false,
+      "cost_cad": null,
       "said": {
         "said": [
           {
@@ -3594,7 +3968,7 @@
       },
       "group": "cleared",
       "group_index": 9,
-      "no": 43
+      "no": 47
     },
     {
       "id": "london-hotel-queen-funeral",
@@ -3651,11 +4025,12 @@
         "label": "Cost on record"
       },
       "big": false,
+      "cost_cad": 397843,
       "said": null,
       "secondary": [],
       "group": "cost",
       "group_index": 8,
-      "no": 44
+      "no": 48
     },
     {
       "id": "foreign-interference-response",
@@ -3744,6 +4119,7 @@
         "label": "Inquiry: slow, not transparent"
       },
       "big": true,
+      "cost_cad": null,
       "said": {
         "said": [
           {
@@ -3754,12 +4130,12 @@
             "src_url": "https://globalnews.ca/news/9293238/justin-trudeau-china-interference-allegations"
           }
         ],
-        "record": "On that point the inquiry backed him: “there is no intelligence that the $250,000 went to any of the 11 candidates.” On the government as a whole it found it “has sometimes taken too long to act” and was “a poor communicator and insufficiently transparent when it comes to foreign interference.”"
+        "record": "The inquiry found “there is no intelligence that the $250,000 went to any of the 11 candidates.” It found the government “has sometimes taken too long to act” and was “a poor communicator and insufficiently transparent when it comes to foreign interference.”"
       },
       "secondary": [],
       "group": "inquiry",
       "group_index": 3,
-      "no": 45
+      "no": 49
     },
     {
       "id": "mckinsey-outsourcing",
@@ -3774,7 +4150,7 @@
         "Public Services and Procurement Canada",
         "Karen Hogan (Auditor General)"
       ],
-      "summary": "Radio-Canada reported in January 2023 that McKinsey’s federal contracts had grown from $2.2 million over nine years under the Harper government to $66 million over seven years under Trudeau; later tallies exceeded $100 million. Dominic Barton, McKinsey’s global managing partner until 2018, chaired Trudeau’s Advisory Council on Economic Growth and served as ambassador to China. The Auditor General’s June 4, 2024 report examined 97 McKinsey contracts worth $209 million awarded between 2011 and 2023: 68 were non-competitive and 18 of 19 under the master standing offer lacked the required justification. Federal spending on professional and special services reached a record $20.7 billion in 2023–24.",
+      "summary": "Radio-Canada reported in January 2023 that McKinsey’s federal contracts had grown from $2.2 million over the nine years before Trudeau took office to $66 million over his first seven; later tallies exceeded $100 million. Dominic Barton, McKinsey’s global managing partner until 2018, chaired Trudeau’s Advisory Council on Economic Growth and served as ambassador to China. The Auditor General’s June 4, 2024 report examined 97 McKinsey contracts worth $209 million awarded between 2011 and 2023: 68 were non-competitive and 18 of 19 under the master standing offer lacked the required justification. Federal spending on professional and special services reached a record $20.7 billion in 2023–24.",
       "finding": {
         "body": "Auditor General of Canada — 2024 Report 5, Professional Services Contracts",
         "date": "2024-06-04",
@@ -3815,8 +4191,8 @@
       "who": "His government",
       "years": "2023–2024",
       "plain": {
-        "headline": "Federal contracts to McKinsey went from $2 million under Harper to more than $100 million under Trudeau. The Auditor General found the rules were routinely ignored.",
-        "telling": "Radio-Canada found McKinsey's federal contracts jumped from $2.2 million over nine Harper years to $66 million in seven Trudeau years, later topping $100 million. McKinsey's former global boss, Dominic Barton, had chaired Trudeau's economic advisory council and was made ambassador to China. The Auditor General examined 97 McKinsey contracts worth $209 million: 70% were awarded without competition and most lacked the required justification. Federal spending on outside consultants hit a record $20.7 billion in 2023–24.",
+        "headline": "Federal contracts to McKinsey went from $2 million in the nine years before he took office to more than $100 million under him. The Auditor General found the rules were routinely ignored.",
+        "telling": "Radio-Canada found McKinsey's federal contracts jumped from $2.2 million over the nine years before he took office to $66 million in his first seven, later topping $100 million. McKinsey's former global boss, Dominic Barton, had chaired Trudeau's economic advisory council and was made ambassador to China. The Auditor General examined 97 McKinsey contracts worth $209 million: 70% were awarded without competition and most lacked the required justification. Federal spending on outside consultants hit a record $20.7 billion in 2023–24.",
         "found": "Auditor General: 'frequent disregard for procurement policies and guidance'.",
         "him": "Nothing. Asked ministers to review the contracts.",
         "others": "Nobody sanctioned.",
@@ -3824,11 +4200,12 @@
         "label": "Audit: rules ignored"
       },
       "big": false,
+      "cost_cad": 209000000,
       "said": null,
       "secondary": [],
       "group": "audit",
       "group_index": 2,
-      "no": 46
+      "no": 50
     },
     {
       "id": "hussen-constituency-contracts",
@@ -3877,11 +4254,12 @@
         "label": "Never investigated"
       },
       "big": false,
+      "cost_cad": 93050,
       "said": null,
       "secondary": [],
       "group": "never",
       "group_index": 7,
-      "no": 47
+      "no": 51
     },
     {
       "id": "han-dong",
@@ -3947,11 +4325,12 @@
         "label": "Inquiry: undetermined"
       },
       "big": false,
+      "cost_cad": null,
       "said": null,
       "secondary": [],
       "group": "inquiry",
       "group_index": 3,
-      "no": 48
+      "no": 52
     },
     {
       "id": "mendicino-bernardo-transfer",
@@ -4008,6 +4387,7 @@
         "label": "Dropped from cabinet"
       },
       "big": false,
+      "cost_cad": null,
       "said": {
         "said": [
           {
@@ -4023,7 +4403,7 @@
       "secondary": [],
       "group": "never",
       "group_index": 7,
-      "no": 49
+      "no": 53
     },
     {
       "id": "david-johnston-rapporteur",
@@ -4095,11 +4475,12 @@
         "label": "Forced out"
       },
       "big": false,
+      "cost_cad": 4496888,
       "said": null,
       "secondary": [],
       "group": "exit",
       "group_index": 5,
-      "no": 50
+      "no": 54
     },
     {
       "id": "hunka-recognition",
@@ -4157,11 +4538,12 @@
         "label": "Speaker resigned"
       },
       "big": false,
+      "cost_cad": null,
       "said": null,
       "secondary": [],
       "group": "exit",
       "group_index": 5,
-      "no": 51
+      "no": 55
     },
     {
       "id": "sdtc-green-fund",
@@ -4246,10 +4628,11 @@
         "label": "Audit: conflicts, ineligible grants"
       },
       "big": true,
+      "cost_cad": 123000000,
       "said": null,
       "group": "audit",
       "group_index": 2,
-      "no": 52
+      "no": 56
     },
     {
       "id": "carbon-charge-heating-oil",
@@ -4313,6 +4696,7 @@
         "label": "Reversed"
       },
       "big": false,
+      "cost_cad": null,
       "said": {
         "said": [
           {
@@ -4342,7 +4726,7 @@
       "secondary": [],
       "group": "admit",
       "group_index": 6,
-      "no": 53
+      "no": 57
     },
     {
       "id": "jamaica-vacation",
@@ -4406,6 +4790,7 @@
         "label": "Cleared in advance"
       },
       "big": false,
+      "cost_cad": 230442,
       "said": {
         "said": [
           {
@@ -4435,7 +4820,7 @@
       "secondary": [],
       "group": "cleared",
       "group_index": 9,
-      "no": 54
+      "no": 58
     },
     {
       "id": "nsicop-2024-parliamentarians",
@@ -4500,11 +4885,12 @@
         "label": "Inquiry: overstated"
       },
       "big": false,
+      "cost_cad": null,
       "said": null,
       "secondary": [],
       "group": "inquiry",
       "group_index": 3,
-      "no": 55
+      "no": 59
     },
     {
       "id": "immigration-could-have-acted-quicker",
@@ -4567,11 +4953,12 @@
         "label": "Admitted"
       },
       "big": false,
+      "cost_cad": null,
       "said": null,
       "secondary": [],
       "group": "admit",
       "group_index": 6,
-      "no": 56
+      "no": 60
     },
     {
       "id": "freeland-resignation",
@@ -4628,6 +5015,7 @@
         "label": "Quit"
       },
       "big": false,
+      "cost_cad": null,
       "said": {
         "said": [
           {
@@ -4650,7 +5038,7 @@
       "secondary": [],
       "group": "exit",
       "group_index": 5,
-      "no": 57
+      "no": 61
     },
     {
       "id": "prorogation-2025",
@@ -4716,11 +5104,12 @@
         "label": "Upheld by court"
       },
       "big": false,
+      "cost_cad": null,
       "said": null,
       "secondary": [],
       "group": "cleared",
       "group_index": 9,
-      "no": 58
+      "no": 62
     },
     {
       "id": "trudeau-resignation",
@@ -4777,6 +5166,7 @@
         "label": "Resigned"
       },
       "big": false,
+      "cost_cad": null,
       "said": {
         "said": [
           {
@@ -4799,7 +5189,7 @@
       "secondary": [],
       "group": "exit",
       "group_index": 5,
-      "no": 59
+      "no": 63
     }
   ]
 }
